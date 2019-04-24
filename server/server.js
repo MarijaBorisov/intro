@@ -1,7 +1,10 @@
 var app = require('../app');
+var dotenv = require('dotenv');
 
-var port = process.env.PORT || 3030;
+dotenv.config();
 
-var server = app.listen(port, () => {
+var port = process.env.PORT || 3000;
+
+app.listen(port, () => {
     console.log(`Express server listening on port ${port}`);
 });
