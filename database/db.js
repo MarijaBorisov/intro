@@ -1,2 +1,8 @@
 var mongoose = require('mongoose');
-mongoose.connect('mongodb://localhost/intro', { useNewUrlParser: true });
+var db_url = require('../config');
+
+mongoose.connect(db_url.mongodbUrl, {   
+    useNewUrlParser: true,
+    useFindAndModify: false,
+    useCreateIndex: true
+});

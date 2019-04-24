@@ -10,7 +10,7 @@ var User = require('./User');
 
 // RETURNS ALL THE USERS IN THE DATABASE
 router.get('/', (req, res, next) => {
-    User.find({}, (err, users) => {
+    User.findOne({}, (err, users) => {
         if (err) return res.status(500).send("There was a problem finding the users.");
         res.status(200).send(users);
     });
@@ -35,7 +35,7 @@ router.post('/', (req, res, next) => {
 router.get('/:id', (req, res, next) => {
     User.findById(req.params.id, (err, user) => {
         if (err) return res.status(500).send("There was a problem finding the user.");
-        if (!user) return res.status(404).send("No user found.");
+        if (!user) return res.status(404).send("No such user found.");
         res.status(200).send(user);
     });
 });
@@ -45,7 +45,7 @@ router.get('/:id', (req, res, next) => {
 router.delete('/:id', (req, res, next) => {
     User.findByIdAndRemove(req.params.id, (err, user) => {
         if (err) return res.status(500).send("There was a problem deleting the user.");
-        res.status(200).send(`User: ${user.name} was deleted.`);
+        res.status(200).send(`User ${user.username} successfully deleted from database.`);
     });
 });
 
