@@ -4,3 +4,20 @@
 [2019-04-25T14:33:49.527Z][error] - Cannot add user
 [2019-04-25T14:34:41.623Z][error] - Getting all users ... 
 [2019-04-25T14:53:24.435Z][error] - Cannot add user
+[2019-04-25T15:14:17.969Z][error] - Cannot add user
+[2019-04-25T15:14:57.062Z][error] - Cannot add user
+[2019-04-25T15:15:50.783Z][error] - Cannot add user
+[2019-04-25T15:16:22.258Z][error] - Cannot add user
+[2019-04-25T15:16:38.426Z][error] - Cannot add user
+[2019-04-25T15:17:08.137Z][error] - Username validaton for lowerCase did not pass
+[2019-04-25T15:17:08.141Z][error] - Cannot add user
+[2019-04-25T15:22:25.563Z][error] - Username validaton for lowerCase did not pass
+[2019-04-25T15:22:25.565Z][error] - Username validaton for isAlphanumeric did not pass
+[2019-04-25T15:22:25.567Z][error] - Cannot add user
+[2019-04-25T15:22:31.944Z][error] - Username validaton for lowerCase did not pass
+[2019-04-25T15:22:31.948Z][error] - Username validaton for isAlphanumeric did not pass
+[2019-04-25T15:22:31.950Z][error] - Cannot add user
+[2019-04-25T15:22:39.840Z][error] - Username validaton for lowerCase did not pass
+[2019-04-25T15:22:39.843Z][error] - Cannot add user
+[2019-04-25T15:23:29.108Z][error] - Username validaton for isAlphanumeric did not pass
+[2019-04-25T15:23:29.109Z][error] - Cannot add user
