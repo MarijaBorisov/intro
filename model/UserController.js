@@ -1,11 +1,11 @@
 var express = require('express');
 var router = express.Router();
-const logger = require('winston');
+const logger = require('../logger');
 
 //express body parser
 router.use(express.json());
 
-var User = require('./User');
+const User = require('./User');
 
 
 
@@ -14,7 +14,7 @@ router.get('/', (req, res, next) => {
     logger.info('GET fired: show all users from database. ' + Date(Date.now()));
 
     User.find({}, (err, users) => {
-        if (err) return res.status(500).send("There was a problem finding the users.");        
+        if (err) return res.status(500).send("There was a problem finding the users.");
         res.status(200).send(users);
     });
 });
@@ -64,6 +64,61 @@ router.put('/:id', (req, res, next) => {
     }, (err, user) => {
         if (err) return res.status(500).send("There was a problem updating the user.");
         res.status(200).send(user);
+    });
+});
+
+
+// USER LOGIN API 
+router.post('/login', (req, res, next) => {
+    // find user with requested email 
+    User.findOne({
+        email: req.body.email
+    }, function (err, user) {
+        if (user === null) {
+            return res.status(400).send({
+                message: "User not found."
+            });
+        } else {
+            if (user.validPassword(req.body.password)) {
+                return res.status(201).send({
+                    message: "User Logged In",
+                })
+            } else {
+                return res.status(400).send({
+                    message: "Wrong Password"
+                });
+            }
+        }
+    });
+});
+
+
+// user signup api 
+router.post('/signup', (req, res, next) => {
+
+    // creating empty user object 
+    let newUser = new User();
+
+    // intialize newUser object with request data 
+    newUser.username = req.body.username;
+    newUser.email = req.body.email;
+    // call setPassword function to hash password 
+    newUser.setPassword(req.body.password);
+    logger.info(req.body);
+
+    // save newUser object to database 
+    newUser.save((err, User) => {
+        if (err) {
+            logger.info(`response: ${res.body}`);
+            return res.status(400).send({
+                message: "Failed to add user."
+            });
+        } else {
+            logger.info(`response: ${res.body}`);
+            return res.status(201).send({
+                message: "User added succesfully."                
+            });
+        }
     });
 });
 

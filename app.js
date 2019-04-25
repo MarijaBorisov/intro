@@ -13,4 +13,7 @@ var UserController = require('./model/UserController');
 
 app.use('/', UserController);
 
+// use user route when url matches /api/user/ 
+app.use('/', UserController);
+
 module.exports = app;
