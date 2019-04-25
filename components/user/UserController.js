@@ -1,6 +1,6 @@
 var express = require('express');
 var router = express.Router();
-
+var logger = require('../../utils/logs/winston');
 var User = require('../user/User');
 
 //add new user
@@ -11,7 +11,9 @@ router.post('/users', (req, res) => {
         email: req.body.email
     })
         .then((err, user) => {
+            logger.info('OK');
             res.status(200).send(user);
+
         })
         .catch((err, user) => {
             return res.status(500).send("Problem with adding user");
@@ -20,10 +22,9 @@ router.post('/users', (req, res) => {
 
 //get all users
 router.get('/users', (req, res) => {
-    User.find({},  (err, users) =>{
+    User.find({}, (err, users) => {
         console.log(users);
         if (err) return res.status(500).send("There was a problem finding the users.");
-
         res.status(200).send(users);
     });
 })

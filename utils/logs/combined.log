@@ -1,0 +1,19 @@
+
+{ message: 'fsjjdfksfsjkfdjksfdhskdfsfk',
+  level: 'info',
+  timestamp: '2019-04-25T14:29:42.816Z' }
+{ message: 'fsjjdfksfsjkfdjksfdhskdfsfk',
+  level: 'info',
+  timestamp: '2019-04-25T14:30:54.776Z' }
+{ message: 'fsjjdfksfsjkfdjksfdhskdfsfk',
+  level: 'info',
+  timestamp: '2019-04-25T14:31:18.081Z' }
+{ message: 'test1',
+  level: 'info',
+  timestamp: '2019-04-25T14:31:47.740Z' }
+{ message: 'test1',
+  level: 'info',
+  timestamp: '2019-04-25T14:32:53.686Z' }
+{ message: 'test2',
+  level: 'info',
+  timestamp: '2019-04-25T14:33:43.535Z' }

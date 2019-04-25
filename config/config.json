@@ -1,7 +1,0 @@
-{
-    "development": {
-        "configId": "development",
-        "node_port": 6000,
-        "database": "mongodb+srv://daca:VsJ3rWzjVI9b20xv@cluster0-gswty.mongodb.net/users?retryWrites=true"
-    }
-}

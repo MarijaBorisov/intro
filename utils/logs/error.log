@@ -1,0 +1,3 @@
+logger.log('info', 'test message %s', 'my string');
+logger.log('info', 'test message %d', 123);
+logger.log('info', 'test message %s, %s', 'first', 'second', { number: 123 });
