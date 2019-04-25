@@ -21,3 +21,8 @@
 [2019-04-25T15:22:39.843Z][error] - Cannot add user
 [2019-04-25T15:23:29.108Z][error] - Username validaton for isAlphanumeric did not pass
 [2019-04-25T15:23:29.109Z][error] - Cannot add user
+[2019-04-25T15:25:54.190Z][error] - Username validaton for isAlphanumeric did not pass
+[2019-04-25T15:25:54.193Z][error] - Cannot add user
+[2019-04-25T15:26:01.950Z][error] - Getting all users ... 
+[2019-04-25T15:28:02.899Z][error] - Username validaton for isAlphanumeric did not pass
+[2019-04-25T15:28:02.904Z][error] - Cannot add user

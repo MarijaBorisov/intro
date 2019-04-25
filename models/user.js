@@ -5,6 +5,7 @@ const logger = require('../config/logger').logger;
 const Schema = mongoose.Schema;
 
 var validateUsername = function (username) {
+    logger.info("--------------------------------------------------------");
     logger.info("Checking username...");
     if (validator.isLowercase(username)) {
         logger.info("Username validaton for lowerCase passed");
@@ -16,6 +17,7 @@ var validateUsername = function (username) {
 
 }
 var validatePassword = function (username) {
+    logger.info("--------------------------------------------------------");
     logger.info("Checking password...");
     if (!validator.isAlphanumeric(username)) {
         logger.info("Username validaton for isAlphanumeric passed, must contain at least one non-alphanumeric character");
