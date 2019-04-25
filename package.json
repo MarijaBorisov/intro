@@ -1,0 +1,29 @@
+{
+  "name": "intro",
+  "version": "1.0.0",
+  "description": "firstcommit",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon ./server/bin/www",
+    "start-server": "nodemon ./server/bin/www"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MarijaBorisov/intro.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MarijaBorisov/intro/issues"
+  },
+  "homepage": "https://github.com/MarijaBorisov/intro#readme",
+  "dependencies": {
+    "dotenv": "^7.0.0",
+    "express": "^4.16.4",
+    "mongoose": "^5.5.3",
+    "nodemon": "^1.18.11",
+    "validator": "^10.11.0",
+    "winston": "^3.2.1"
+  }
+}
