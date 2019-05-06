@@ -8,7 +8,20 @@ var getUsersPage = (req,res,next) => {
 }
 var createUser = (req,res,next) => {
 
-   User.create(req.body)
+   User2 = new User(req.body);
+   User2.save()
+   .then(user => {
+      logger.info( 'User with email - ' + `${req.body.email}` + ' is created!')
+      res.status(200).send(user)
+   })
+   .catch((err) =>{
+      res.status(404).send('404');
+      logger.error('Failed to add user.');
+   }
+     
+   )
+
+  /* User.create(req.body)
    .then(user => {
       logger.info( 'User with email - ' + `${req.body.email}` + ' is created!')
       res.status(200).send(user)
@@ -16,7 +29,7 @@ var createUser = (req,res,next) => {
    .catch(
       showError404,
       logger.error('Failed to add user.')
-   )
+   )*/
 }
 var getAllUsers = (req,res,next) => {
     User.find()

@@ -2,3 +2,10 @@
 [2019-04-25T13:08:05.475Z] error User is not find!
 [2019-04-25T13:09:06.783Z][error] User is not find!
 [2019-04-25T13:34:14.068Z][error] Failed to get list of all users.
+[2019-05-06T14:57:17.993Z][error] Failed to add user.
+[2019-05-06T15:04:10.760Z][error] Failed to add user.
+[2019-05-06T15:04:38.432Z][error] Failed to add user.
+[2019-05-06T15:14:18.282Z][error] Failed to add user.
+[2019-05-06T15:17:25.088Z][error] Failed to add user.MongoError: E11000 duplicate key error collection: library.users2 index: name_1 dup key: { : "Tamaraasas" }
+[2019-05-06T15:18:06.251Z][error] Failed to add user.
+[2019-05-06T15:18:22.278Z][error] Failed to add user.

@@ -5,3 +5,52 @@
 [2019-04-25T13:33:52.124Z][info] Server running!
 [2019-04-25T13:34:14.068Z][error] Failed to get list of all users.
 [2019-04-25T13:34:14.085Z][info] All users has been successfully taken.
+[2019-05-06T14:43:19.977Z][info] Connection is created!
+[2019-05-06T14:43:20.123Z][info] Server running!
+[2019-05-06T14:43:34.347Z][info] Connection is created!
+[2019-05-06T14:43:34.398Z][info] Server running!
+[2019-05-06T14:47:40.035Z][info] Connection is created!
+[2019-05-06T14:47:40.084Z][info] Server running!
+[2019-05-06T14:53:36.187Z][info] Connection is created!
+[2019-05-06T14:53:36.238Z][info] Server running!
+[2019-05-06T14:56:50.922Z][info] Connection is created!
+[2019-05-06T14:56:50.970Z][info] Server running!
+[2019-05-06T14:57:17.993Z][error] Failed to add user.
+[2019-05-06T15:04:10.760Z][error] Failed to add user.
+[2019-05-06T15:04:31.557Z][info] Connection is created!
+[2019-05-06T15:04:31.611Z][info] Server running!
+[2019-05-06T15:04:38.432Z][error] Failed to add user.
+[2019-05-06T15:06:14.051Z][info] Connection is created!
+[2019-05-06T15:06:14.110Z][info] Server running!
+[2019-05-06T15:10:02.534Z][info] Connection is created!
+[2019-05-06T15:10:02.588Z][info] Server running!
+[2019-05-06T15:11:27.625Z][info] Connection is created!
+[2019-05-06T15:11:28.271Z][info] Server running!
+[2019-05-06T15:12:33.759Z][info] Connection is created!
+[2019-05-06T15:12:33.938Z][info] Server running!
+[2019-05-06T15:12:36.774Z][info] Password is correct!
+[2019-05-06T15:12:36.788Z][info] Email is correct!
+[2019-05-06T15:12:36.878Z][info] User with email - asdas@dasdas.hj is created!
+[2019-05-06T15:13:08.142Z][info] Password is correct!
+[2019-05-06T15:13:08.150Z][info] Email is correct!
+[2019-05-06T15:14:14.231Z][info] Connection is created!
+[2019-05-06T15:14:14.355Z][info] Server running!
+[2019-05-06T15:14:18.282Z][error] Failed to add user.
+[2019-05-06T15:14:18.285Z][info] Password is correct!
+[2019-05-06T15:14:18.298Z][info] Email is correct!
+[2019-05-06T15:17:20.761Z][info] Connection is created!
+[2019-05-06T15:17:20.873Z][info] Server running!
+[2019-05-06T15:17:25.039Z][info] Password is correct!
+[2019-05-06T15:17:25.050Z][info] Email is correct!
+[2019-05-06T15:17:25.088Z][error] Failed to add user.MongoError: E11000 duplicate key error collection: library.users2 index: name_1 dup key: { : "Tamaraasas" }
+[2019-05-06T15:18:02.405Z][info] Connection is created!
+[2019-05-06T15:18:02.525Z][info] Server running!
+[2019-05-06T15:18:06.200Z][info] Password is correct!
+[2019-05-06T15:18:06.214Z][info] Email is correct!
+[2019-05-06T15:18:06.251Z][error] Failed to add user.
+[2019-05-06T15:18:22.233Z][info] Password is correct!
+[2019-05-06T15:18:22.241Z][info] Email is correct!
+[2019-05-06T15:18:22.278Z][error] Failed to add user.
+[2019-05-06T15:18:53.581Z][info] Password is correct!
+[2019-05-06T15:18:53.581Z][info] Email is correct!
+[2019-05-06T15:18:53.612Z][info] User with email - asdas@d7asdas.hj is created!
