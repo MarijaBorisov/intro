@@ -1,1 +1,17 @@
-djeka
+djeka{"message":"GET fired: get one user-find by id. Tue May 07 2019 12:36:09 GMT+0200 (Central European Summer Time)","level":"info","service":"user-service"}
+{"message":"POST fired: login user djeka2@eng.it , Tue May 07 2019 12:36:30 GMT+0200 (Central European Summer Time)","level":"info","service":"user-service"}
+{"message":"POST fired: login user djeka2@eng.it , Tue May 07 2019 12:38:00 GMT+0200 (Central European Summer Time)","level":"info","service":"user-service"}
+{"message":"POST fired: login user djeka2@eng.it , Tue May 07 2019 14:29:46 GMT+0200 (Central European Summer Time)","level":"info","service":"user-service"}
+{"message":"POST fired: login user djeka2@eng.it , Tue May 07 2019 14:30:38 GMT+0200 (Central European Summer Time)","level":"info","service":"user-service"}
+{"message":"POST fired: login user djeka2@eng.it , Tue May 07 2019 14:31:10 GMT+0200 (Central European Summer Time)","level":"info","service":"user-service"}
+{"message":"POST fired: login user djeka2@eng.it , Tue May 07 2019 14:39:29 GMT+0200 (Central European Summer Time)","level":"info","service":"user-service"}
+{"message":"POST fired: login user djeka2@eng.it , Tue May 07 2019 14:49:22 GMT+0200 (Central European Summer Time)","level":"info","service":"user-service"}
+{"message":"POST fired: login user undefined , Tue May 07 2019 15:04:54 GMT+0200 (Central European Summer Time)","level":"info","service":"user-service"}
+{"message":"POST fired: login user undefined , Tue May 07 2019 15:05:21 GMT+0200 (Central European Summer Time)","level":"info","service":"user-service"}
+{"message":"GET fired: get one user-find by id. Tue May 07 2019 15:05:40 GMT+0200 (Central European Summer Time)","level":"info","service":"user-service"}
+{"message":"POST fired: login user djeka2@eng.it , Tue May 07 2019 15:06:00 GMT+0200 (Central European Summer Time)","level":"info","service":"user-service"}
+{"message":"GET fired: get one user-find by id. Tue May 07 2019 15:07:38 GMT+0200 (Central European Summer Time)","level":"info","service":"user-service"}
+{"message":"POST fired: login user djeka2@eng.it , Tue May 07 2019 15:07:44 GMT+0200 (Central European Summer Time)","level":"info","service":"user-service"}
+{"message":"POST fired: login user djeka2@eng.it , Tue May 07 2019 15:07:49 GMT+0200 (Central European Summer Time)","level":"info","service":"user-service"}
+{"message":"POST fired: login user djeka2@eng.it , Tue May 07 2019 15:09:31 GMT+0200 (Central European Summer Time)","level":"info","service":"user-service"}
+{"level":"info","message":"GET fired: show all users from database. Tue May 07 2019 15:10:29 GMT+0200 (Central European Summer Time)"}
