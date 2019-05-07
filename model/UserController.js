@@ -101,7 +101,7 @@ router.put('/:id', (req, res, next) => {
 
 
 
-// USER LOGIN API 2 - calling the function from user.js
+// USER LOGIN API 2 - calling the function generateJwt() from user.js to generate token
 // **
 router.post('/login', (req, res, next) => {
     logger.info(`POST fired: login user ${req.body.email} , ${Date(Date.now())}`);
@@ -120,7 +120,7 @@ router.post('/login', (req, res, next) => {
                 //console.log(user.generateJwt());
                 return res.status(201).send({
                     message: `User ${req.body.email} logged in`,
-                    token: token                   
+                    token: token
                 })
             } else {
                 return res.status(400).send({
@@ -132,7 +132,7 @@ router.post('/login', (req, res, next) => {
 });
 
 
-// user signup api 
+// USER SIGNUP API - CREATE NEW USER
 // **
 router.post('/signup', (req, res, next) => {
     logger.info('POST fired: signup a new user. ' + Date(Date.now()));
@@ -153,10 +153,26 @@ router.post('/signup', (req, res, next) => {
             });
         } else {
             return res.status(201).send({
-                message: `User ${user.username} succesfully added.`
+                message: `User ${user.username} succesfully added to database.`
             });
         }
     });
+});
+
+
+
+// RETURNS TWO LAST ADDED USERS FROM DB
+// **
+router.get('/get/two', (req, res, next) => {
+    logger.info(`GET fired: get two users from db - ${Date(Date.now())}`);
+
+    User.find({}, (err, users) => {
+        if (err) {
+            return res.status(500).send("There was a problem finding last two users.");
+        } else {
+            res.status(200).send(users);
+        }
+    }).sort('-_id').limit(2);
 });
 
 
