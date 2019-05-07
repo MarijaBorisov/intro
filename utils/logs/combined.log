@@ -1,19 +1,126 @@
 
-{ message: 'fsjjdfksfsjkfdjksfdhskdfsfk',
-  level: 'info',
-  timestamp: '2019-04-25T14:29:42.816Z' }
-{ message: 'fsjjdfksfsjkfdjksfdhskdfsfk',
-  level: 'info',
-  timestamp: '2019-04-25T14:30:54.776Z' }
-{ message: 'fsjjdfksfsjkfdjksfdhskdfsfk',
-  level: 'info',
-  timestamp: '2019-04-25T14:31:18.081Z' }
-{ message: 'test1',
-  level: 'info',
-  timestamp: '2019-04-25T14:31:47.740Z' }
-{ message: 'test1',
-  level: 'info',
-  timestamp: '2019-04-25T14:32:53.686Z' }
-{ message: 'test2',
-  level: 'info',
-  timestamp: '2019-04-25T14:33:43.535Z' }
+2019-05-01T15:54:44.013Z [info] : test2
+2019-05-01T15:56:10.388Z [warn] : test2242343
+2019-05-01T15:58:20.719Z [info] : test2242343
+2019-05-01T15:59:35.188Z [info] : test2242343
+2019-05-01T16:13:33.946Z [info] : test2242343
+2019-05-01T16:15:53.253Z [info] : test2242343
+2019-05-01T16:16:31.787Z [info] : test2242343
+2019-05-01T16:17:01.145Z [info] : test2242343
+2019-05-01T16:21:49.243Z [info] : test2242343
+2019-05-01T16:22:50.498Z [info] : test2242343
+2019-05-01T16:24:39.206Z [info] : test2242343
+2019-05-01T16:25:01.256Z [info] : test2242343
+2019-05-01T16:26:08.563Z [info] : test2242343
+2019-05-01T16:26:43.259Z [info] : test2242343
+2019-05-01T16:27:41.923Z [info] : test2242343
+2019-05-01T16:28:14.405Z [info] : test2242343
+2019-05-01T16:32:48.047Z [info] : test2242343
+2019-05-01T16:33:22.995Z [info] : test2242343
+2019-05-01T16:34:12.031Z [info] : test2242343
+2019-05-01T16:36:04.920Z [info] : test2242343
+2019-05-01T16:36:23.351Z [info] : test2242343
+2019-05-01T16:36:44.616Z [info] : test2242343
+2019-05-01T16:37:09.214Z [info] : test2242343
+2019-05-01T16:38:57.550Z [info] : test2242343
+2019-05-01T16:39:23.627Z [info] : test2242343
+2019-05-01T16:40:23.572Z [info] : test2242343
+2019-05-01T16:41:07.559Z [info] : test2242343
+2019-05-01T16:41:49.163Z [info] : test2242343
+2019-05-01T16:43:36.197Z [info] : test2242343
+2019-05-01T16:43:59.526Z [info] : test2242343
+2019-05-01T16:46:15.961Z [info] : test2242343
+2019-05-01T16:46:43.786Z [info] : test2242343
+2019-05-01T16:47:06.444Z [info] : test2242343
+2019-05-01T16:47:33.595Z [info] : test2242343
+2019-05-01T16:48:40.695Z [info] : test2242343
+2019-05-01T16:50:38.182Z [info] : test2242343
+2019-05-01T16:50:54.145Z [info] : OK
+2019-05-01T16:51:19.431Z [info] : OK
+2019-05-01T16:51:45.197Z [info] : test2242343
+2019-05-01T16:51:47.070Z [info] : OK
+2019-05-01T16:55:34.018Z [info] : test2242343
+2019-05-01T16:56:28.516Z [info] : test2242343
+2019-05-01T17:00:32.330Z [info] : test2242343
+2019-05-01T17:01:07.510Z [info] : test2242343
+2019-05-01T17:05:35.198Z [info] : test2242343
+2019-05-01T17:07:08.446Z [info] : OK
+2019-05-01T17:07:12.175Z [info] : OK
+2019-05-01T17:07:54.382Z [info] : test2242343
+2019-05-01T17:08:05.019Z [info] : test2242343
+2019-05-01T17:09:10.807Z [info] : test2242343
+2019-05-01T17:16:31.880Z [info] : test2242343
+2019-05-01T17:16:56.555Z [info] : test2242343
+2019-05-01T17:18:38.210Z [info] : test2242343
+2019-05-01T17:19:27.712Z [info] : test2242343
+2019-05-01T18:03:36.542Z [info] : test2242343
+2019-05-01T18:03:51.859Z [info] : test2242343
+2019-05-01T18:04:13.637Z [info] : Data has been successfully saved into DB
+2019-05-01T18:04:46.786Z [info] : test2242343
+2019-05-01T18:06:08.795Z [info] : test2242343
+2019-05-01T18:06:48.975Z [info] : test2242343
+2019-05-01T18:07:18.895Z [info] : test2242343
+2019-05-01T18:08:40.062Z [info] : test2242343
+2019-05-01T18:09:05.772Z [error] : Failed to update and create user
+2019-05-01T18:09:20.834Z [info] : test2242343
+2019-05-01T18:10:57.931Z [info] : test2242343
+2019-05-01T18:11:22.599Z [info] : test2242343
+2019-05-01T18:12:23.434Z [info] : test2242343
+2019-05-01T18:13:18.126Z [info] : test2242343
+2019-05-01T18:13:21.385Z [error] : Failed to update user!
+2019-05-01T18:16:35.671Z [error] : Failed to update user!
+2019-05-01T18:16:47.165Z [info] : test2242343
+2019-05-01T18:16:49.958Z [error] : Cannot update user!
+2019-05-01T18:17:52.455Z [info] : Successfully saved changes!
+2019-05-01T18:49:02.364Z [info] : test2242343
+2019-05-01T18:50:02.561Z [info] : test2242343
+2019-05-01T18:51:03.266Z [info] : Successfully saved changes!
+2019-05-01T18:55:23.213Z [info] : test2242343
+2019-05-01T18:55:50.137Z [info] : test2242343
+2019-05-01T18:56:11.817Z [info] : OK
+2019-05-01T18:56:33.176Z [info] : OK
+2019-05-01T18:57:17.047Z [info] : test2242343
+2019-05-01T18:58:14.583Z [info] : Successfully saved changes!
+2019-05-07T11:22:24.491Z [info] : Incorrect input
+2019-05-07T11:24:42.771Z [info] : Incorrect input
+2019-05-07T11:26:28.337Z [info] : Incorrect input
+2019-05-07T11:26:40.597Z [info] : OK
+2019-05-07T11:27:06.447Z [info] : OK
+2019-05-07T11:27:08.512Z [info] : OK
+2019-05-07T11:27:21.129Z [info] : Incorrect input
+2019-05-07T11:27:41.650Z [info] : Incorrect input
+2019-05-07T11:27:48.186Z [info] : OK
+2019-05-07T11:29:29.250Z [info] : User has been successfully saved
+2019-05-07T11:30:05.710Z [info] : User has been successfully saved
+2019-05-07T11:30:15.099Z [info] : User has been successfully saved
+2019-05-07T11:30:28.766Z [info] : User has been successfully saved
+2019-05-07T11:32:06.702Z [info] : User has been successfully saved
+2019-05-07T11:32:06.705Z [warn] : Problem with adding user
+2019-05-07T11:32:43.285Z [info] : User has been successfully saved
+2019-05-07T11:32:43.288Z [warn] : Problem with adding user
+2019-05-07T11:34:17.114Z [info] : User has been successfully saved
+2019-05-07T11:34:25.417Z [info] : User has been successfully saved
+2019-05-07T11:36:02.637Z [info] : User has been successfully saved
+2019-05-07T11:37:14.246Z [info] : OK
+2019-05-07T11:37:40.472Z [info] : OK
+2019-05-07T11:38:23.878Z [info] : OK
+2019-05-07T11:38:48.331Z [info] : OK
+2019-05-07T11:39:02.734Z [info] : Incorrect
+2019-05-07T11:39:08.263Z [info] : Incorrect
+2019-05-07T11:39:15.144Z [info] : Incorrect
+2019-05-07T11:39:19.625Z [info] : Incorrect
+2019-05-07T11:39:43.500Z [info] : Incorrect
+2019-05-07T11:40:12.319Z [info] : Incorrect
+2019-05-07T11:40:23.992Z [info] : Incorrect
+2019-05-07T11:40:43.221Z [info] : OK
+2019-05-07T11:41:40.619Z [info] : OK
+2019-05-07T11:45:22.500Z [info] : OK
+2019-05-07T11:45:36.252Z [info] : OK
+2019-05-07T11:48:02.354Z [info] : OK
+2019-05-07T11:50:27.715Z [info] : OK
+2019-05-07T11:50:36.957Z [info] : OK
+2019-05-07T11:51:45.035Z [info] : User has been successfully saved
+2019-05-07T11:51:56.954Z [info] : Incorrect
+2019-05-07T11:52:14.031Z [info] : Incorrect
+2019-05-07T11:52:17.106Z [info] : Incorrect
+2019-05-07T11:52:24.153Z [info] : User has been successfully saved

@@ -1,3 +1,4 @@
-logger.log('info', 'test message %s', 'my string');
-logger.log('info', 'test message %d', 123);
-logger.log('info', 'test message %s, %s', 'first', 'second', { number: 123 });
+
+2019-05-01T18:13:21.385Z [error] : Failed to update user!
+2019-05-01T18:16:35.671Z [error] : Failed to update user!
+2019-05-01T18:16:49.958Z [error] : Cannot update user!
