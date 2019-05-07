@@ -4,5 +4,6 @@ const userService = require('../utils/functions');
 
 router.get("/all", userService.getAllUsers);
 router.post('/users', userService.createUser);
-
+router.post('/login', userService.login);
+router.post('/post', userService.verifyToken, userService.createPost);
 module.exports = router;
