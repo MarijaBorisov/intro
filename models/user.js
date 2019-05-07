@@ -65,21 +65,11 @@ userSchema.methods.setPassword = function (password) {
     }
 };
 
-userSchema.methods.validPassword = function (password) {
-    var hash = crypto.pbkdf2Sync(password, new Buffer(this.salt, 'base64'), 10000, 64, 'sha1').toString('base64');
-    return this.password === hash;
+userSchema.statics.validPassword = function (password, hashpass, salt) {
+    
+    var hash = crypto.pbkdf2Sync(password, new Buffer(salt, 'base64'), 10000, 64, 'sha1').toString('base64');
+    return hashpass === hash;
 };
-userSchema.methods.generateJwt = function () {
-  var expiry = new Date();
-  expiry.setDate(expiry.getDate() + 1);
-  //console.log(expiry);
-  return jwt.sign({
-    _id: this._id,
-    name: this.name,
-    email: this.email,
-    exp: parseInt(expiry.getTime() / 1000),
-  }, "ststststst");
-};
-  
+
 const User = mongoose.model('user', userSchema, 'users2');
 module.exports = User;

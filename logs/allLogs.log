@@ -54,3 +54,161 @@
 [2019-05-06T15:18:53.581Z][info] Password is correct!
 [2019-05-06T15:18:53.581Z][info] Email is correct!
 [2019-05-06T15:18:53.612Z][info] User with email - asdas@d7asdas.hj is created!
+[2019-05-07T07:38:07.387Z][info] Connection is created!
+[2019-05-07T07:38:07.519Z][info] Server running!
+[2019-05-07T07:38:17.495Z][info] Connection is created!
+[2019-05-07T07:38:17.611Z][info] Server running!
+[2019-05-07T07:39:14.295Z][info] Password is correct!
+[2019-05-07T07:39:14.305Z][info] Email is correct!
+[2019-05-07T07:39:14.357Z][info] User with email - asdas@d7asssss.hj is created!
+[2019-05-07T07:39:55.354Z][error] Invalid log data!
+[2019-05-07T07:42:00.285Z][error] Invalid log data!
+[2019-05-07T07:45:17.088Z][error] Invalid log data!
+[2019-05-07T07:46:09.198Z][info] Connection is created!
+[2019-05-07T07:46:09.314Z][info] Server running!
+[2019-05-07T07:46:17.853Z][error] Invalid log data!
+[2019-05-07T07:48:13.956Z][info] Connection is created!
+[2019-05-07T07:48:14.082Z][info] Server running!
+[2019-05-07T07:48:18.547Z][error] Invalid log data!
+[2019-05-07T07:51:05.488Z][error] Invalid log data!
+[2019-05-07T07:51:06.861Z][error] Invalid log data!
+[2019-05-07T07:51:08.898Z][error] Invalid log data!
+[2019-05-07T07:51:59.276Z][error] Invalid log data!
+[2019-05-07T07:52:15.937Z][info] Connection is created!
+[2019-05-07T07:52:16.063Z][info] Server running!
+[2019-05-07T07:52:24.909Z][error] Invalid log data!
+[2019-05-07T07:54:54.692Z][info] Connection is created!
+[2019-05-07T07:54:54.809Z][info] Server running!
+[2019-05-07T07:55:11.597Z][error] Invalid log data!
+[2019-05-07T07:56:52.497Z][error] Invalid log data!
+[2019-05-07T07:57:31.291Z][error] Invalid log data!
+[2019-05-07T07:57:42.759Z][info] Connection is created!
+[2019-05-07T07:57:42.876Z][info] Server running!
+[2019-05-07T07:57:51.295Z][error] Invalid log data 2!
+[2019-05-07T07:59:18.620Z][error] User is not found
+[2019-05-07T07:59:18.625Z][info] Successfully taken user by nameTam
+[2019-05-07T08:03:04.452Z][info] Connection is created!
+[2019-05-07T08:03:04.574Z][info] Server running!
+[2019-05-07T08:03:32.027Z][error] Invalid log data 2!
+[2019-05-07T08:07:04.421Z][info] Connection is created!
+[2019-05-07T08:07:04.545Z][info] Server running!
+[2019-05-07T08:07:13.911Z][error] Invalid log data 2!
+[2019-05-07T08:09:10.394Z][info] Connection is created!
+[2019-05-07T08:09:10.513Z][info] Server running!
+[2019-05-07T08:09:16.723Z][error] Invalid log data 2!
+[2019-05-07T08:10:20.379Z][info] Connection is created!
+[2019-05-07T08:10:20.507Z][info] Server running!
+[2019-05-07T08:10:24.801Z][error] Invalid log data 2!
+[2019-05-07T08:11:51.578Z][error] Invalid log data 2!
+[2019-05-07T08:16:04.447Z][info] Connection is created!
+[2019-05-07T08:16:04.561Z][info] Server running!
+[2019-05-07T08:16:12.559Z][error] Invalid log data 2!
+[2019-05-07T08:18:01.470Z][error] Failed to get list of all users.
+[2019-05-07T08:18:01.474Z][info] All users has been successfully taken.
+[2019-05-07T08:20:20.775Z][info] Connection is created!
+[2019-05-07T08:20:20.890Z][info] Server running!
+[2019-05-07T08:20:40.178Z][error] Invalid log data 2!
+[2019-05-07T08:21:06.684Z][error] Invalid log data 2!
+[2019-05-07T08:21:09.036Z][error] Invalid log data 2!
+[2019-05-07T08:21:09.771Z][error] Invalid log data 2!
+[2019-05-07T08:21:10.160Z][error] Invalid log data 2!
+[2019-05-07T08:21:27.762Z][info] Connection is created!
+[2019-05-07T08:21:27.893Z][info] Server running!
+[2019-05-07T08:21:31.164Z][error] Invalid log data 2!
+[2019-05-07T08:23:07.558Z][info] Connection is created!
+[2019-05-07T08:23:07.737Z][info] Server running!
+[2019-05-07T08:23:16.295Z][error] Invalid log data 2!
+[2019-05-07T08:24:50.439Z][info] Connection is created!
+[2019-05-07T08:24:50.587Z][info] Server running!
+[2019-05-07T08:24:54.786Z][error] Invalid log data 2!
+[2019-05-07T08:25:45.455Z][info] Connection is created!
+[2019-05-07T08:25:45.573Z][info] Server running!
+[2019-05-07T08:25:50.982Z][error] Failed to get list of all users.
+[2019-05-07T08:25:50.996Z][info] All users has been successfully taken.
+[2019-05-07T08:26:31.006Z][info] Connection is created!
+[2019-05-07T08:26:31.123Z][info] Server running!
+[2019-05-07T08:26:39.054Z][error] Failed to get list of all users.
+[2019-05-07T08:26:39.071Z][info] All users has been successfully taken.
+[2019-05-07T08:28:02.031Z][info] Connection is created!
+[2019-05-07T08:28:02.228Z][info] Server running!
+[2019-05-07T08:28:07.526Z][error] Failed to get list of all users.
+[2019-05-07T08:28:25.228Z][info] Connection is created!
+[2019-05-07T08:28:25.343Z][info] Server running!
+[2019-05-07T08:28:43.234Z][error] Failed to get list of all users.
+[2019-05-07T08:29:18.296Z][info] Connection is created!
+[2019-05-07T08:29:18.409Z][info] Server running!
+[2019-05-07T08:29:21.875Z][error] Failed to get list of all users.
+[2019-05-07T08:30:07.728Z][info] Connection is created!
+[2019-05-07T08:30:07.847Z][info] Server running!
+[2019-05-07T08:30:15.690Z][error] Failed to get list of all users.
+[2019-05-07T08:30:15.697Z][info] All users has been successfully taken.
+[2019-05-07T08:31:53.558Z][info] Connection is created!
+[2019-05-07T08:31:53.770Z][info] Server running!
+[2019-05-07T08:31:57.078Z][error] Failed to get list of all users.
+[2019-05-07T08:31:57.094Z][info] Check username
+[2019-05-07T08:34:07.597Z][info] Connection is created!
+[2019-05-07T08:34:07.711Z][info] Server running!
+[2019-05-07T08:34:14.813Z][error] Failed to get list of all users.
+[2019-05-07T08:34:14.829Z][info] Check username
+[2019-05-07T08:36:56.446Z][info] Connection is created!
+[2019-05-07T08:36:56.583Z][info] Server running!
+[2019-05-07T08:37:03.822Z][info] Check username
+[2019-05-07T08:37:03.837Z][error] Failed to find user.
+[2019-05-07T08:37:50.217Z][info] Connection is created!
+[2019-05-07T08:37:50.345Z][info] Server running!
+[2019-05-07T08:37:52.429Z][info] Check username
+[2019-05-07T08:38:25.388Z][info] Connection is created!
+[2019-05-07T08:38:25.507Z][info] Server running!
+[2019-05-07T08:38:26.461Z][info] Check username
+[2019-05-07T08:40:05.050Z][info] Connection is created!
+[2019-05-07T08:40:05.173Z][info] Server running!
+[2019-05-07T08:40:10.017Z][info] Check username
+[2019-05-07T08:40:10.020Z][error] Failed to find user.
+[2019-05-07T08:42:07.459Z][info] Connection is created!
+[2019-05-07T08:42:07.597Z][info] Server running!
+[2019-05-07T08:42:13.080Z][info] Check username
+[2019-05-07T08:42:13.085Z][error] Failed to find user.
+[2019-05-07T08:42:53.505Z][info] Connection is created!
+[2019-05-07T08:42:53.654Z][info] Server running!
+[2019-05-07T08:42:59.423Z][info] Check username
+[2019-05-07T08:45:49.711Z][info] Connection is created!
+[2019-05-07T08:45:49.847Z][info] Server running!
+[2019-05-07T08:45:54.201Z][error] Invalid log data 2!
+[2019-05-07T08:49:19.289Z][info] Connection is created!
+[2019-05-07T08:49:19.399Z][info] Server running!
+[2019-05-07T08:49:27.706Z][error] Invalid log data 2! TypeError [ERR_INVALID_ARG_TYPE]: The first argument must be one of type string, Buffer, ArrayBuffer, Array, or Array-like Object. Received type undefined
+[2019-05-07T08:49:49.769Z][info] Connection is created!
+[2019-05-07T08:49:49.881Z][info] Server running!
+[2019-05-07T08:49:53.385Z][info] Successfully logged in!
+[2019-05-07T08:50:03.870Z][error] Invalid log data 1!
+[2019-05-07T08:50:15.852Z][error] Invalid log data 2! TypeError: Cannot read property 'salt' of null
+[2019-05-07T08:53:00.950Z][info] Connection is created!
+[2019-05-07T08:53:01.068Z][info] Server running!
+[2019-05-07T08:53:04.837Z][error] Invalid log data 2! 
+[2019-05-07T08:53:06.790Z][error] Invalid log data 2! 
+[2019-05-07T08:53:14.553Z][info] Successfully logged in!
+[2019-05-07T08:54:34.822Z][info] Connection is created!
+[2019-05-07T08:54:34.937Z][info] Server running!
+[2019-05-07T08:54:38.799Z][info] Successfully logged in!
+[2019-05-07T08:54:40.039Z][info] Successfully logged in!
+[2019-05-07T09:29:50.219Z][info] Connection is created!
+[2019-05-07T09:29:50.372Z][info] Server running!
+[2019-05-07T10:05:26.997Z][info] Connection is created!
+[2019-05-07T10:05:27.570Z][info] Server running!
+[2019-05-07T10:07:58.098Z][error] Failed to get list of all users.
+[2019-05-07T10:07:58.111Z][info] All users has been successfully taken.
+[2019-05-07T10:08:11.445Z][error] Failed to get list of all users.
+[2019-05-07T10:08:11.448Z][info] All users has been successfully taken.
+[2019-05-07T10:10:39.188Z][error] User is not found
+[2019-05-07T10:10:39.190Z][info] Successfully taken user by namelogin
+[2019-05-07T10:12:22.276Z][info] Connection is created!
+[2019-05-07T10:12:22.401Z][info] Server running!
+[2019-05-07T10:12:28.078Z][info] Successfully logged in!
+[2019-05-07T10:12:57.114Z][error] Failed to get list of all users.
+[2019-05-07T10:12:57.117Z][info] All users has been successfully taken.
+[2019-05-07T10:14:28.957Z][info] Connection is created!
+[2019-05-07T10:14:29.084Z][info] Server running!
+[2019-05-07T10:14:44.218Z][error] Failed to get list of all users.
+[2019-05-07T10:14:44.227Z][info] All users has been successfully taken.
+[2019-05-07T10:15:00.009Z][error] Failed to get list of all users.
+[2019-05-07T10:15:00.011Z][info] All users has been successfully taken.

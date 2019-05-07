@@ -1,6 +1,6 @@
 var User = require('../../models/user');
-//const { checkSchema } = require('validator');
 var logger = require('../../util/logger');
+var jwt = require('jsonwebtoken');
 
 var getUsersPage = (req,res,next) => {
    logger.info('Home page for users has benn successfully appeared');
@@ -17,19 +17,7 @@ var createUser = (req,res,next) => {
    .catch((err) =>{
       res.status(404).send('404');
       logger.error('Failed to add user.');
-   }
-     
-   )
-
-  /* User.create(req.body)
-   .then(user => {
-      logger.info( 'User with email - ' + `${req.body.email}` + ' is created!')
-      res.status(200).send(user)
    })
-   .catch(
-      showError404,
-      logger.error('Failed to add user.')
-   )*/
 }
 var getAllUsers = (req,res,next) => {
     User.find()
@@ -117,6 +105,55 @@ var findAndUpdateUser = (req, res, next) => {
       logger.error('Failed to update user')
    );
 }
+
+var userLogin = (req, res, next) => {
+   
+   let username = req.body.name;
+   let pass = req.body.password;
+
+   User.findOne({ name: username}).then(user => {
+      var salt = user.salt;
+      var hashPass = user.password;
+      if(User.validPassword(pass, hashPass, salt)){
+         //res.status(200).send('Successfully logged in!')
+         logger.info('Successfully logged in!')
+         jwt.sign({user}, 'secretKey', (err, token) => {
+            res.json({token});
+         });
+      }else{
+         res.send('Invalid log data!')
+         logger.error('Invalid log data!')
+      }  
+   })
+   .catch((err) =>{
+         res.send('Invalid log data!')
+         logger.error('Invalid log data!')
+   });
+}
+
+var verifyToken =(req,res,next) => {
+
+   const bearerHeader = req.headers['authorization'];
+
+   if(typeof bearerHeader !== 'undefined'){
+      const bearer = bearerHeader.split(' ');
+      const bearerToken = bearer[1];
+      req.token = bearerToken;
+      next();
+   }else{
+      res.sendStatus(403);
+   }
+}
+var verifyUsersToken = (req,res,next) => {
+   jwt.verify(req.token, 'secretKey', (err, authorizationData) => {
+      if(err){
+         res.sendStatus(403);
+      }else{
+         next();
+      }
+   })
+}
+
 exports.userComponents = {
     getUsersPage,
     createUser,
@@ -126,5 +163,8 @@ exports.userComponents = {
     updateUser,
     updateOrCreate,
     findAndUpdateUser,
-    showError404
+    showError404,
+    userLogin,
+    verifyToken,
+    verifyUsersToken
 }

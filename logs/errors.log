@@ -9,3 +9,56 @@
 [2019-05-06T15:17:25.088Z][error] Failed to add user.MongoError: E11000 duplicate key error collection: library.users2 index: name_1 dup key: { : "Tamaraasas" }
 [2019-05-06T15:18:06.251Z][error] Failed to add user.
 [2019-05-06T15:18:22.278Z][error] Failed to add user.
+[2019-05-07T07:39:55.354Z][error] Invalid log data!
+[2019-05-07T07:42:00.285Z][error] Invalid log data!
+[2019-05-07T07:45:17.088Z][error] Invalid log data!
+[2019-05-07T07:46:17.853Z][error] Invalid log data!
+[2019-05-07T07:48:18.547Z][error] Invalid log data!
+[2019-05-07T07:51:05.488Z][error] Invalid log data!
+[2019-05-07T07:51:06.861Z][error] Invalid log data!
+[2019-05-07T07:51:08.898Z][error] Invalid log data!
+[2019-05-07T07:51:59.276Z][error] Invalid log data!
+[2019-05-07T07:52:24.909Z][error] Invalid log data!
+[2019-05-07T07:55:11.597Z][error] Invalid log data!
+[2019-05-07T07:56:52.497Z][error] Invalid log data!
+[2019-05-07T07:57:31.291Z][error] Invalid log data!
+[2019-05-07T07:57:51.295Z][error] Invalid log data 2!
+[2019-05-07T07:59:18.620Z][error] User is not found
+[2019-05-07T08:03:32.027Z][error] Invalid log data 2!
+[2019-05-07T08:07:13.911Z][error] Invalid log data 2!
+[2019-05-07T08:09:16.723Z][error] Invalid log data 2!
+[2019-05-07T08:10:24.801Z][error] Invalid log data 2!
+[2019-05-07T08:11:51.578Z][error] Invalid log data 2!
+[2019-05-07T08:16:12.559Z][error] Invalid log data 2!
+[2019-05-07T08:18:01.470Z][error] Failed to get list of all users.
+[2019-05-07T08:20:40.178Z][error] Invalid log data 2!
+[2019-05-07T08:21:06.684Z][error] Invalid log data 2!
+[2019-05-07T08:21:09.036Z][error] Invalid log data 2!
+[2019-05-07T08:21:09.771Z][error] Invalid log data 2!
+[2019-05-07T08:21:10.160Z][error] Invalid log data 2!
+[2019-05-07T08:21:31.164Z][error] Invalid log data 2!
+[2019-05-07T08:23:16.295Z][error] Invalid log data 2!
+[2019-05-07T08:24:54.786Z][error] Invalid log data 2!
+[2019-05-07T08:25:50.982Z][error] Failed to get list of all users.
+[2019-05-07T08:26:39.054Z][error] Failed to get list of all users.
+[2019-05-07T08:28:07.526Z][error] Failed to get list of all users.
+[2019-05-07T08:28:43.234Z][error] Failed to get list of all users.
+[2019-05-07T08:29:21.875Z][error] Failed to get list of all users.
+[2019-05-07T08:30:15.690Z][error] Failed to get list of all users.
+[2019-05-07T08:31:57.078Z][error] Failed to get list of all users.
+[2019-05-07T08:34:14.813Z][error] Failed to get list of all users.
+[2019-05-07T08:37:03.837Z][error] Failed to find user.
+[2019-05-07T08:40:10.020Z][error] Failed to find user.
+[2019-05-07T08:42:13.085Z][error] Failed to find user.
+[2019-05-07T08:45:54.201Z][error] Invalid log data 2!
+[2019-05-07T08:49:27.706Z][error] Invalid log data 2! TypeError [ERR_INVALID_ARG_TYPE]: The first argument must be one of type string, Buffer, ArrayBuffer, Array, or Array-like Object. Received type undefined
+[2019-05-07T08:50:03.870Z][error] Invalid log data 1!
+[2019-05-07T08:50:15.852Z][error] Invalid log data 2! TypeError: Cannot read property 'salt' of null
+[2019-05-07T08:53:04.837Z][error] Invalid log data 2! 
+[2019-05-07T08:53:06.790Z][error] Invalid log data 2! 
+[2019-05-07T10:07:58.098Z][error] Failed to get list of all users.
+[2019-05-07T10:08:11.445Z][error] Failed to get list of all users.
+[2019-05-07T10:10:39.188Z][error] User is not found
+[2019-05-07T10:12:57.114Z][error] Failed to get list of all users.
+[2019-05-07T10:14:44.218Z][error] Failed to get list of all users.
+[2019-05-07T10:15:00.009Z][error] Failed to get list of all users.
