@@ -1,7 +1,10 @@
 const Book = require('../models/book');
 const User = require('../models/user');
+const Product = require('../models/product');
 const logger = require('../config/logger').logger;
 const jwt = require('jsonwebtoken');
+const db = require('../config/dbMySql')
+
 module.exports.getAllBooks = (req, res, next) => {
 
   Book.find()
@@ -45,7 +48,17 @@ module.exports.getAllUsers = (req, res, next) => {
       res.status(404).send("Cannot find user");
     })
 };
+module.exports.getAllUsersMYSQL = (req, res, next) => {
 
+  Product.findAll()
+    .then(result => {
+      // console.log(result[0]);
+      res.send(result[0]);
+    })
+    .catch(err => {
+      res.status(404).send("Cannot find product");
+    });
+};
 module.exports.createUser = (req, res) => {
   logger.info("POST request - Creating user ... ");
   UserDB = new User(req.body);
@@ -61,19 +74,75 @@ module.exports.createUser = (req, res) => {
     ;
 
 };
+module.exports.createUserMYSQL = (req, res) => {
+  logger.info("POST request - Creating user MYSQL... ");
+  Product.createProduct(req.body)
+    .then(result => {
+
+      res.send(result[0]);
+    })
+    .catch(err => {
+      res.status(404).send("Cannot find product");
+    });
+
+};
+module.exports.updateUserMYSQL = (req, res) => {
+  logger.info("POST request - Update user MYSQL... ");
+  Product.updateProduct(req.body.name, req.body.id)
+    .then(result => {
+
+      res.send(result[0]);
+    })
+    .catch(err => {
+      res.status(404).send("Cannot update product");
+    });
+
+};
+module.exports.removeUserMYSQL = (req, res) => {
+  logger.info("DELETE request - Removing product MYSQL... ");
+  Product.deleteProduct(req.body.id)
+    .then(result => {
+      ;
+      res.send(result[0]);
+    })
+    .catch(err => {
+      res.status(404).send("Cannot delete product");
+    });
+
+};
+module.exports.findUserMYSQL = (req, res) => {
+  logger.info("GET request - Get product by ID MYSQL... ");
+  Product.findByID(req.body.id)
+    .then(result => {
+      ;
+      res.send(result[0]);
+    })
+    .catch(err => {
+      res.status(404).send("Cannot find product");
+    });
+
+};
 module.exports.createPost = (req, res) => {
   logger.info("POST request - Creating post ... ");
+  res.status(200).send("Post created");
+
+};
+module.exports.verifyTokenRoute = (req, res, next) => {
+  logger.info("POST request - verifyTokenRoute ... ");
   jwt.verify(req.token, 'secretkey', (err, authData) => {
 
     if (err) {
       res.status(403).send("Forbidden");
     } else {
-      res.send({ message: "Post is created", authData });
+      logger.info("Token is correct");
+      next();
     }
 
   })
 
 };
+
+
 module.exports.verifyToken = (req, res, next) => {
   logger.info("POST request - verifyToken ... ");
   const bearerHeader = req.headers['authorization'];

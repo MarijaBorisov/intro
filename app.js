@@ -5,10 +5,13 @@ const logger = require('winston');
 const dotenv = require('dotenv');
 const booksRouter = require('./routes/books');
 const usersRouter = require('./routes/users');
+const productsRouter = require('./routes/products');
 const connection = require('./config/db').connection;
+const db = require('./config/dbMySql');
 
 dotenv.config();
 const app = express();
+
 
 
 
@@ -18,5 +21,6 @@ app.use(express.urlencoded({ extended: false }));
 
 app.use('/books', booksRouter);
 app.use('/users', usersRouter);
+app.use('/products', productsRouter);
 
 module.exports = app;

@@ -61,11 +61,9 @@ UserSchema.pre('save', function (next) {
     console.log(this.password);
     if (this.password && this.isModified('password') && this.password.length >= 8) {
         this.salt = crypto.randomBytes(32).toString('base64');
-        //logger.info(this.salt);
-        // console.log(this.salt);
+
         this.password = this.setPassword(this.password);
-        //logger.info(this.password);
-        //console.log(this.password);
+
         next();
 
     }
