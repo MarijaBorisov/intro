@@ -14,6 +14,11 @@ module.exports = winston.createLogger({
         new winston.transports.File({
             filename: './logs/combined.log'
         })
+    ],
+    exceptionHandlers: [
+        new winston.transports.File({
+            filename: './logs/exceptions.log'
+        })
     ]
 });
 
