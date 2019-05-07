@@ -46,7 +46,7 @@ var removeUserByName = (req,res,next) => {
    let name2 = req.params.name;
    User.remove({name: name2})
    .then(user => {
-         logger.info('Successfully taken user by name ' + `${name2}`)
+         logger.info('Successfully removed user by name ' + `${name2}`)
          res.status(200).send(user)
    })
    .catch(
