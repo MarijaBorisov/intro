@@ -78,36 +78,18 @@ UserSchema.methods.validPassword = function (password) {
 
 // GENERATE JSON WEB TOKEN
 // **
-// UserSchema.methods.generateJwt = function () {
-//     var expiry = new Date();
-//     expiry.setDate(expiry.getDate() + 1);
-//     expiry.setSeconds(expiry.getSeconds() + 30);
-//     //console.log(expiry);
-//     return jwt.sign({
-//         _id: this._id,
-//         email: this.email,
-//         name: this.name,
-//         exp: parseInt(expiry.getTime() / 1000),
-//     }, secretWord); // DO NOT KEEP YOUR SECRET IN THE CODE!    
-// };
+UserSchema.methods.generateJwt = function () {
+    var expiry = new Date();
+    expiry.setDate(expiry.getDate() + 1);
+    expiry.setSeconds(expiry.getSeconds() + 30);
+    console.log(expiry);
+    return jwt.sign({
+        _id: this._id,
+        email: this.email,        
+        exp: parseInt(expiry.getTime() / 1000),
+    }, secretWord); // DO NOT KEEP YOUR SECRET IN THE CODE!    
+};
 
-
-/* my implementation below from medium tutorial that is not working correctly  */
-
-// // method to set salt and hash the password for a user; setPassword method first creates a salt unique for every user 
-// // then it hashes the salt with user password and creates a hash; this hash is stored in the database as user password
-// UserSchema.methods.setPassword = function (password) {
-//     // creating a unique salt for a particular user 
-//     this.salt = crypto.randomBytes(16).toString('hex');
-//     // hashing user's salt and password with 1000 iterations, 64 length and sha512 digest 
-//     this.hash = crypto.pbkdf2Sync(password, this.salt, 1000, 64, `sha512`).toString(`hex`);
-//     console.log()
-// };
-
-// UserSchema.methods.validPassword = function (password) {
-//     var hash = crypto.pbkdf2Sync(password, this.salt, 1000, 64, `sha512`).toString(`hex`);
-//     return this.hash === hash;
-// };
 
 
 // mongoose.model('User', UserSchema);

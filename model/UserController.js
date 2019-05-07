@@ -12,7 +12,6 @@ router.use(express.json());
 var secretWord = process.env.SECRETWORD;
 
 
-
 // RETURNS ALL THE USERS IN THE DATABASE
 // **
 router.get('/', checkAuth, (req, res, next) => {
@@ -66,6 +65,44 @@ router.put('/:id', (req, res, next) => {
 
 // USER LOGIN API 
 // **
+// router.post('/login', (req, res, next) => {
+//     logger.info(`POST fired: login user ${req.body.email} , ${Date(Date.now())}`);
+
+//     // find user with requested email
+//     User.findOne({
+//         email: req.body.email
+//     }, function (err, user) {
+//         if (user === null) {
+//             return res.status(400).send({
+//                 message: `User ${req.body.email} not found.`
+//             });
+//         } else {
+//             if (user.validPassword(req.body.password)) {
+//                 const token = jwt.sign({
+//                         email: user.email,
+//                         id: user._id
+//                     },
+//                     secretWord, {
+//                         expiresIn: "1h"
+//                     }
+//                 );
+//                 return res.status(201).send({
+//                     message: `User ${req.body.email} logged in`,
+//                     token: token
+//                 })
+//             } else {
+//                 return res.status(400).send({
+//                     message: "Wrong Password"
+//                 });
+//             }
+//         }
+//     });
+// });
+
+
+
+// USER LOGIN API 2 - calling the function from user.js
+// **
 router.post('/login', (req, res, next) => {
     logger.info(`POST fired: login user ${req.body.email} , ${Date(Date.now())}`);
 
@@ -79,17 +116,11 @@ router.post('/login', (req, res, next) => {
             });
         } else {
             if (user.validPassword(req.body.password)) {
-                const token = jwt.sign({
-                        email: user.email,
-                        id: user._id
-                    },
-                    secretWord, {
-                        expiresIn: "1h"
-                    }
-                );
+                const token = user.generateJwt();
+                //console.log(user.generateJwt());
                 return res.status(201).send({
                     message: `User ${req.body.email} logged in`,
-                    token: token
+                    token: token                   
                 })
             } else {
                 return res.status(400).send({
