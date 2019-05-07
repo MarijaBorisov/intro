@@ -48,6 +48,20 @@ module.exports.getAllUsers = (req, res, next) => {
       res.status(404).send("Cannot find user");
     })
 };
+
+module.exports.getLastTwo = (req, res, next) => {
+
+  User.find().sort({ _id: -1 }).limit(2)
+    .then(function (users) {
+
+      logger.error("Getting last two users ... ");
+      res.send(users);
+
+    }).catch(function (err) {
+      logger.error("Cannot last 2 users " + err);
+      res.status(404).send("Cannot last 2 users ");
+    })
+};
 module.exports.getAllUsersMYSQL = (req, res, next) => {
 
   Product.findAll()
