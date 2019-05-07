@@ -21,18 +21,18 @@ router.get('/', (req, res, next) => {
 
 
 // CREATES A NEW USER
-router.post('/', (req, res, next) => {
-    logger.info('POST fired: create new user. ' + Date(Date.now()));
-    User.create({
-            username: req.body.username,
-            email: req.body.email,
-            password: req.body.password
-        },
-        (err, user) => {
-            if (err) return res.status(500).send("There was a problem adding the information to the database.");
-            res.status(200).send(user);
-        });
-});
+// router.post('/', (req, res, next) => {
+//     logger.info('POST fired: create new user. ' + Date(Date.now()));
+//     User.create({
+//             username: req.body.username,
+//             email: req.body.email,
+//             password: req.body.password
+//         },
+//         (err, user) => {
+//             if (err) return res.status(500).send("There was a problem adding the information to the database.");
+//             res.status(200).send(user);
+//         });
+// });
 
 
 // GETS A SINGLE USER FROM THE DATABASE
@@ -51,7 +51,7 @@ router.delete('/:id', (req, res, next) => {
     logger.info('DELETE fired: delete user-find by id. ' + Date(Date.now()));
     User.findByIdAndRemove(req.params.id, (err, user) => {
         if (err) return res.status(500).send("There was a problem deleting the user.");
-        res.status(200).send(`User ${user.username} successfully deleted from database.`);
+        res.status(200).send(`User ${user.username} removed from database.`);
     });
 });
 
@@ -70,7 +70,9 @@ router.put('/:id', (req, res, next) => {
 
 // USER LOGIN API 
 router.post('/login', (req, res, next) => {
-    // find user with requested email 
+    // find user with requested email
+    logger.info(`POST fired: login user ${req.body.email} at: ${Date(Date.now())}`);
+
     User.findOne({
         email: req.body.email
     }, function (err, user) {
@@ -95,28 +97,25 @@ router.post('/login', (req, res, next) => {
 
 // user signup api 
 router.post('/signup', (req, res, next) => {
+    logger.info('POST fired: signup a new user. ' + Date(Date.now()));
 
-    // creating empty user object 
+    // creating empty user object
     let newUser = new User();
 
     // intialize newUser object with request data 
     newUser.username = req.body.username;
-    newUser.email = req.body.email;
-    // call setPassword function to hash password 
-    newUser.setPassword(req.body.password);
-    logger.info(req.body);
+    newUser.email = req.body.email;    
+    newUser.password = req.body.password;
 
     // save newUser object to database 
-    newUser.save((err, User) => {
-        if (err) {
-            logger.info(`response: ${res.body}`);
+    newUser.save((err, user) => {
+        if (err) {            
             return res.status(400).send({
-                message: "Failed to add user."
+                message: err.message
             });
         } else {
-            logger.info(`response: ${res.body}`);
             return res.status(201).send({
-                message: "User added succesfully."                
+                message: `User ${user.username} succesfully added.` 
             });
         }
     });

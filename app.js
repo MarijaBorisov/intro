@@ -11,9 +11,9 @@ var jwt = require('jsonwebtoken');
 var UserController = require('./model/UserController');
 
 
-app.use('/', UserController);
+//app.use('/', UserController);
 
 // use user route when url matches /api/user/ 
-app.use('/', UserController);
+app.use('/api/user/', UserController);
 
 module.exports = app;
