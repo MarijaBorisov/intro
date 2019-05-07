@@ -5,6 +5,9 @@ var validator = require('validator');
 const logger = require('../logger');
 
 
+var secretWord = process.env.SECRETWORD;
+
+
 var validateLocalStrategyPassword = function (password) {
     //console.log("validateLocalStrategyPassword: " + password);
     return (validator.isLength(password, 8));
@@ -15,8 +18,10 @@ var validateLocalStrategyEmail = function (email) {
     return (validator.isEmail(email));
 };
 
-var UserSchema = new mongoose.Schema({
 
+// CREATE A NEW MONGOOSE USER SCHEMA
+// **
+var UserSchema = new mongoose.Schema({
     username: {
         type: String,
         required: [true, 'Username is required'],
@@ -36,22 +41,24 @@ var UserSchema = new mongoose.Schema({
         validate: [validateLocalStrategyPassword, 'Password should be longer']
     },
     salt: String
-
 });
 
-//hash the password
+
+//HASH THE PASSWORD
+// **
 UserSchema.pre('save', function (next) {
     //console.log(" hash password - this.pass: " + this.password);
     if (this.password && this.isModified('password') && this.password.length >= 8) {
         this.salt = crypto.randomBytes(16).toString('base64');
         this.password = this.setPassword(this.password);
-    }    
+    }
 
     next();
 });
 
 
-
+// SET THE PASSWORD 
+// **
 UserSchema.methods.setPassword = function (password) {
     if (this.salt && password) {
         return crypto.pbkdf2Sync(password, Buffer.from(this.salt, 'base64'), 10000, 64, 'sha1').toString('base64');
@@ -61,13 +68,28 @@ UserSchema.methods.setPassword = function (password) {
     }
 };
 
-
+// DOUBLE CHECK THE PASSWORD
+// **
 UserSchema.methods.validPassword = function (password) {
     var hash = crypto.pbkdf2Sync(password, Buffer.from(this.salt, 'base64'), 10000, 64, 'sha1').toString('base64');
     return this.password === hash;
 };
 
 
+// GENERATE JSON WEB TOKEN
+// **
+// UserSchema.methods.generateJwt = function () {
+//     var expiry = new Date();
+//     expiry.setDate(expiry.getDate() + 1);
+//     expiry.setSeconds(expiry.getSeconds() + 30);
+//     //console.log(expiry);
+//     return jwt.sign({
+//         _id: this._id,
+//         email: this.email,
+//         name: this.name,
+//         exp: parseInt(expiry.getTime() / 1000),
+//     }, secretWord); // DO NOT KEEP YOUR SECRET IN THE CODE!    
+// };
 
 
 /* my implementation below from medium tutorial that is not working correctly  */
@@ -77,7 +99,6 @@ UserSchema.methods.validPassword = function (password) {
 // UserSchema.methods.setPassword = function (password) {
 //     // creating a unique salt for a particular user 
 //     this.salt = crypto.randomBytes(16).toString('hex');
-
 //     // hashing user's salt and password with 1000 iterations, 64 length and sha512 digest 
 //     this.hash = crypto.pbkdf2Sync(password, this.salt, 1000, 64, `sha512`).toString(`hex`);
 //     console.log()

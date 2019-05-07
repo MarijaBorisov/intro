@@ -1,16 +1,21 @@
 var express = require('express');
 const logger = require('../logger');
 const User = require('./User');
+const jwt = require('jsonwebtoken');
+const checkAuth = require('../util/check-auth');
 
 var router = express.Router();
 
 //express body parser
 router.use(express.json());
 
+var secretWord = process.env.SECRETWORD;
+
+
 
 // RETURNS ALL THE USERS IN THE DATABASE
 // **
-router.get('/', (req, res, next) => {
+router.get('/', checkAuth, (req, res, next) => {
     logger.log('info', 'GET fired: show all users from database. ' + Date(Date.now()));
 
     User.find({}, (err, users) => {
@@ -59,9 +64,9 @@ router.put('/:id', (req, res, next) => {
 });
 
 
-// USER LOGIN API
+// USER LOGIN API 
 // **
-router.post('/login', (req, res, next) => {    
+router.post('/login', (req, res, next) => {
     logger.info(`POST fired: login user ${req.body.email} , ${Date(Date.now())}`);
 
     // find user with requested email
@@ -74,8 +79,17 @@ router.post('/login', (req, res, next) => {
             });
         } else {
             if (user.validPassword(req.body.password)) {
+                const token = jwt.sign({
+                        email: user.email,
+                        id: user._id
+                    },
+                    secretWord, {
+                        expiresIn: "1h"
+                    }
+                );
                 return res.status(201).send({
-                    message: `User ${req.body.email} logged In`
+                    message: `User ${req.body.email} logged in`,
+                    token: token
                 })
             } else {
                 return res.status(400).send({
