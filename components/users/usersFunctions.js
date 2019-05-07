@@ -105,7 +105,17 @@ var findAndUpdateUser = (req, res, next) => {
       logger.error('Failed to update user')
    );
 }
-
+var lastFive = (req, res, next) => {
+   User.find().sort({_id: -1}).limit(2)
+   .then(user => {
+      res.status(200).send(user)
+      logger.info('Successfully taken last two users from DB!')
+   })
+   .catch(err => {
+      res.status(404).send('404');
+      logger.error('Faild to take last two users from DB!');
+   })
+}
 var userLogin = (req, res, next) => {
    
    let username = req.body.name;
@@ -166,5 +176,6 @@ exports.userComponents = {
     showError404,
     userLogin,
     verifyToken,
-    verifyUsersToken
+    verifyUsersToken,
+    lastFive
 }
