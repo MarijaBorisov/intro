@@ -180,18 +180,66 @@ var groupUserByName = (req,res,next) => {
 
 var filterByRegex = (req,res,next) => {
 
-   User.aggregate([
-      { $match: { name: { $regex : /^Ta/i}}},
-      { $project: { name: 1}}
+   User.aggregate(
+      [
+     
+      { $match: { name:  { $regex: /^Ta/} } },
+      { $project: { name: 1 } }
    ])
    .then(user => {
       res.send(user)
       logger.info('Resolved - filter users by firstname with regex!')
    })
    .catch(err => {
-      res.send('Reject - group users by name!')
-      logger.error('Reject - filter users by firstname with regex!')
+      res.send('Reject - filter users by firstname with regex!')
+      logger.error('Reject - filter users by firstname with regex! ' + err)
    })
+}
+var filterByRegexNotLikeSpecificNames = (req,res,next) => {
+
+   User.aggregate(
+   [
+     { $match: { name:  { $nin: [/^Uros/i, /^Petar/i] } } },
+     { $project: { name: 1 } }
+   ])
+   .then(user => {
+      res.send(user)
+      logger.info('Resolved - filter by specific names!')
+   })
+   .catch(err => {
+      res.send('Reject - filter by specific names')
+      logger.error('Reject - filter by specific names!')
+   })
+}
+var changeNameIfNotExists = (req,res,next) => {
+
+   User.aggregate(
+   [
+      { $project: { name: { $cond: { if: { $eq: ["$name", 'Tamara'] }, then: 'newName', else: '$name' }} } }
+   ])
+   .then(user => {
+      res.send(user)
+      logger.info('Resolved - name is checked and changed!')
+   })
+   .catch(err => {
+      res.send('Reject - change name!')
+      logger.error('Reject - change name!' + err)
+   })
+}
+var showFieldsWhichExist = (req,res,next) => {
+   User.aggregate(
+      [
+         { $match: { name: { $exists: true}}},
+         { $project: { name: 1 , email: 1 } }
+      ])
+      .then(user => {
+         res.send(user)
+         logger.info('Resolved - users with all fileds are taken!')
+      })
+      .catch(err => {
+         res.send('Reject to take users and show all fields!')
+         logger.error('Reject to take users and show all fields!' + err)
+      })
 }
 exports.userComponents = {
     getUsersPage,
@@ -208,5 +256,9 @@ exports.userComponents = {
     verifyUsersToken,
     lastFive,
     groupUserByName,
-    filterByRegex
+    filterByRegex,
+    filterByRegexNotLikeSpecificNames,
+    changeNameIfNotExists,
+    showFieldsWhichExist
+    
 }

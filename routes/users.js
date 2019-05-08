@@ -12,7 +12,9 @@ router.post('/add', sc.createUser);
 //router.put('/findone', sc.findAndUpdateUser);
 //router.post('/login', sc.userLogin);
 //router.get('/lastFive', sc.lastFive);
-router.get('/groupUsers', sc.groupUserByName);
-router.get('/filter', sc.filterByRegex);
-
+//router.get('/groupUsers', sc.groupUserByName);
+//router.get('/filter', sc.filterByRegex);
+//router.get('/filterSpecificNames', sc.filterByRegexNotLikeSpecificNames);
+//router.get('/filterIfNotExists', sc.changeNameIfNotExists);
+router.get('/fieldWhichExist', sc.showFieldsWhichExist);
 module.exports = router;

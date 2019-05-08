@@ -562,3 +562,108 @@
 [2019-05-08T13:28:48.136Z][info] Connection is created!
 [2019-05-08T13:28:48.537Z][info] Server running!
 [2019-05-08T13:28:58.958Z][info] Resolved - filter users by firstname - firstletter!
+[2019-05-08T13:32:36.904Z][info] Connection is created!
+[2019-05-08T13:32:37.568Z][info] Server running!
+[2019-05-08T13:32:44.295Z][info] Resolved - filter users by firstname - regex!
+[2019-05-08T13:50:44.724Z][info] Connection is created!
+[2019-05-08T13:50:45.342Z][info] Server running!
+[2019-05-08T13:50:46.376Z][error] Reject - filter users by firstname with regex!
+[2019-05-08T13:52:35.054Z][info] Connection is created!
+[2019-05-08T13:52:35.514Z][info] Server running!
+[2019-05-08T13:53:17.675Z][info] Connection is created!
+[2019-05-08T13:53:18.089Z][info] Server running!
+[2019-05-08T13:53:21.859Z][error] Reject - filter users by firstname with regex!
+[2019-05-08T13:54:08.554Z][info] Connection is created!
+[2019-05-08T13:54:08.956Z][info] Server running!
+[2019-05-08T13:54:13.433Z][error] Reject - filter users by firstname with regex!
+[2019-05-08T13:55:54.141Z][info] Connection is created!
+[2019-05-08T13:55:54.673Z][info] Server running!
+[2019-05-08T13:55:54.813Z][info] Resolved - filter users by firstname with regex!
+[2019-05-08T13:56:50.553Z][info] Connection is created!
+[2019-05-08T13:56:50.979Z][info] Server running!
+[2019-05-08T13:56:51.419Z][error] Reject - filter users by firstname with regex!
+[2019-05-08T13:58:05.912Z][info] Connection is created!
+[2019-05-08T13:58:06.374Z][info] Server running!
+[2019-05-08T13:58:09.311Z][error] Reject - filter users by firstname with regex!
+[2019-05-08T13:58:57.706Z][info] Connection is created!
+[2019-05-08T13:58:58.480Z][info] Server running!
+[2019-05-08T13:58:59.645Z][error] Reject - filter users by firstname with regex!
+[2019-05-08T13:59:50.921Z][info] Connection is created!
+[2019-05-08T13:59:51.413Z][info] Server running!
+[2019-05-08T13:59:52.909Z][error] Reject - filter users by firstname with regex!
+[2019-05-08T14:00:36.386Z][info] Connection is created!
+[2019-05-08T14:00:36.798Z][info] Server running!
+[2019-05-08T14:00:41.898Z][error] Reject - filter users by firstname with regex!
+[2019-05-08T14:00:56.434Z][info] Connection is created!
+[2019-05-08T14:00:56.895Z][info] Server running!
+[2019-05-08T14:00:57.146Z][error] Reject - filter users by firstname with regex!
+[2019-05-08T14:01:38.981Z][info] Connection is created!
+[2019-05-08T14:01:39.405Z][info] Server running!
+[2019-05-08T14:01:45.061Z][error] Reject - filter users by firstname with regex! MongoError: $not cannot have a regex
+[2019-05-08T14:03:22.516Z][info] Connection is created!
+[2019-05-08T14:03:22.989Z][info] Server running!
+[2019-05-08T14:03:26.437Z][error] Reject - filter users by firstname with regex! MongoError: $not cannot have a regex
+[2019-05-08T14:06:39.371Z][info] Connection is created!
+[2019-05-08T14:06:39.803Z][info] Server running!
+[2019-05-08T14:06:52.050Z][info] Resolved - filter users by firstname with regex!
+[2019-05-08T14:07:18.939Z][info] Connection is created!
+[2019-05-08T14:07:19.316Z][info] Server running!
+[2019-05-08T14:07:22.453Z][info] Resolved - filter users by firstname with regex!
+[2019-05-08T14:18:01.434Z][info] Connection is created!
+[2019-05-08T14:18:01.884Z][info] Server running!
+[2019-05-08T14:18:11.046Z][error] User is not found
+[2019-05-08T14:18:11.052Z][info] Successfully taken user by namefilter
+[2019-05-08T14:18:59.922Z][error] User is not found
+[2019-05-08T14:18:59.925Z][info] Successfully taken user by namefilterSpecificNames
+[2019-05-08T14:19:13.916Z][info] Connection is created!
+[2019-05-08T14:19:14.424Z][info] Server running!
+[2019-05-08T14:19:16.995Z][error] User is not found
+[2019-05-08T14:19:17.002Z][info] Successfully taken user by namefilterSpecificNames
+[2019-05-08T14:19:17.888Z][error] User is not found
+[2019-05-08T14:19:17.890Z][info] Successfully taken user by namefilterSpecificNames
+[2019-05-08T14:19:18.548Z][error] User is not found
+[2019-05-08T14:19:18.549Z][info] Successfully taken user by namefilterSpecificNames
+[2019-05-08T14:19:19.085Z][error] User is not found
+[2019-05-08T14:19:19.086Z][info] Successfully taken user by namefilterSpecificNames
+[2019-05-08T14:19:19.649Z][error] User is not found
+[2019-05-08T14:19:19.651Z][info] Successfully taken user by namefilterSpecificNames
+[2019-05-08T14:19:21.364Z][error] User is not found
+[2019-05-08T14:19:21.366Z][info] Successfully taken user by namefilterSpecificNames
+[2019-05-08T14:19:57.372Z][info] Connection is created!
+[2019-05-08T14:19:57.780Z][info] Server running!
+[2019-05-08T14:20:02.955Z][info] Resolved - filter users by firstname with regex!
+[2019-05-08T14:34:52.073Z][info] Connection is created!
+[2019-05-08T14:34:52.595Z][info] Server running!
+[2019-05-08T14:34:54.594Z][info] Resolved - filter users by firstname with regex!
+[2019-05-08T14:36:01.141Z][info] Connection is created!
+[2019-05-08T14:36:01.778Z][info] Server running!
+[2019-05-08T14:36:08.149Z][error] Reject - filter users by firstname with regex! MongoError: Invalid $project :: caused by :: FieldPath field names may not start with '$'.
+[2019-05-08T14:38:26.015Z][info] Connection is created!
+[2019-05-08T14:38:26.418Z][info] Server running!
+[2019-05-08T14:38:31.947Z][error] Reject - filter users by firstname with regex! MongoError: unknown top level operator: $ne
+[2019-05-08T14:39:14.621Z][info] Connection is created!
+[2019-05-08T14:39:15.038Z][info] Server running!
+[2019-05-08T14:46:25.234Z][info] Connection is created!
+[2019-05-08T14:46:25.654Z][info] Server running!
+[2019-05-08T14:46:28.533Z][error] Reject - filter users by firstname with regex! MongoError: Unrecognized pipeline stage name: '$cond'
+[2019-05-08T14:46:29.660Z][error] Reject - filter users by firstname with regex! MongoError: Unrecognized pipeline stage name: '$cond'
+[2019-05-08T14:49:41.595Z][info] Connection is created!
+[2019-05-08T14:49:42.005Z][info] Server running!
+[2019-05-08T14:49:46.583Z][info] Resolved - filter users by firstname with regex!
+[2019-05-08T14:51:12.049Z][info] Connection is created!
+[2019-05-08T14:51:12.448Z][info] Server running!
+[2019-05-08T14:51:13.304Z][info] Resolved - filter users by firstname with regex!
+[2019-05-08T15:29:15.296Z][info] Connection is created!
+[2019-05-08T15:29:15.837Z][info] Server running!
+[2019-05-08T15:30:19.483Z][info] Password is correct!
+[2019-05-08T15:30:19.493Z][info] Email is correct!
+[2019-05-08T15:30:19.497Z][error] Failed to add user.
+[2019-05-08T15:30:52.708Z][info] Connection is created!
+[2019-05-08T15:30:53.153Z][info] Server running!
+[2019-05-08T15:30:55.308Z][info] Password is correct!
+[2019-05-08T15:30:55.318Z][info] Email is correct!
+[2019-05-08T15:30:55.348Z][info] User with email - sdfsf@sdfsdfsdf.com is created!
+[2019-05-08T15:31:21.719Z][info] Resolved - users with all fileds are taken!
+[2019-05-08T15:32:03.096Z][info] Connection is created!
+[2019-05-08T15:32:03.540Z][info] Server running!
+[2019-05-08T15:32:09.043Z][info] Resolved - users with all fileds are taken!
