@@ -19,6 +19,110 @@ module.exports.getAllBooks = (req, res, next) => {
     })
 };
 
+module.exports.countByAuthor = (req, res, next) => {
+
+  Book.aggregate(
+    [
+
+      { $group: { _id: "$author", numberOfBooks: { $sum: 1 } } },
+      { $project: { _id: 1, author: 1, numberOfBooks: 1 } }
+    ]
+  )
+
+    .then(function (books) {
+
+      logger.info("Counting all books by author... ");
+      res.send(books);
+
+    }).catch(function (err) {
+      logger.error("Cannot find books");
+      res.status(404).send("Cannot find books");
+    })
+};
+
+module.exports.sumPricesByAuthor = (req, res, next) => {
+
+  Book.aggregate(
+    [
+      { $match: {} },
+      { $group: { _id: "$author", total: { $sum: "$price" } } }
+    ]
+  )
+    .then(function (books) {
+
+      logger.info("Counting all books by author... ");
+      res.send(books);
+
+    }).catch(function (err) {
+      logger.error("Cannot find books");
+      res.status(404).send("Cannot find books");
+    })
+};
+
+module.exports.getAuthorNames = (req, res, next) => {
+
+  Book.aggregate(
+    [
+      { $project: { author: 1 } }
+    ]
+  )
+    .then(function (books) {
+
+      logger.info("All author names... ");
+      res.send(books);
+
+    }).catch(function (err) {
+      logger.error("Cannot find authors");
+      res.status(404).send("Cannot find authors");
+    })
+};
+
+module.exports.getAuthorNames = (req, res, next) => {
+
+  Book.aggregate(
+    [
+      { $project: { author: 1 } }
+    ]
+  )
+    .then(function (books) {
+
+      logger.info("All author names... ");
+      res.send(books);
+
+    }).catch(function (err) {
+      logger.error("Cannot find authors");
+      res.status(404).send("Cannot find authors");
+    })
+};
+module.exports.getAuthorByFilter = (req, res, next) => {
+
+  Book.aggregate(
+    [
+      {
+        $match: {
+          author: {
+            $regex:
+              /^mi/i
+          }
+        }
+      },
+      {
+        $project: {
+          author: 1
+        }
+      }
+    ]
+  )
+    .then(function (books) {
+
+      logger.info("All author names... ");
+      res.send(books);
+
+    }).catch(function (err) {
+      logger.error("Cannot find authors");
+      res.status(404).send("Cannot find authors");
+    })
+};
 module.exports.createBook = (req, res) => {
   logger.info("POST request - Creating book ... ");
 
@@ -47,6 +151,60 @@ module.exports.getAllUsers = (req, res, next) => {
       logger.error("Cannot find users - " + err);
       res.status(404).send("Cannot find users");
     })
+};
+
+module.exports.getUserByName = (req, res, next) => {
+
+
+  let name = req.params.name;
+  User.find({ username: name }).then(function (user) {
+    logger.info("Getting user by username ... ");
+    if (user.length < 1) {
+      res.status(404).send("Cannot find user");
+    } else {
+
+      res.send(user);
+    }
+
+
+  }).catch(function (err) {
+    logger.error("Cannot find user - " + err);
+    res.status(404).send("Cannot find user");
+  });
+};
+
+module.exports.deleteUserByName = (req, res, next) => {
+  let name = req.params.name;
+  User.remove({ username: name }).then(function (user) {
+    logger.info("Getting user by username ... ");
+    if (user.deletedCount < 1) {
+      res.status(404).send("Cannot find user");
+    } else {
+      res.send(user);
+    }
+  }).catch(function (err) {
+    logger.error("Cannot find user - " + err);
+    res.status(404).send("Cannot find user");
+  });
+
+};
+
+module.exports.updateUser = (req, res) => {
+  console.log('You made a UPDATE request: ', req.body);
+  User.updateOne({ _id: req.body._id }, req.body)
+    .then(function (user) {
+      if (user.nModified < 1) {
+        res.status(404).send("User is not modified");
+      } else {
+
+        res.send(user);
+      }
+    }).catch(function (err) {
+      logger.error("Cannot update user - " + err);
+      res.status(404).send("Cannot update user");
+    })
+    ;
+
 };
 
 module.exports.getLastTwo = (req, res, next) => {

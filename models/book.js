@@ -10,8 +10,11 @@ const BookSchema = new Schema({
     author: {
         type: String
     },
+    price: {
+        type: Number
+    },
 
 })
 
-const Book = mongoose.model('book', BookSchema);
+const Book = mongoose.model('bookStore', BookSchema);
 module.exports = Book;

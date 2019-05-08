@@ -47,3 +47,16 @@
 [2019-05-07T09:16:17.760Z][error] - Cannot find user
 [2019-05-07T14:51:20.731Z][error] - Getting all users ... 
 [2019-05-07T15:19:26.393Z][error] - Getting last two users ... 
+[2019-05-08T10:10:48.808Z][error] - Cannot find books
+[2019-05-08T10:12:31.695Z][error] - Cannot find books
+[2019-05-08T10:15:27.458Z][error] - Cannot find books
+[2019-05-08T10:15:46.641Z][error] - Cannot find books
+[2019-05-08T10:17:37.309Z][error] - Cannot find books
+[2019-05-08T10:23:42.310Z][error] - Cannot find books
+[2019-05-08T10:23:44.631Z][error] - Cannot find books
+[2019-05-08T10:23:45.662Z][error] - Cannot find books
+[2019-05-08T10:23:47.374Z][error] - Cannot find books
+[2019-05-08T12:52:42.502Z][error] - Cannot update user - CastError: Cast to ObjectId failed for value "5cd0497365e3dfb1e1043db14" at path "_id" for model "User"
+[2019-05-08T13:02:00.361Z][error] - Cannot find books
+[2019-05-08T13:02:11.870Z][error] - Cannot find books
+[2019-05-08T13:02:12.939Z][error] - Cannot find books
