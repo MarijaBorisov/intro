@@ -98,19 +98,10 @@ module.exports.getAuthorByFilter = (req, res, next) => {
 
   Book.aggregate(
     [
-      {
-        $match: {
-          author: {
-            $regex:
-              /^mi/i
-          }
-        }
-      },
-      {
-        $project: {
-          author: 1
-        }
-      }
+      { $match: { author: { $regex: /^mi/i } } },
+
+      { $project: { author: 1 } }
+
     ]
   )
     .then(function (books) {
@@ -120,7 +111,65 @@ module.exports.getAuthorByFilter = (req, res, next) => {
 
     }).catch(function (err) {
       logger.error("Cannot find authors");
-      res.status(404).send("Cannot find authors");
+      res.status(404).send("Cannot find authors" + err);
+    })
+};
+
+module.exports.getAllAuthorsThatAreNotEqualToPattern = (req, res, next) => {
+
+  Book.aggregate(
+    [
+      { $match: { author: { $ne: 'mika' } } },
+      { $project: { author: 1 } }
+
+    ]
+  )
+    .then(function (books) {
+
+      logger.info("All author names... ");
+      res.send(books);
+
+    }).catch(function (err) {
+      logger.error("Cannot find authors");
+      res.status(404).send("Cannot find authors" + err);
+    })
+};
+
+
+module.exports.getAllAuthorsAndChangeNameIfEqualToPattern = (req, res, next) => {
+
+  Book.aggregate(
+    [
+      { $project: { author: { $cond: { if: { $eq: ["$author", 'mika'] }, then: 'noname', else: '$author' } } } }
+    ]
+  )
+    .then(function (books) {
+
+      logger.info("All author names... ");
+      res.send(books);
+
+    }).catch(function (err) {
+      logger.error("Cannot find authors");
+      res.status(404).send("Cannot find authors" + err);
+    })
+};
+
+module.exports.getAllAuthorsThatHavePrice = (req, res, next) => {
+
+  Book.aggregate(
+    [
+      { $match: { price: { $exists: true } } },
+      { $project: { _id: 1, author: 1, price: 1 } }
+    ]
+  )
+    .then(function (books) {
+
+      logger.info("All author names... ");
+      res.send(books);
+
+    }).catch(function (err) {
+      logger.error("Cannot find authors");
+      res.status(404).send("Cannot find authors" + err);
     })
 };
 module.exports.createBook = (req, res) => {

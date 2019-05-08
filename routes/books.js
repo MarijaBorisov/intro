@@ -7,5 +7,7 @@ router.post('/books', bookService.createBook);
 router.get("/countByAuthor", bookService.countByAuthor);
 router.get("/sumPricesByAuthor", bookService.sumPricesByAuthor);
 router.get("/getAuthorNames", bookService.getAuthorNames);
-router.get("/getAuthorByFilter", bookService.getAuthorByFilter);
+router.get("/getAllAuthorsThatAreNotEqualToPattern", bookService.getAllAuthorsThatAreNotEqualToPattern);
+router.get("/getAllAuthorsAndChangeNameIfEqualToPattern", bookService.getAllAuthorsAndChangeNameIfEqualToPattern);
+router.get("/getAllAuthorsThatHavePrice", bookService.getAllAuthorsThatHavePrice);
 module.exports = router;
