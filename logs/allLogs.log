@@ -282,3 +282,141 @@
 [2019-05-07T14:56:01.510Z][info] Server running!
 [2019-05-07T14:57:33.442Z][info] Connection is created!
 [2019-05-07T14:57:33.730Z][info] Server running!
+[2019-05-07T14:57:40.463Z][info] Connection is created!
+[2019-05-07T14:57:40.694Z][info] Server running!
+[2019-05-07T14:57:49.165Z][info] Product has been successfully updated.
+[2019-05-07T15:17:46.359Z][info] Connection is created!
+[2019-05-07T15:17:46.557Z][info] Server running!
+[2019-05-07T15:18:13.665Z][error] User is not found
+[2019-05-07T15:18:13.676Z][info] Successfully taken user by namelastFive
+[2019-05-07T15:18:15.251Z][error] User is not found
+[2019-05-07T15:18:15.252Z][info] Successfully taken user by namelastFive
+[2019-05-07T15:19:31.126Z][info] Connection is created!
+[2019-05-07T15:19:31.310Z][info] Server running!
+[2019-05-07T15:19:32.407Z][error] User is not found
+[2019-05-07T15:19:32.421Z][info] Successfully taken user by namelastFive
+[2019-05-07T15:23:29.224Z][error] User is not found
+[2019-05-07T15:23:29.228Z][info] Successfully taken user by namelastFive
+[2019-05-07T15:24:08.860Z][info] Connection is created!
+[2019-05-07T15:24:09.047Z][info] Server running!
+[2019-05-07T15:24:17.505Z][info] Successfully taken last five users from DB!
+[2019-05-07T15:25:01.825Z][info] Successfully taken last five users from DB!
+[2019-05-07T15:25:51.211Z][info] Connection is created!
+[2019-05-07T15:25:51.402Z][info] Server running!
+[2019-05-07T15:26:08.024Z][info] Successfully taken last five users from DB!
+[2019-05-07T15:27:25.206Z][info] Connection is created!
+[2019-05-07T15:27:25.396Z][info] Server running!
+[2019-05-07T15:27:28.180Z][info] Successfully taken last five users from DB!
+[2019-05-07T15:29:24.059Z][info] Successfully taken last five users from DB!
+[2019-05-07T15:29:58.309Z][info] Connection is created!
+[2019-05-07T15:29:58.485Z][info] Server running!
+[2019-05-07T15:30:03.184Z][info] Successfully taken last five users from DB!
+[2019-05-07T15:30:51.873Z][info] Connection is created!
+[2019-05-07T15:30:52.066Z][info] Server running!
+[2019-05-07T15:32:25.877Z][info] Connection is created!
+[2019-05-07T15:32:26.069Z][info] Server running!
+[2019-05-07T15:32:38.152Z][info] Successfully taken last five users from DB!
+[2019-05-07T15:32:53.642Z][info] Connection is created!
+[2019-05-07T15:32:53.826Z][info] Server running!
+[2019-05-07T15:32:59.393Z][error] Faild to take last five users from DB!
+[2019-05-07T15:37:56.238Z][info] Connection is created!
+[2019-05-07T15:37:56.424Z][info] Server running!
+[2019-05-07T15:37:59.681Z][info] Successfully taken last five users from DB!
+[2019-05-07T15:39:01.457Z][info] Connection is created!
+[2019-05-07T15:39:01.638Z][info] Server running!
+[2019-05-07T15:39:11.095Z][info] Successfully taken last five users from DB!
+[2019-05-07T15:39:43.146Z][info] Successfully taken last five users from DB!
+[2019-05-08T07:39:06.358Z][info] Connection is created!
+[2019-05-08T07:39:06.998Z][info] Server running!
+[2019-05-08T07:56:32.748Z][info] Connection is created!
+[2019-05-08T07:56:33.568Z][info] Server running!
+[2019-05-08T07:57:47.107Z][info] Successfully added product!
+[2019-05-08T08:05:51.264Z][info] Connection is created!
+[2019-05-08T08:05:51.726Z][info] Server running!
+[2019-05-08T08:06:25.021Z][info] All products has been successfully taken.
+[2019-05-08T08:10:26.096Z][info] Connection is created!
+[2019-05-08T08:10:26.869Z][info] Server running!
+[2019-05-08T08:10:47.053Z][info] Product has been successfully taken.
+[2019-05-08T08:17:21.305Z][info] Connection is created!
+[2019-05-08T08:17:21.801Z][info] Server running!
+[2019-05-08T08:17:54.513Z][info] Successfully removed product!
+[2019-05-08T08:17:54.524Z][error] Failed to remove product!
+[2019-05-08T08:20:52.579Z][info] Connection is created!
+[2019-05-08T08:20:53.014Z][info] Server running!
+[2019-05-08T08:24:40.849Z][info] Product has been successfully taken.
+[2019-05-08T08:24:55.724Z][info] Product has been successfully taken.
+[2019-05-08T08:25:26.728Z][info] Successfully added product!
+[2019-05-08T08:25:40.450Z][info] Product has been successfully taken.
+[2019-05-08T08:27:23.874Z][info] Connection is created!
+[2019-05-08T08:27:24.331Z][info] Server running!
+[2019-05-08T08:28:08.746Z][info] Successfully added product!
+[2019-05-08T08:29:02.768Z][info] Connection is created!
+[2019-05-08T08:29:03.209Z][info] Server running!
+[2019-05-08T08:30:49.041Z][info] Connection is created!
+[2019-05-08T08:30:49.519Z][info] Server running!
+[2019-05-08T08:30:53.572Z][info] Product has been successfully taken.
+[2019-05-08T08:31:03.271Z][info] Product has been successfully taken.
+[2019-05-08T08:31:08.318Z][info] Product has been successfully taken.
+[2019-05-08T08:34:01.499Z][info] Connection is created!
+[2019-05-08T08:34:01.902Z][info] Server running!
+[2019-05-08T08:34:05.926Z][info] All products has been successfully taken.
+[2019-05-08T08:34:20.639Z][info] Product has been successfully taken.
+[2019-05-08T08:38:47.997Z][info] Product has been successfully taken.
+[2019-05-08T08:38:52.580Z][info] Product has been successfully taken.
+[2019-05-08T09:00:45.118Z][info] Connection is created!
+[2019-05-08T09:00:45.579Z][info] Server running!
+[2019-05-08T09:00:54.083Z][error] Failed to remove product!
+[2019-05-08T09:02:09.195Z][info] Connection is created!
+[2019-05-08T09:02:09.662Z][info] Server running!
+[2019-05-08T09:02:12.365Z][error] Failed to remove product!
+[2019-05-08T09:02:51.118Z][error] Failed to remove product!
+[2019-05-08T09:03:25.205Z][info] Connection is created!
+[2019-05-08T09:03:25.642Z][info] Server running!
+[2019-05-08T09:03:29.489Z][error] Failed to remove product!
+[2019-05-08T09:03:30.578Z][error] Failed to remove product!
+[2019-05-08T09:03:31.402Z][error] Failed to remove product!
+[2019-05-08T09:03:58.924Z][info] Connection is created!
+[2019-05-08T09:03:59.354Z][info] Server running!
+[2019-05-08T09:04:04.549Z][error] Failed to remove product! - TypeError: product.destroy is not a function
+[2019-05-08T09:07:42.239Z][info] Connection is created!
+[2019-05-08T09:07:42.653Z][info] Server running!
+[2019-05-08T09:07:48.571Z][error] Failed to remove product! - TypeError: product.destroy is not a function
+[2019-05-08T09:07:49.492Z][error] Failed to remove product! - TypeError: product.destroy is not a function
+[2019-05-08T09:08:18.185Z][info] Connection is created!
+[2019-05-08T09:08:18.624Z][info] Server running!
+[2019-05-08T09:08:28.837Z][info] Successfully removed product! 
+[2019-05-08T09:10:20.959Z][info] Connection is created!
+[2019-05-08T09:10:21.371Z][info] Server running!
+[2019-05-08T09:10:25.442Z][info] Successfully removed product! 
+[2019-05-08T09:11:49.081Z][info] Connection is created!
+[2019-05-08T09:11:49.735Z][info] Server running!
+[2019-05-08T09:12:04.986Z][info] All products has been successfully taken.
+[2019-05-08T09:12:19.382Z][info] Product has been successfully taken.
+[2019-05-08T09:12:46.703Z][error] Failed to update product!
+[2019-05-08T09:16:44.339Z][info] Connection is created!
+[2019-05-08T09:16:44.796Z][info] Server running!
+[2019-05-08T09:16:51.462Z][error] Failed to update product!
+[2019-05-08T09:16:52.651Z][error] Failed to update product!
+[2019-05-08T09:17:26.681Z][info] Connection is created!
+[2019-05-08T09:17:27.398Z][info] Server running!
+[2019-05-08T09:17:36.506Z][error] Failed to update product!
+[2019-05-08T09:17:58.680Z][info] Connection is created!
+[2019-05-08T09:17:59.089Z][info] Server running!
+[2019-05-08T09:18:04.238Z][error] Failed to update product!TypeError: product.update is not a function
+[2019-05-08T09:18:05.537Z][error] Failed to update product!TypeError: product.update is not a function
+[2019-05-08T09:19:22.433Z][info] Connection is created!
+[2019-05-08T09:19:22.914Z][info] Server running!
+[2019-05-08T09:19:31.843Z][error] Failed to update product!TypeError: product.update is not a function
+[2019-05-08T09:19:33.239Z][error] Failed to update product!TypeError: product.update is not a function
+[2019-05-08T09:19:34.198Z][error] Failed to update product!TypeError: product.update is not a function
+[2019-05-08T09:20:09.663Z][info] Connection is created!
+[2019-05-08T09:20:10.121Z][info] Server running!
+[2019-05-08T09:20:14.154Z][error] Failed to update product!AssertionError [ERR_ASSERTION]: Missing where attribute in the options parameter
+[2019-05-08T09:20:58.279Z][info] Connection is created!
+[2019-05-08T09:20:58.703Z][info] Server running!
+[2019-05-08T09:21:02.779Z][error] Failed to update product!AssertionError [ERR_ASSERTION]: Missing where attribute in the options parameter
+[2019-05-08T09:21:25.222Z][info] Connection is created!
+[2019-05-08T09:21:25.630Z][info] Server running!
+[2019-05-08T09:23:58.531Z][info] Connection is created!
+[2019-05-08T09:23:58.961Z][info] Server running!
+[2019-05-08T09:24:02.872Z][info] Product has been successfully updated.

@@ -3,6 +3,7 @@ var logger = require('./util/logger');
 var path = require('path');
 const rootDir = require('./util/path');
 var connection = require('./util/database');
+const sequelize = require('./util/databaseMySQL');
 var adminRouter = require('./routes/admin');
 var usersRouter = require('./routes/users');
 var productsRouter = require('./routes/products');
@@ -22,5 +23,7 @@ app.use('/products', productsRouter);
 app.use((req,res,next) => {
     res.status(404).send('Error');
 });
+
+sequelize.sync();
 
 module.exports = app;

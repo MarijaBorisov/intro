@@ -63,3 +63,29 @@
 [2019-05-07T10:14:44.218Z][error] Failed to get list of all users.
 [2019-05-07T10:15:00.009Z][error] Failed to get list of all users.
 [2019-05-07T14:19:06.727Z][error] Failed to remove product!
+[2019-05-07T15:18:13.665Z][error] User is not found
+[2019-05-07T15:18:15.251Z][error] User is not found
+[2019-05-07T15:19:32.407Z][error] User is not found
+[2019-05-07T15:23:29.224Z][error] User is not found
+[2019-05-07T15:32:59.393Z][error] Faild to take last five users from DB!
+[2019-05-08T08:17:54.524Z][error] Failed to remove product!
+[2019-05-08T09:00:54.083Z][error] Failed to remove product!
+[2019-05-08T09:02:12.365Z][error] Failed to remove product!
+[2019-05-08T09:02:51.118Z][error] Failed to remove product!
+[2019-05-08T09:03:29.489Z][error] Failed to remove product!
+[2019-05-08T09:03:30.578Z][error] Failed to remove product!
+[2019-05-08T09:03:31.402Z][error] Failed to remove product!
+[2019-05-08T09:04:04.549Z][error] Failed to remove product! - TypeError: product.destroy is not a function
+[2019-05-08T09:07:48.571Z][error] Failed to remove product! - TypeError: product.destroy is not a function
+[2019-05-08T09:07:49.492Z][error] Failed to remove product! - TypeError: product.destroy is not a function
+[2019-05-08T09:12:46.703Z][error] Failed to update product!
+[2019-05-08T09:16:51.462Z][error] Failed to update product!
+[2019-05-08T09:16:52.651Z][error] Failed to update product!
+[2019-05-08T09:17:36.506Z][error] Failed to update product!
+[2019-05-08T09:18:04.238Z][error] Failed to update product!TypeError: product.update is not a function
+[2019-05-08T09:18:05.537Z][error] Failed to update product!TypeError: product.update is not a function
+[2019-05-08T09:19:31.843Z][error] Failed to update product!TypeError: product.update is not a function
+[2019-05-08T09:19:33.239Z][error] Failed to update product!TypeError: product.update is not a function
+[2019-05-08T09:19:34.198Z][error] Failed to update product!TypeError: product.update is not a function
+[2019-05-08T09:20:14.154Z][error] Failed to update product!AssertionError [ERR_ASSERTION]: Missing where attribute in the options parameter
+[2019-05-08T09:21:02.779Z][error] Failed to update product!AssertionError [ERR_ASSERTION]: Missing where attribute in the options parameter

@@ -1,8 +1,36 @@
-var crypto = require('crypto');
-var jwt = require('jsonwebtoken');
-var validator = require('validator');
-var logger = require('../util/logger');
-var conn= require('../util/databaseMySQL');
+const crypto = require('crypto');
+const jwt = require('jsonwebtoken');
+const validator = require('validator');
+const logger = require('../util/logger');
+const Sequelize = require('sequelize');
+const sequelize = require('../util/databaseMySQL');
+
+const Product = sequelize.define('product',{
+    id: {
+        type: Sequelize.INTEGER,
+        autoIncrement: true,
+        allowNull: false,
+        primaryKey: true
+    },
+    title: {
+        type: Sequelize.STRING,
+        allowNull: false
+    },
+    price: {
+        type: Sequelize.FLOAT,
+        allowNull: false
+    },
+    description: {
+        type: Sequelize.STRING,
+        allowNull: false
+    }
+});
+
+module.exports = Product;
+
+
+
+/*
 
 module.exports = class Product {
     constructor(id, title, price, description){
@@ -31,3 +59,4 @@ module.exports = class Product {
         return conn.execute('UPDATE products SET products.title = ?, products.price = ?, products.description = ? WHERE products.product_id = ?',[product.title, product.price, product.description, product.id]);
     }
 }
+*/
