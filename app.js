@@ -7,7 +7,7 @@ const booksRouter = require('./routes/books');
 const usersRouter = require('./routes/users');
 const productsRouter = require('./routes/products');
 const connection = require('./config/db').connection;
-const db = require('./config/dbMySql');
+const sequelize = require('./config/dbMySql');
 
 dotenv.config();
 const app = express();
@@ -23,4 +23,10 @@ app.use('/books', booksRouter);
 app.use('/users', usersRouter);
 app.use('/products', productsRouter);
 
+sequelize.sync().then(result => {
+    //console.log(result);
+    app.listen(4000);
+}).catch(err => {
+    console.log(err);
+})
 module.exports = app;

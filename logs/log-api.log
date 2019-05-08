@@ -348,3 +348,15 @@
 [2019-05-07T14:40:23.352Z][info] - POST request - Creating user MYSQL... 
 [2019-05-07T14:51:20.731Z][error] - Getting all users ... 
 [2019-05-07T15:19:26.393Z][error] - Getting last two users ... 
+[2019-05-08T09:17:37.416Z][info] - All products has been successfully taken.
+[2019-05-08T09:18:52.015Z][info] - Successfully added product!
+[2019-05-08T09:19:00.355Z][info] - All products has been successfully taken.
+[2019-05-08T09:19:17.257Z][info] - Successfully added product!
+[2019-05-08T09:19:23.380Z][info] - All products has been successfully taken.
+[2019-05-08T09:20:41.067Z][info] - Successfully removed product!
+[2019-05-08T09:20:46.928Z][info] - All products has been successfully taken.
+[2019-05-08T09:21:23.173Z][info] - Successfully added product!
+[2019-05-08T09:22:15.351Z][info] - Product has been successfully taken.
+[2019-05-08T09:22:19.767Z][info] - Product has been successfully taken.
+[2019-05-08T09:22:21.475Z][info] - Product has been successfully taken.
+[2019-05-08T09:22:32.246Z][info] - Product has been successfully taken.

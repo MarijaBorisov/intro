@@ -38,14 +38,14 @@ module.exports.createBook = (req, res) => {
 module.exports.getAllUsers = (req, res, next) => {
 
   User.find()
-    .then(function (books) {
+    .then(function (user) {
 
-      logger.error("Getting all users ... ");
-      res.send(books);
+      logger.info("Getting all users ... ");
+      res.send(user);
 
     }).catch(function (err) {
-      logger.error("Cannot find user");
-      res.status(404).send("Cannot find user");
+      logger.error("Cannot find users - " + err);
+      res.status(404).send("Cannot find users");
     })
 };
 
@@ -54,7 +54,7 @@ module.exports.getLastTwo = (req, res, next) => {
   User.find().sort({ _id: -1 }).limit(2)
     .then(function (users) {
 
-      logger.error("Getting last two users ... ");
+      logger.info("Getting last two users ... ");
       res.send(users);
 
     }).catch(function (err) {
@@ -62,77 +62,92 @@ module.exports.getLastTwo = (req, res, next) => {
       res.status(404).send("Cannot last 2 users ");
     })
 };
-module.exports.getAllUsersMYSQL = (req, res, next) => {
-
+module.exports.getAllProductsMYSQL = (req, res, next) => {
+  logger.info("GET request - Getting all products MYSQL... ");
+  logger.info("Getting all products ... ");
   Product.findAll()
     .then(result => {
       // console.log(result[0]);
       res.send(result[0]);
+      logger.info("Products are returned");
     })
     .catch(err => {
-      res.status(404).send("Cannot find product");
+      logger.error("Cannot find products - " + err);
+      res.status(404).send("Cannot find products - " + err);
     });
 };
 module.exports.createUser = (req, res) => {
   logger.info("POST request - Creating user ... ");
   UserDB = new User(req.body);
   UserDB.save()
-    .then(function (book) {
+    .then(function (user) {
       logger.info("Creating user ... ");
-      res.send(book);
+      res.send(user);
       logger.info("User is created");
     }).catch(function (err) {
-      logger.error("Cannot add user");
+      logger.error("Cannot add user - " + err);
       res.status(404).send("Cannot add user");
     })
     ;
 
 };
-module.exports.createUserMYSQL = (req, res) => {
+module.exports.createProductMYSQL = (req, res) => {
   logger.info("POST request - Creating user MYSQL... ");
+  logger.info("Creating product ... ");
   Product.createProduct(req.body)
     .then(result => {
 
       res.send(result[0]);
+      logger.info("Product is created ... ");
     })
     .catch(err => {
-      res.status(404).send("Cannot find product");
+      logger.error("Cannot create product - " + err);
+      res.status(404).send("Cannot create product");
     });
 
 };
-module.exports.updateUserMYSQL = (req, res) => {
-  logger.info("POST request - Update user MYSQL... ");
+module.exports.updateProductMYSQL = (req, res) => {
+  logger.info("POST request - Update product MYSQL... ");
+  logger.info("Updating product ... ");
   Product.updateProduct(req.body.name, req.body.id)
     .then(result => {
 
       res.send(result[0]);
+      logger.info("Product is updated");
     })
     .catch(err => {
+      logger.info("Cannot update product - " + err);
       res.status(404).send("Cannot update product");
     });
 
 };
-module.exports.removeUserMYSQL = (req, res) => {
+module.exports.removeProductMYSQL = (req, res) => {
   logger.info("DELETE request - Removing product MYSQL... ");
+  logger.info("Deleting product ... ");
   Product.deleteProduct(req.body.id)
     .then(result => {
-      ;
+
       res.send(result[0]);
+      logger.info("Product is deleted");
     })
     .catch(err => {
+      logger.error("Cannot delete product - " + err);
       res.status(404).send("Cannot delete product");
     });
 
 };
-module.exports.findUserMYSQL = (req, res) => {
+module.exports.findProductMYSQL = (req, res) => {
   logger.info("GET request - Get product by ID MYSQL... ");
+  logger.info("Getting product ... ");
   Product.findByID(req.body.id)
     .then(result => {
-      ;
+
       res.send(result[0]);
+      logger.info("Product is returned");
     })
     .catch(err => {
-      res.status(404).send("Cannot find product");
+      logger.error("Cannot return product - " + err);
+      res.status(404).send("Cannot return product");
     });
 
 };
@@ -188,7 +203,7 @@ module.exports.login = (req, res) => {
       logger.info("User '" + username + "' is logged in");
 
       jwt.sign({ user }, 'secretkey', (err, token) => {
-        logger.info("Token '" + token + "' is logged in");
+        logger.info("Token - " + token);
         res.json({ token });
       })
 
@@ -199,8 +214,8 @@ module.exports.login = (req, res) => {
     }
   }).catch(function (err) {
     //console.log(err);
-    logger.error("Cannot find user");
-    res.status(404).send("Cannot find user " + err);
+    logger.error("Cannot find user - " + err);
+    res.status(404).send("Cannot find user");
   });
 
 };
