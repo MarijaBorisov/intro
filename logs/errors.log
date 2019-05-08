@@ -89,3 +89,16 @@
 [2019-05-08T09:19:34.198Z][error] Failed to update product!TypeError: product.update is not a function
 [2019-05-08T09:20:14.154Z][error] Failed to update product!AssertionError [ERR_ASSERTION]: Missing where attribute in the options parameter
 [2019-05-08T09:21:02.779Z][error] Failed to update product!AssertionError [ERR_ASSERTION]: Missing where attribute in the options parameter
+[2019-05-08T10:26:52.239Z][error] Failed to add user.
+[2019-05-08T10:26:54.956Z][error] Failed to add user.
+[2019-05-08T10:27:13.424Z][error] Failed to add user.
+[2019-05-08T12:30:21.946Z][error] Reject - filter users by firstname - firstletter!
+[2019-05-08T12:39:59.492Z][error] Reject - filter users by firstname - firstletter!
+[2019-05-08T12:43:37.479Z][error] Reject - filter users by firstname - firstletter!
+[2019-05-08T12:43:51.948Z][error] Reject - filter users by firstname - firstletter!
+[2019-05-08T12:59:57.191Z][error] Reject - filter users by firstname - firstletter!
+[2019-05-08T13:02:35.485Z][error] Reject - filter users by firstname - firstletter!
+[2019-05-08T13:06:36.883Z][error] Reject - filter users by firstname - firstletter!
+[2019-05-08T13:07:52.207Z][error] Reject - filter users by firstname - firstletter!
+[2019-05-08T13:11:13.769Z][error] Reject - filter users by firstname - firstletter!
+[2019-05-08T13:11:45.421Z][error] Reject - filter users by firstname - firstletter!

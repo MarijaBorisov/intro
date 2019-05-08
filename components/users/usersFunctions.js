@@ -141,10 +141,8 @@ var userLogin = (req, res, next) => {
    });
 }
 
-var verifyToken =(req,res,next) => {
-
+var verifyToken = (req,res,next) => {
    const bearerHeader = req.headers['authorization'];
-
    if(typeof bearerHeader !== 'undefined'){
       const bearer = bearerHeader.split(' ');
       const bearerToken = bearer[1];
@@ -164,6 +162,37 @@ var verifyUsersToken = (req,res,next) => {
    })
 }
 
+var groupUserByName = (req,res,next) => {
+
+   User.aggregate([
+      { $group: { _id: "$email", numberOfUsers: { $sum: 1 } } },
+      { $project: { _id: 1, email: 1, numberOfUsers: 1 } }
+   ])
+   .then(user => {
+      res.send(user)
+      logger.info('Resolved - group users by name!')
+   })
+   .catch(err => {
+      res.send('Reject - group users by name!')
+      logger.error('Reject - group users by name!')
+   })
+}
+
+var filterByRegex = (req,res,next) => {
+
+   User.aggregate([
+      { $match: { name: { $regex : /^Ta/i}}},
+      { $project: { name: 1}}
+   ])
+   .then(user => {
+      res.send(user)
+      logger.info('Resolved - filter users by firstname with regex!')
+   })
+   .catch(err => {
+      res.send('Reject - group users by name!')
+      logger.error('Reject - filter users by firstname with regex!')
+   })
+}
 exports.userComponents = {
     getUsersPage,
     createUser,
@@ -177,5 +206,7 @@ exports.userComponents = {
     userLogin,
     verifyToken,
     verifyUsersToken,
-    lastFive
+    lastFive,
+    groupUserByName,
+    filterByRegex
 }

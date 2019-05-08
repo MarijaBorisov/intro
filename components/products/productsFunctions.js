@@ -20,7 +20,7 @@ var getAllProducts = (req, res, next) => {
    Product.findAll()
    .then(product => {
       res.status(200).send(product);
-      logger.info('All products has been successfully taken.');
+      logger.info('All products have been successfully taken.');
    })
    .catch(err => {
       res.status(404).send('404');
@@ -52,7 +52,7 @@ var removeProductById = (req,res,next) => {
 var updateProduct = (req,res,next) => {
    Product.findAll({where: {id: req.body.id}})
    .then(product => {
-      console.log(product);
+      //console.log(product);
       product[0].update({
          id: req.body.id,
          title : req.body.title,

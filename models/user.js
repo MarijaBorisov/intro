@@ -25,7 +25,6 @@ var validateEmail = email => {
         return false;
     }
 }
-
 const userSchema = new Schema({
     
     name: {
@@ -40,14 +39,14 @@ const userSchema = new Schema({
     },
     email: {
         type: String,
-        unique: true,
+        unique: false,
         required: true,
         validate: [validateEmail, 'Fill valid email address']
     },
     salt: {
         type: String
     }
-}, {collection: 'users2'});
+}, {collection: 'users3'});
 
 userSchema.pre('save', function (next) {
     if (this.password && this.isModified('password') && this.password.length >= 8) {
@@ -66,10 +65,9 @@ userSchema.methods.setPassword = function (password) {
 };
 
 userSchema.statics.validPassword = function (password, hashpass, salt) {
-    
     var hash = crypto.pbkdf2Sync(password, new Buffer(salt, 'base64'), 10000, 64, 'sha1').toString('base64');
     return hashpass === hash;
 };
 
-const User = mongoose.model('user', userSchema, 'users2');
+const User = mongoose.model('user', userSchema, 'users3');
 module.exports = User;

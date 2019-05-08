@@ -4,7 +4,6 @@ var sc = require('../components/products/productsFunctions').productComponents;
 
 //MySQLS
 
- 
 router.get('/all', sc.getAllProducts);
 router.get('/:id', sc.getProductPageById);
 router.post('/add', sc.createProduct);

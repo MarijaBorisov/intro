@@ -420,3 +420,145 @@
 [2019-05-08T09:23:58.531Z][info] Connection is created!
 [2019-05-08T09:23:58.961Z][info] Server running!
 [2019-05-08T09:24:02.872Z][info] Product has been successfully updated.
+[2019-05-08T09:28:17.335Z][info] Connection is created!
+[2019-05-08T09:28:17.765Z][info] Server running!
+[2019-05-08T09:28:51.109Z][info] All products has been successfully taken.
+[2019-05-08T09:29:22.694Z][info] Product has been successfully taken.
+[2019-05-08T09:29:26.631Z][info] Successfully added product!
+[2019-05-08T09:29:38.545Z][info] Successfully added product!
+[2019-05-08T09:29:51.418Z][info] All products has been successfully taken.
+[2019-05-08T09:29:56.772Z][info] Product has been successfully taken.
+[2019-05-08T10:19:24.193Z][info] Connection is created!
+[2019-05-08T10:19:26.477Z][info] Server running!
+[2019-05-08T10:26:44.726Z][info] Password is correct!
+[2019-05-08T10:26:44.881Z][info] Email is correct!
+[2019-05-08T10:26:44.988Z][info] User with email - tam@tam.com is created!
+[2019-05-08T10:26:52.163Z][info] Password is correct!
+[2019-05-08T10:26:52.164Z][info] Email is correct!
+[2019-05-08T10:26:52.239Z][error] Failed to add user.
+[2019-05-08T10:26:54.927Z][info] Password is correct!
+[2019-05-08T10:26:54.927Z][info] Email is correct!
+[2019-05-08T10:26:54.956Z][error] Failed to add user.
+[2019-05-08T10:27:07.216Z][info] Connection is created!
+[2019-05-08T10:27:07.630Z][info] Server running!
+[2019-05-08T10:27:13.376Z][info] Password is correct!
+[2019-05-08T10:27:13.390Z][info] Email is correct!
+[2019-05-08T10:27:13.424Z][error] Failed to add user.
+[2019-05-08T10:28:27.631Z][info] Connection is created!
+[2019-05-08T10:28:28.231Z][info] Server running!
+[2019-05-08T10:28:34.184Z][info] Password is correct!
+[2019-05-08T10:28:34.194Z][info] Email is correct!
+[2019-05-08T10:28:34.223Z][info] User with email - tam@tam.com is created!
+[2019-05-08T10:28:41.378Z][info] Password is correct!
+[2019-05-08T10:28:41.385Z][info] Email is correct!
+[2019-05-08T10:28:41.418Z][info] User with email - tam@tam.com is created!
+[2019-05-08T10:28:47.898Z][info] Password is correct!
+[2019-05-08T10:28:47.898Z][info] Email is correct!
+[2019-05-08T10:28:47.931Z][info] User with email - tam@tam.com is created!
+[2019-05-08T10:29:00.166Z][info] Password is correct!
+[2019-05-08T10:29:00.166Z][info] Email is correct!
+[2019-05-08T10:29:00.198Z][info] User with email - tam3@tam.com is created!
+[2019-05-08T10:31:07.209Z][info] Connection is created!
+[2019-05-08T10:31:07.617Z][info] Server running!
+[2019-05-08T10:31:38.128Z][info] Resolved - group users by name!
+[2019-05-08T12:18:41.680Z][info] Connection is created!
+[2019-05-08T12:18:46.812Z][info] Server running!
+[2019-05-08T12:20:36.153Z][info] Resolved - filter users by firstname - firstletter!
+[2019-05-08T12:20:39.683Z][info] Resolved - filter users by firstname - firstletter!
+[2019-05-08T12:21:30.635Z][info] Connection is created!
+[2019-05-08T12:21:31.124Z][info] Server running!
+[2019-05-08T12:21:31.925Z][info] Resolved - filter users by firstname - firstletter!
+[2019-05-08T12:23:08.399Z][info] Password is correct!
+[2019-05-08T12:23:08.452Z][info] Email is correct!
+[2019-05-08T12:23:08.492Z][info] User with email - nenad3@tam.com is created!
+[2019-05-08T12:23:21.400Z][info] Password is correct!
+[2019-05-08T12:23:21.400Z][info] Email is correct!
+[2019-05-08T12:23:21.433Z][info] User with email - petar3@tam.com is created!
+[2019-05-08T12:23:27.121Z][info] Password is correct!
+[2019-05-08T12:23:27.121Z][info] Email is correct!
+[2019-05-08T12:23:27.159Z][info] User with email - petar3@tam.com is created!
+[2019-05-08T12:25:26.065Z][info] Resolved - filter users by firstname - firstletter!
+[2019-05-08T12:27:42.950Z][info] Connection is created!
+[2019-05-08T12:27:43.400Z][info] Server running!
+[2019-05-08T12:28:09.810Z][info] Connection is created!
+[2019-05-08T12:28:10.241Z][info] Server running!
+[2019-05-08T12:28:27.173Z][info] Resolved - filter users by firstname - firstletter!
+[2019-05-08T12:29:00.670Z][info] Connection is created!
+[2019-05-08T12:29:01.229Z][info] Server running!
+[2019-05-08T12:29:03.742Z][info] Resolved - filter users by firstname - firstletter!
+[2019-05-08T12:29:16.621Z][info] Resolved - filter users by firstname - firstletter!
+[2019-05-08T12:29:29.815Z][info] Connection is created!
+[2019-05-08T12:29:30.254Z][info] Server running!
+[2019-05-08T12:29:34.207Z][info] Resolved - filter users by firstname - firstletter!
+[2019-05-08T12:30:15.220Z][info] Connection is created!
+[2019-05-08T12:30:15.656Z][info] Server running!
+[2019-05-08T12:30:21.946Z][error] Reject - filter users by firstname - firstletter!
+[2019-05-08T12:33:02.799Z][info] Connection is created!
+[2019-05-08T12:33:03.186Z][info] Server running!
+[2019-05-08T12:33:07.410Z][info] Resolved - filter users by firstname - firstletter!
+[2019-05-08T12:33:08.550Z][info] Resolved - filter users by firstname - firstletter!
+[2019-05-08T12:36:33.251Z][info] Resolved - group users by name!
+[2019-05-08T12:39:09.973Z][info] Connection is created!
+[2019-05-08T12:39:10.397Z][info] Server running!
+[2019-05-08T12:39:19.808Z][info] Resolved - filter users by firstname - firstletter!
+[2019-05-08T12:39:20.985Z][info] Resolved - filter users by firstname - firstletter!
+[2019-05-08T12:39:46.852Z][info] Connection is created!
+[2019-05-08T12:39:47.249Z][info] Server running!
+[2019-05-08T12:39:59.492Z][error] Reject - filter users by firstname - firstletter!
+[2019-05-08T12:43:37.479Z][error] Reject - filter users by firstname - firstletter!
+[2019-05-08T12:43:51.948Z][error] Reject - filter users by firstname - firstletter!
+[2019-05-08T12:44:01.585Z][info] Connection is created!
+[2019-05-08T12:44:02.026Z][info] Server running!
+[2019-05-08T12:44:15.334Z][info] Connection is created!
+[2019-05-08T12:44:15.886Z][info] Server running!
+[2019-05-08T12:45:33.170Z][info] Connection is created!
+[2019-05-08T12:45:33.905Z][info] Server running!
+[2019-05-08T12:45:34.689Z][info] Resolved - filter users by firstname - firstletter!
+[2019-05-08T12:46:10.411Z][info] Connection is created!
+[2019-05-08T12:46:10.865Z][info] Server running!
+[2019-05-08T12:46:43.041Z][info] Connection is created!
+[2019-05-08T12:46:43.458Z][info] Server running!
+[2019-05-08T12:46:47.127Z][info] Resolved - filter users by firstname - firstletter!
+[2019-05-08T12:59:18.652Z][info] Resolved - filter users by firstname - firstletter!
+[2019-05-08T12:59:19.965Z][info] Resolved - filter users by firstname - firstletter!
+[2019-05-08T12:59:50.674Z][info] Connection is created!
+[2019-05-08T12:59:51.098Z][info] Server running!
+[2019-05-08T12:59:57.191Z][error] Reject - filter users by firstname - firstletter!
+[2019-05-08T13:02:30.665Z][info] Connection is created!
+[2019-05-08T13:02:31.338Z][info] Server running!
+[2019-05-08T13:02:35.485Z][error] Reject - filter users by firstname - firstletter!
+[2019-05-08T13:03:31.590Z][info] Connection is created!
+[2019-05-08T13:03:31.998Z][info] Server running!
+[2019-05-08T13:03:56.226Z][info] Connection is created!
+[2019-05-08T13:03:56.629Z][info] Server running!
+[2019-05-08T13:06:19.708Z][info] Connection is created!
+[2019-05-08T13:06:20.125Z][info] Server running!
+[2019-05-08T13:06:36.883Z][error] Reject - filter users by firstname - firstletter!
+[2019-05-08T13:07:02.731Z][info] Connection is created!
+[2019-05-08T13:07:03.176Z][info] Server running!
+[2019-05-08T13:07:48.152Z][info] Connection is created!
+[2019-05-08T13:07:48.573Z][info] Server running!
+[2019-05-08T13:07:52.207Z][error] Reject - filter users by firstname - firstletter!
+[2019-05-08T13:11:10.181Z][info] Connection is created!
+[2019-05-08T13:11:10.576Z][info] Server running!
+[2019-05-08T13:11:13.769Z][error] Reject - filter users by firstname - firstletter!
+[2019-05-08T13:11:40.822Z][info] Connection is created!
+[2019-05-08T13:11:41.260Z][info] Server running!
+[2019-05-08T13:11:45.421Z][error] Reject - filter users by firstname - firstletter!
+[2019-05-08T13:17:05.105Z][info] Connection is created!
+[2019-05-08T13:17:05.557Z][info] Server running!
+[2019-05-08T13:17:10.842Z][info] Resolved - filter users by firstname - firstletter!
+[2019-05-08T13:17:40.701Z][info] Connection is created!
+[2019-05-08T13:17:41.305Z][info] Server running!
+[2019-05-08T13:17:42.709Z][info] Resolved - filter users by firstname - firstletter!
+[2019-05-08T13:25:03.206Z][info] Connection is created!
+[2019-05-08T13:25:03.740Z][info] Server running!
+[2019-05-08T13:25:15.473Z][info] Resolved - filter users by firstname - firstletter!
+[2019-05-08T13:25:41.699Z][info] Connection is created!
+[2019-05-08T13:25:42.170Z][info] Server running!
+[2019-05-08T13:25:44.921Z][info] Resolved - filter users by firstname - firstletter!
+[2019-05-08T13:27:10.524Z][info] Connection is created!
+[2019-05-08T13:27:10.941Z][info] Server running!
+[2019-05-08T13:28:48.136Z][info] Connection is created!
+[2019-05-08T13:28:48.537Z][info] Server running!
+[2019-05-08T13:28:58.958Z][info] Resolved - filter users by firstname - firstletter!
