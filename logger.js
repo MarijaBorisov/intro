@@ -13,7 +13,8 @@ module.exports = winston.createLogger({
             level: 'error'
         }),
         new winston.transports.File({
-            filename: './loghistory/good.log'
+            filename: './loghistory/all.log',
+            level: 'info'
         })
     ]
 });
