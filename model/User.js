@@ -39,8 +39,12 @@ var UserSchema = new mongoose.Schema({
         required: [true, 'Password is required'],
         trim: true,
         validate: [validateLocalStrategyPassword, 'Password should be longer']
+    },    
+    profession: {
+        type: String,        
+        trim: true
     },
-    salt: String
+    salt: String, 
 });
 
 
