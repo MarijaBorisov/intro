@@ -667,3 +667,236 @@
 [2019-05-08T15:32:03.096Z][info] Connection is created!
 [2019-05-08T15:32:03.540Z][info] Server running!
 [2019-05-08T15:32:09.043Z][info] Resolved - users with all fileds are taken!
+[2019-05-08T15:32:43.667Z][info] Connection is created!
+[2019-05-08T15:32:44.113Z][info] Server running!
+[2019-05-08T15:32:48.729Z][info] Resolved - users with all fileds are taken!
+[2019-05-10T07:40:02.522Z][info] Connection is created!
+[2019-05-10T07:40:07.975Z][info] Server running!
+[2019-05-10T07:42:38.883Z][info] Connection is created!
+[2019-05-10T07:42:39.309Z][info] Server running!
+[2019-05-10T07:42:41.661Z][info] Password is correct!
+[2019-05-10T07:42:41.693Z][info] Email is correct!
+[2019-05-10T07:42:41.747Z][info] User with email - sdfsf@sdfsdfsdf.com is created!
+[2019-05-10T07:42:57.246Z][info] Password is correct!
+[2019-05-10T07:42:57.259Z][info] Email is correct!
+[2019-05-10T07:42:57.298Z][info] User with email - ppppsdfsf@sdfsdfsdf.com is created!
+[2019-05-10T07:43:14.837Z][info] Password is correct!
+[2019-05-10T07:43:14.837Z][info] Email is correct!
+[2019-05-10T07:43:14.868Z][info] User with email - uuuuuudfsf@sdfsdfsdf.com is created!
+[2019-05-10T07:43:41.926Z][info] Resolved - users with field age!
+[2019-05-10T07:44:14.963Z][info] Password is correct!
+[2019-05-10T07:44:14.964Z][info] Email is correct!
+[2019-05-10T07:44:14.996Z][info] User with email - nnnuuuuuudfsf@sdfsdfsdf.com is created!
+[2019-05-10T07:44:35.827Z][info] Resolved - users with field age!
+[2019-05-10T07:47:18.159Z][info] Connection is created!
+[2019-05-10T07:47:18.647Z][info] Server running!
+[2019-05-10T07:47:29.260Z][info] Resolved - list of all names!
+[2019-05-10T07:54:02.378Z][info] Connection is created!
+[2019-05-10T07:54:02.863Z][info] Server running!
+[2019-05-10T07:54:11.199Z][info] Resolved - list of all names that are equals to Petar!
+[2019-05-10T07:55:17.312Z][info] Connection is created!
+[2019-05-10T07:55:18.058Z][info] Server running!
+[2019-05-10T07:55:19.181Z][info] Resolved - list of all names that are equals to Petar!
+[2019-05-10T07:55:20.210Z][info] Resolved - list of all names that are equals to Petar!
+[2019-05-10T07:56:16.551Z][info] Connection is created!
+[2019-05-10T07:56:17.003Z][info] Server running!
+[2019-05-10T07:56:17.534Z][info] Resolved - list of all names that are equals to Petar!
+[2019-05-10T07:57:08.133Z][info] Resolved - list of all names that are equals to Petar!
+[2019-05-10T07:57:19.192Z][info] Connection is created!
+[2019-05-10T07:57:19.646Z][info] Server running!
+[2019-05-10T07:57:23.637Z][info] Resolved - list of all names that are equals to Petar!
+[2019-05-10T08:08:03.213Z][info] Connection is created!
+[2019-05-10T08:08:03.639Z][info] Server running!
+[2019-05-10T08:08:17.045Z][error] Reject to take last two users!MongoError: unknown top level operator: $last
+[2019-05-10T08:09:13.431Z][error] Reject to take last two users!MongoError: unknown top level operator: $last
+[2019-05-10T08:11:01.165Z][info] Connection is created!
+[2019-05-10T08:11:01.624Z][info] Server running!
+[2019-05-10T08:11:01.886Z][info] Resolved - last two users!
+[2019-05-10T08:11:04.340Z][info] Resolved - last two users!
+[2019-05-10T08:11:28.339Z][info] Connection is created!
+[2019-05-10T08:11:28.987Z][info] Server running!
+[2019-05-10T08:11:34.336Z][info] Resolved - last two users!
+[2019-05-10T08:13:08.289Z][info] Connection is created!
+[2019-05-10T08:13:08.726Z][info] Server running!
+[2019-05-10T08:13:13.002Z][info] Resolved - last two users!
+[2019-05-10T08:21:37.025Z][info] Connection is created!
+[2019-05-10T08:21:37.436Z][info] Server running!
+[2019-05-10T08:21:52.832Z][info] Connection is created!
+[2019-05-10T08:21:53.386Z][info] Server running!
+[2019-05-10T08:22:06.721Z][info] Resolved - sum and avg of ages of all users!
+[2019-05-10T08:26:45.256Z][info] Connection is created!
+[2019-05-10T08:26:45.703Z][info] Server running!
+[2019-05-10T08:26:48.162Z][info] Resolved - sum and avg of ages of all users!
+[2019-05-10T08:40:32.587Z][info] Connection is created!
+[2019-05-10T08:40:33.118Z][info] Server running!
+[2019-05-10T08:40:36.414Z][error] Reject - sum and avg of ages of all users!MongoError: Expression $subtract takes exactly 2 arguments. 1 were passed in.
+[2019-05-10T08:41:18.105Z][error] Reject - sum and avg of ages of all users!MongoError: Expression $subtract takes exactly 2 arguments. 1 were passed in.
+[2019-05-10T08:42:43.351Z][info] Connection is created!
+[2019-05-10T08:42:43.800Z][info] Server running!
+[2019-05-10T08:42:49.964Z][error] Reject - subtract age from two users!MongoError: unknown group operator '$subtract'
+[2019-05-10T08:43:12.556Z][info] Connection is created!
+[2019-05-10T08:43:12.996Z][info] Server running!
+[2019-05-10T08:43:17.287Z][error] Reject - subtract age from two users!MongoError: Expression $subtract takes exactly 2 arguments. 1 were passed in.
+[2019-05-10T08:43:46.890Z][info] Connection is created!
+[2019-05-10T08:43:47.406Z][info] Server running!
+[2019-05-10T08:44:01.383Z][error] Reject - subtract age from two users!MongoError: unknown group operator '$subtract'
+[2019-05-10T08:48:31.927Z][info] Connection is created!
+[2019-05-10T08:48:32.532Z][info] Server running!
+[2019-05-10T08:48:32.950Z][error] Reject - subtract age from two users!MongoError: The $subtract accumulator is a unary operator
+[2019-05-10T08:50:32.074Z][info] Connection is created!
+[2019-05-10T08:50:32.543Z][info] Server running!
+[2019-05-10T08:50:35.214Z][error] Reject - subtract age from two users!MongoError: The $subtract accumulator is a unary operator
+[2019-05-10T08:56:15.371Z][info] Connection is created!
+[2019-05-10T08:56:16.133Z][info] Server running!
+[2019-05-10T09:02:44.766Z][info] Connection is created!
+[2019-05-10T09:02:45.163Z][info] Server running!
+[2019-05-10T09:05:45.828Z][info] Connection is created!
+[2019-05-10T09:05:46.269Z][info] Server running!
+[2019-05-10T09:05:49.278Z][error] Reject - subtract age from two users!MongoError: The $subtract accumulator is a unary operator
+[2019-05-10T09:13:11.791Z][info] Connection is created!
+[2019-05-10T09:13:12.225Z][info] Server running!
+[2019-05-10T09:13:31.546Z][error] Reject - subtract age from two users!MongoError: The $subtract accumulator is a unary operator
+[2019-05-10T09:15:54.900Z][info] Connection is created!
+[2019-05-10T09:15:55.705Z][info] Server running!
+[2019-05-10T09:16:04.542Z][info] Connection is created!
+[2019-05-10T09:16:04.998Z][info] Server running!
+[2019-05-10T09:16:05.911Z][error] Reject - subtract age from two users!MongoError: unknown operator: $subtract
+[2019-05-10T09:17:47.989Z][info] Connection is created!
+[2019-05-10T09:17:48.453Z][info] Server running!
+[2019-05-10T09:21:15.392Z][info] Connection is created!
+[2019-05-10T09:21:15.856Z][info] Server running!
+[2019-05-10T09:21:57.037Z][info] Connection is created!
+[2019-05-10T09:21:57.522Z][info] Server running!
+[2019-05-10T09:22:29.092Z][info] Connection is created!
+[2019-05-10T09:22:29.634Z][info] Server running!
+[2019-05-10T09:22:32.932Z][info] Resolved - subtract age from two users!
+[2019-05-10T09:24:02.480Z][info] Connection is created!
+[2019-05-10T09:24:02.881Z][info] Server running!
+[2019-05-10T09:24:09.841Z][info] Resolved - subtract age from two users!
+[2019-05-10T09:25:58.769Z][info] Connection is created!
+[2019-05-10T09:25:59.246Z][info] Server running!
+[2019-05-10T09:25:59.471Z][info] Password is correct!
+[2019-05-10T09:25:59.481Z][info] Email is correct!
+[2019-05-10T09:25:59.581Z][error] Failed to add user.
+[2019-05-10T09:26:08.699Z][info] Password is correct!
+[2019-05-10T09:26:08.709Z][info] Email is correct!
+[2019-05-10T09:26:08.767Z][info] User with email - nnnuuudduuudfsf@sdfsdfsdf.com is created!
+[2019-05-10T09:26:30.574Z][info] Resolved - subtract age from two users!
+[2019-05-10T09:36:13.486Z][info] Connection is created!
+[2019-05-10T09:36:14.102Z][info] Server running!
+[2019-05-10T09:36:20.830Z][info] Resolved - subtract age from two users!
+[2019-05-10T09:37:01.664Z][info] Password is correct!
+[2019-05-10T09:37:01.676Z][info] Email is correct!
+[2019-05-10T09:37:01.708Z][info] User with email - dddnnnuuudduuudfsf@sdfsdfsdf.com is created!
+[2019-05-10T09:37:39.574Z][info] Resolved - subtract age from two users!
+[2019-05-10T09:39:53.005Z][info] Connection is created!
+[2019-05-10T09:39:53.419Z][info] Server running!
+[2019-05-10T09:40:12.916Z][info] Password is correct!
+[2019-05-10T09:40:12.926Z][info] Email is correct!
+[2019-05-10T09:40:12.955Z][info] User with email - dddnnnuuudduuudfsf@sdfsdfsdf.com is created!
+[2019-05-10T09:40:33.465Z][info] Password is correct!
+[2019-05-10T09:40:33.466Z][info] Email is correct!
+[2019-05-10T09:40:33.502Z][info] User with email - tttdfsf@sdfsdfsdf.com is created!
+[2019-05-10T09:40:47.830Z][info] Password is correct!
+[2019-05-10T09:40:47.832Z][info] Email is correct!
+[2019-05-10T09:40:47.861Z][info] User with email - ppptttdfsf@sdfsdfsdf.com is created!
+[2019-05-10T09:41:04.196Z][info] Password is correct!
+[2019-05-10T09:41:04.197Z][info] Email is correct!
+[2019-05-10T09:41:04.226Z][info] User with email - uuutttdfsf@sdfsdfsdf.com is created!
+[2019-05-10T09:41:28.103Z][info] Password is correct!
+[2019-05-10T09:41:28.104Z][info] Email is correct!
+[2019-05-10T09:41:28.141Z][info] User with email - nnntttdfsf@sdfsdfsdf.com is created!
+[2019-05-10T09:41:58.345Z][info] Password is correct!
+[2019-05-10T09:41:58.345Z][info] Email is correct!
+[2019-05-10T09:41:58.372Z][info] User with email - mmmtttdfsf@sdfsdfsdf.com is created!
+[2019-05-10T09:42:25.583Z][info] Password is correct!
+[2019-05-10T09:42:25.590Z][info] Email is correct!
+[2019-05-10T09:42:25.625Z][info] User with email - jjjtttdfsf@sdfsdfsdf.com is created!
+[2019-05-10T09:45:28.551Z][info] Connection is created!
+[2019-05-10T09:45:29.146Z][info] Server running!
+[2019-05-10T09:46:00.515Z][info] Connection is created!
+[2019-05-10T09:46:00.984Z][info] Server running!
+[2019-05-10T09:46:46.395Z][info] Resolved - subtract time from two users!
+[2019-05-10T09:49:33.620Z][info] Connection is created!
+[2019-05-10T09:49:34.074Z][info] Server running!
+[2019-05-10T09:49:37.097Z][error] Reject - subtract time from two users!MongoError: can't convert from BSON type long to Date
+[2019-05-10T09:50:34.993Z][info] Connection is created!
+[2019-05-10T09:50:35.445Z][info] Server running!
+[2019-05-10T09:50:38.428Z][info] Resolved - subtract time from two users!
+[2019-05-10T09:54:59.334Z][info] Connection is created!
+[2019-05-10T09:54:59.801Z][info] Server running!
+[2019-05-10T09:55:06.852Z][info] Resolved - subtract time from two users!
+[2019-05-10T09:56:49.731Z][info] Connection is created!
+[2019-05-10T09:56:50.209Z][info] Server running!
+[2019-05-10T09:56:59.478Z][error] Reject - year from timestamp!MongoError: Unrecognized expression '$mounth'
+[2019-05-10T09:57:00.625Z][error] Reject - year from timestamp!MongoError: Unrecognized expression '$mounth'
+[2019-05-10T09:57:44.533Z][info] Connection is created!
+[2019-05-10T09:57:45.121Z][info] Server running!
+[2019-05-10T09:57:47.366Z][info] Resolved - year from timestamp!
+[2019-05-10T09:58:41.695Z][info] Connection is created!
+[2019-05-10T09:58:42.220Z][info] Server running!
+[2019-05-10T09:58:42.729Z][error] Reject - year from timestamp!MongoError: Unrecognized expression '$day'
+[2019-05-10T09:58:43.891Z][error] Reject - year from timestamp!MongoError: Unrecognized expression '$day'
+[2019-05-10T10:00:37.394Z][info] Connection is created!
+[2019-05-10T10:00:37.899Z][info] Server running!
+[2019-05-10T10:00:38.312Z][info] Resolved - year from timestamp!
+[2019-05-10T10:12:33.164Z][info] Connection is created!
+[2019-05-10T10:12:33.607Z][info] Server running!
+[2019-05-10T10:12:38.099Z][error] Reject - year from timestamp!MongoError: Unrecognized expression '$minutes'
+[2019-05-10T10:13:07.502Z][info] Connection is created!
+[2019-05-10T10:13:08.069Z][info] Server running!
+[2019-05-10T10:13:08.972Z][info] Resolved - year from timestamp!
+[2019-05-10T10:14:08.366Z][info] Connection is created!
+[2019-05-10T10:14:08.804Z][info] Server running!
+[2019-05-10T10:14:15.779Z][info] Resolved - year from timestamp!
+[2019-05-10T10:18:51.863Z][info] Connection is created!
+[2019-05-10T10:18:52.470Z][info] Server running!
+[2019-05-10T10:18:54.610Z][info] Resolved - time from timestamp and timezone!
+[2019-05-10T10:21:29.415Z][info] Connection is created!
+[2019-05-10T10:21:29.887Z][info] Server running!
+[2019-05-10T10:21:30.289Z][error] Reject - time from timestamp and timezone!MongoError: missing 'date' argument to $hour, provided: $hour: { timezone: "Europe/Belgrade" }
+[2019-05-10T10:23:08.763Z][info] Connection is created!
+[2019-05-10T10:23:09.497Z][info] Server running!
+[2019-05-10T10:23:51.642Z][info] Connection is created!
+[2019-05-10T10:23:52.074Z][info] Server running!
+[2019-05-10T10:24:11.223Z][info] Resolved - last two users!
+[2019-05-10T10:30:04.023Z][info] Connection is created!
+[2019-05-10T10:30:04.549Z][info] Server running!
+[2019-05-10T10:31:15.762Z][info] Connection is created!
+[2019-05-10T10:31:16.234Z][info] Server running!
+[2019-05-10T10:31:16.916Z][error] Reject to take last two users!MongoError: Argument to $skip must be a number not a object
+[2019-05-10T10:32:25.509Z][info] Connection is created!
+[2019-05-10T10:32:25.915Z][info] Server running!
+[2019-05-10T10:32:34.535Z][info] Connection is created!
+[2019-05-10T10:32:35.067Z][info] Server running!
+[2019-05-10T10:32:35.468Z][error] Reject to take last two users!MongoError: Argument to $skip must be a number not a object
+[2019-05-10T10:33:34.556Z][info] Connection is created!
+[2019-05-10T10:33:34.972Z][info] Server running!
+[2019-05-10T10:33:37.668Z][error] Reject to take last two users!MongoError: Argument to $skip must be a number not a object
+[2019-05-10T10:34:17.713Z][info] Connection is created!
+[2019-05-10T10:34:18.177Z][info] Server running!
+[2019-05-10T10:34:18.336Z][error] Reject to take last two users!MongoError: Argument to $skip must be a number not a object
+[2019-05-10T10:42:15.102Z][error] Reject to take last two users!MongoError: Argument to $skip must be a number not a object
+[2019-05-10T10:42:43.578Z][info] Connection is created!
+[2019-05-10T10:42:44.517Z][info] Server running!
+[2019-05-10T10:42:45.659Z][info] Resolved - last two users!
+[2019-05-10T10:43:17.972Z][info] Connection is created!
+[2019-05-10T10:43:18.446Z][info] Server running!
+[2019-05-10T10:43:20.500Z][error] Reject to take last two users!MongoError: Argument to $skip must be a number not a object
+[2019-05-10T10:44:18.526Z][info] Connection is created!
+[2019-05-10T10:44:19.252Z][info] Server running!
+[2019-05-10T10:44:20.538Z][error] Reject to take last two users!MongoError: Argument to $skip must be a number not a object
+[2019-05-10T10:44:21.651Z][error] Reject to take last two users!MongoError: Argument to $skip must be a number not a object
+[2019-05-10T10:44:22.285Z][error] Reject to take last two users!MongoError: Argument to $skip must be a number not a object
+[2019-05-10T10:44:22.692Z][error] Reject to take last two users!MongoError: Argument to $skip must be a number not a object
+[2019-05-10T10:45:09.714Z][info] Connection is created!
+[2019-05-10T10:45:10.120Z][info] Server running!
+[2019-05-10T10:45:13.648Z][error] Reject to take last two users!MongoError: Argument to $skip must be a number not a object
+[2019-05-10T10:45:14.529Z][error] Reject to take last two users!MongoError: Argument to $skip must be a number not a object
+[2019-05-10T10:45:51.549Z][info] Connection is created!
+[2019-05-10T10:45:52.133Z][info] Server running!
+[2019-05-10T10:45:55.394Z][error] Reject to take last two users!MongoError: Argument to $skip must be a number not a object
+[2019-05-10T10:48:11.130Z][info] Connection is created!
+[2019-05-10T10:48:11.656Z][info] Server running!
+[2019-05-10T12:02:19.824Z][info] Connection is created!
+[2019-05-10T12:02:20.446Z][info] Server running!

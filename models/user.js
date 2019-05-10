@@ -43,10 +43,17 @@ const userSchema = new Schema({
         required: true,
         validate: [validateEmail, 'Fill valid email address']
     },
+    age: {
+        type: Number
+    },
+    time: {
+        type: Date,
+        default: Date.now
+    },
     salt: {
         type: String
     }
-}, {collection: 'users3'});
+}, {collection: 'users5'});
 
 userSchema.pre('save', function (next) {
     if (this.password && this.isModified('password') && this.password.length >= 8) {
@@ -69,5 +76,5 @@ userSchema.statics.validPassword = function (password, hashpass, salt) {
     return hashpass === hash;
 };
 
-const User = mongoose.model('user', userSchema, 'users3');
+const User = mongoose.model('user', userSchema, 'users5');
 module.exports = User;

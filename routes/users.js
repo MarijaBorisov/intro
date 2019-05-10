@@ -16,5 +16,19 @@ router.post('/add', sc.createUser);
 //router.get('/filter', sc.filterByRegex);
 //router.get('/filterSpecificNames', sc.filterByRegexNotLikeSpecificNames);
 //router.get('/filterIfNotExists', sc.changeNameIfNotExists);
-router.get('/fieldWhichExist', sc.showFieldsWhichExist);
+//router.get('/fieldWhichExist', sc.showFieldsWhichExist);
+//router.get('/fieldAge', sc.showFieldsContainsFieldAge);
+//router.get('/allNames', sc.allNames);
+//router.get('/eqToSpecific', sc.nameWhichIsNotSpecificName);
+router.get('/lastTwo', sc.lastTwo);
+//router.get('/sumAge', sc.sumAndAvgOfAges);
+//router.get('/subtractAge', sc.subtractLastUsersAndFirstUsersYears);
+//router.get('/subtractLastTwoAge', sc.subtractLastTwoUsersYears);
+//router.get('/subtractTime', sc.timeBetweenTwoTimestamps);
+//router.get('/year', sc.yearFromTimestamp);
+//router.get('/timeForTimezone', sc.yearForTimezone);
+
+
+
 module.exports = router;
+

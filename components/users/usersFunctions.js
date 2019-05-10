@@ -180,9 +180,7 @@ var groupUserByName = (req,res,next) => {
 
 var filterByRegex = (req,res,next) => {
 
-   User.aggregate(
-      [
-     
+   User.aggregate([
       { $match: { name:  { $regex: /^Ta/} } },
       { $project: { name: 1 } }
    ])
@@ -197,8 +195,7 @@ var filterByRegex = (req,res,next) => {
 }
 var filterByRegexNotLikeSpecificNames = (req,res,next) => {
 
-   User.aggregate(
-   [
+   User.aggregate([
      { $match: { name:  { $nin: [/^Uros/i, /^Petar/i] } } },
      { $project: { name: 1 } }
    ])
@@ -213,8 +210,7 @@ var filterByRegexNotLikeSpecificNames = (req,res,next) => {
 }
 var changeNameIfNotExists = (req,res,next) => {
 
-   User.aggregate(
-   [
+   User.aggregate([
       { $project: { name: { $cond: { if: { $eq: ["$name", 'Tamara'] }, then: 'newName', else: '$name' }} } }
    ])
    .then(user => {
@@ -227,8 +223,7 @@ var changeNameIfNotExists = (req,res,next) => {
    })
 }
 var showFieldsWhichExist = (req,res,next) => {
-   User.aggregate(
-      [
+   User.aggregate([
          { $match: { name: { $exists: true}}},
          { $project: { name: 1 , email: 1 } }
       ])
@@ -241,6 +236,189 @@ var showFieldsWhichExist = (req,res,next) => {
          logger.error('Reject to take users and show all fields!' + err)
       })
 }
+var showFieldsContainsFieldAge = (req,res,next) => {
+   User.aggregate([
+         { $match: { age: { $exists: true}}},
+         { $project: { age: 1 , name: 1 } }
+      ])
+      .then(user => {
+         res.send(user)
+         logger.info('Resolved - users with field age!')
+      })
+      .catch(err => {
+         res.send('Reject to take users with field age!')
+         logger.error('Reject to take users with field age!' + err)
+      })
+}
+var allNames = (req,res,next) => {
+   User.aggregate([
+        { $project: {  name: 1 } }
+      ])
+      .then(user => {
+         res.send(user)
+         logger.info('Resolved - list of all names!')
+      })
+      .catch(err => {
+         res.send('Reject to take list of all users names!')
+         logger.error('Reject to take list of all users names!' + err)
+      })
+}
+
+var nameWhichIsNotSpecificName = (req,res,next) => {
+   User.aggregate([
+         { $match: { name: { $eq: 'Petar'}}},
+         //{ $match: { name: { $ne: 'Petar'}}}, 'List of all names that are not equals to Petar'
+         { $project: {  name: 1 } }
+      ])
+      .then(user => {
+         res.send(user)
+         logger.info('Resolved - list of all names that are equals to Petar!')
+      })
+      .catch(err => {
+         res.send('Reject to take list of all names that are equals to Petar!')
+         logger.error('Reject to take list of all names that are equals to Petar!' + err)
+      })
+}
+
+var lastTwo = (req,res,next) => {
+   User.aggregate([
+         {_id : -1 },
+         { $limit: 2 },
+         { $project: {  _id: 1 , name: 1 } }
+      ])
+      .then(user => {
+         res.send(user)
+         logger.info('Resolved - last two users!')
+      })
+      .catch(err => {
+         res.send('Reject to take last two users!')
+         logger.error('Reject to take last two users!' + err)
+      })
+}
+
+var sumAndAvgOfAges = (req,res,next) => {
+   User.aggregate([
+         
+         { $group: { _id: 1, sumAge: { $sum: "$age" }, avgAge: { $avg: "$age" } } }
+         
+      ])
+      .then(user => {
+         res.send(user)
+         logger.info('Resolved - sum and avg of ages of all users!')
+      })
+      .catch(err => {
+         res.send('Reject - sum and avg of ages of all users!')
+         logger.error('Reject - sum and avg of ages of all users!' + err)
+      })
+}
+
+var subtractLastUsersAndFirstUsersYears = (req,res,next) => {
+   User.aggregate([
+         
+         { $group: { _id: 1, 
+            first: { $first: "$$ROOT"}, 
+            last: { $last: "$$ROOT"}  
+         } },
+         { $project: { _id: 1, 
+            ageDifference: { $abs: { $subtract: [ "$first.age", "$last.age" ] } }
+         } }
+      
+      ])
+      .then(user => {
+         res.send(user)
+         logger.info('Resolved - subtract age from two users!')
+      })
+      .catch(err => {
+         res.send('Reject - subtract age from two users!')
+         logger.error('Reject - subtract age from two users!' + err)
+      })
+}
+
+var subtractLastTwoUsersYears = (req,res,next) => {
+   User.aggregate([
+         { $sort: {_id : -1 } },
+         { $limit: 2 },
+         { $group: { _id: 1, 
+            first: { $first: "$$ROOT"}, 
+            last: { $last: "$$ROOT"}  
+         } },
+         { $project: { _id: 1, 
+            ageDifference: { $abs: { $subtract: [ "$first.age", "$last.age" ] } }
+         } }
+      
+      ])
+      .then(user => {
+         res.send(user)
+         logger.info('Resolved - subtract age from two users!')
+      })
+      .catch(err => {
+         res.send('Reject - subtract age from two users!')
+         logger.error('Reject - subtract age from two users!' + err)
+      })
+}
+
+var timeBetweenTwoTimestamps = (req,res,next) => {
+   User.aggregate([
+         { $sort: {_id : -1 } },
+         { $limit: 2 },
+         { $group: { _id: 1, 
+            first: { $first: "$$ROOT"}, 
+            last: { $last: "$$ROOT"}  
+         } },
+         { $project: { _id: 1, 
+            ageDifference: { $abs: { $subtract: [ { $second: "$first.time"}, { $second: "$last.time" } ] } } 
+         } }
+      
+      ])
+      .then(user => {
+         res.send(user)
+         logger.info('Resolved - subtract time from two users!')
+      })
+      .catch(err => {
+         res.send('Reject - subtract time from two users!')
+         logger.error('Reject - subtract time from two users!' + err)
+      })
+}
+
+var yearFromTimestamp = (req,res,next) => {
+   User.aggregate([
+         
+        { $project: { _id: 1, year: { $year: "$time"}, month: { $month: "$time"} } }
+        
+      ])
+      .then(user => {
+         res.send(user)
+         logger.info('Resolved - year from timestamp!')
+      })
+      .catch(err => {
+         res.send('Reject - year from timestamp!')
+         logger.error('Reject - year from timestamp!' + err)
+      })
+}
+
+var yearForTimezone = (req,res,next) => {
+   User.aggregate([
+         
+        { $project: { _id: 1, time:1, 
+         timeHours:  
+            { $hour : { date: "$time", timezone: 'Europe/Belgrade'} } , 
+         timeMinutes:  
+            { $minute: { date: "$time", timezone: 'Europe/Belgrade'} } , 
+         timeSeconds:  
+            { $second : { date: "$time", timezone: 'Europe/Belgrade'} } 
+         } }
+        
+      ])
+      .then(user => {
+         res.send(user)
+         logger.info('Resolved - time from timestamp and timezone!')
+      })
+      .catch(err => {
+         res.send('Reject - time from timestamp and timezone!')
+         logger.error('Reject - time from timestamp and timezone!' + err)
+      })
+}
+
 exports.userComponents = {
     getUsersPage,
     createUser,
@@ -259,6 +437,16 @@ exports.userComponents = {
     filterByRegex,
     filterByRegexNotLikeSpecificNames,
     changeNameIfNotExists,
-    showFieldsWhichExist
+    showFieldsWhichExist,
+    showFieldsContainsFieldAge,
+    allNames,
+    nameWhichIsNotSpecificName,
+    lastTwo,
+    sumAndAvgOfAges,
+    subtractLastUsersAndFirstUsersYears,
+    subtractLastTwoUsersYears,
+    timeBetweenTwoTimestamps,
+    yearForTimezone,
+    yearFromTimestamp
     
 }

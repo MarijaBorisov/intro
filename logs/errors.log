@@ -126,3 +126,36 @@
 [2019-05-08T14:46:28.533Z][error] Reject - filter users by firstname with regex! MongoError: Unrecognized pipeline stage name: '$cond'
 [2019-05-08T14:46:29.660Z][error] Reject - filter users by firstname with regex! MongoError: Unrecognized pipeline stage name: '$cond'
 [2019-05-08T15:30:19.497Z][error] Failed to add user.
+[2019-05-10T08:08:17.045Z][error] Reject to take last two users!MongoError: unknown top level operator: $last
+[2019-05-10T08:09:13.431Z][error] Reject to take last two users!MongoError: unknown top level operator: $last
+[2019-05-10T08:40:36.414Z][error] Reject - sum and avg of ages of all users!MongoError: Expression $subtract takes exactly 2 arguments. 1 were passed in.
+[2019-05-10T08:41:18.105Z][error] Reject - sum and avg of ages of all users!MongoError: Expression $subtract takes exactly 2 arguments. 1 were passed in.
+[2019-05-10T08:42:49.964Z][error] Reject - subtract age from two users!MongoError: unknown group operator '$subtract'
+[2019-05-10T08:43:17.287Z][error] Reject - subtract age from two users!MongoError: Expression $subtract takes exactly 2 arguments. 1 were passed in.
+[2019-05-10T08:44:01.383Z][error] Reject - subtract age from two users!MongoError: unknown group operator '$subtract'
+[2019-05-10T08:48:32.950Z][error] Reject - subtract age from two users!MongoError: The $subtract accumulator is a unary operator
+[2019-05-10T08:50:35.214Z][error] Reject - subtract age from two users!MongoError: The $subtract accumulator is a unary operator
+[2019-05-10T09:05:49.278Z][error] Reject - subtract age from two users!MongoError: The $subtract accumulator is a unary operator
+[2019-05-10T09:13:31.546Z][error] Reject - subtract age from two users!MongoError: The $subtract accumulator is a unary operator
+[2019-05-10T09:16:05.911Z][error] Reject - subtract age from two users!MongoError: unknown operator: $subtract
+[2019-05-10T09:25:59.581Z][error] Failed to add user.
+[2019-05-10T09:49:37.097Z][error] Reject - subtract time from two users!MongoError: can't convert from BSON type long to Date
+[2019-05-10T09:56:59.478Z][error] Reject - year from timestamp!MongoError: Unrecognized expression '$mounth'
+[2019-05-10T09:57:00.625Z][error] Reject - year from timestamp!MongoError: Unrecognized expression '$mounth'
+[2019-05-10T09:58:42.729Z][error] Reject - year from timestamp!MongoError: Unrecognized expression '$day'
+[2019-05-10T09:58:43.891Z][error] Reject - year from timestamp!MongoError: Unrecognized expression '$day'
+[2019-05-10T10:12:38.099Z][error] Reject - year from timestamp!MongoError: Unrecognized expression '$minutes'
+[2019-05-10T10:21:30.289Z][error] Reject - time from timestamp and timezone!MongoError: missing 'date' argument to $hour, provided: $hour: { timezone: "Europe/Belgrade" }
+[2019-05-10T10:31:16.916Z][error] Reject to take last two users!MongoError: Argument to $skip must be a number not a object
+[2019-05-10T10:32:35.468Z][error] Reject to take last two users!MongoError: Argument to $skip must be a number not a object
+[2019-05-10T10:33:37.668Z][error] Reject to take last two users!MongoError: Argument to $skip must be a number not a object
+[2019-05-10T10:34:18.336Z][error] Reject to take last two users!MongoError: Argument to $skip must be a number not a object
+[2019-05-10T10:42:15.102Z][error] Reject to take last two users!MongoError: Argument to $skip must be a number not a object
+[2019-05-10T10:43:20.500Z][error] Reject to take last two users!MongoError: Argument to $skip must be a number not a object
+[2019-05-10T10:44:20.538Z][error] Reject to take last two users!MongoError: Argument to $skip must be a number not a object
+[2019-05-10T10:44:21.651Z][error] Reject to take last two users!MongoError: Argument to $skip must be a number not a object
+[2019-05-10T10:44:22.285Z][error] Reject to take last two users!MongoError: Argument to $skip must be a number not a object
+[2019-05-10T10:44:22.692Z][error] Reject to take last two users!MongoError: Argument to $skip must be a number not a object
+[2019-05-10T10:45:13.648Z][error] Reject to take last two users!MongoError: Argument to $skip must be a number not a object
+[2019-05-10T10:45:14.529Z][error] Reject to take last two users!MongoError: Argument to $skip must be a number not a object
+[2019-05-10T10:45:55.394Z][error] Reject to take last two users!MongoError: Argument to $skip must be a number not a object
