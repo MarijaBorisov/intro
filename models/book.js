@@ -9,12 +9,17 @@ const BookSchema = new Schema({
     },
     author: {
         type: String
+
     },
     price: {
         type: Number
     },
+    qty: {
+        type: Number
+    },
+    time: { type: Date, default: Date.now }
 
 })
 
-const Book = mongoose.model('bookStore', BookSchema);
+const Book = mongoose.model('bookStore3', BookSchema);
 module.exports = Book;

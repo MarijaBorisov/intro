@@ -65,3 +65,64 @@
 [2019-05-08T14:37:54.965Z][error] - Cannot find authors
 [2019-05-08T14:38:19.137Z][error] - Cannot find authors
 [2019-05-08T14:46:09.065Z][error] - Cannot find authors
+[2019-05-10T08:26:36.019Z][error] - Cannot find books
+[2019-05-10T08:26:41.965Z][error] - Cannot find books
+[2019-05-10T08:45:10.142Z][error] - Cannot find authors
+[2019-05-10T08:45:52.249Z][error] - Cannot find authors - MongoError: The $multiply accumulator is a unary operator
+[2019-05-10T09:22:15.284Z][error] - Cannot find authors
+[2019-05-10T09:58:44.489Z][error] - Cannot find authors
+[2019-05-10T09:59:11.836Z][error] - Cannot find authors
+[2019-05-10T10:03:49.234Z][error] - Cannot find authors
+[2019-05-10T10:03:51.152Z][error] - Cannot find authors
+[2019-05-10T10:06:57.575Z][error] - Cannot find authors
+[2019-05-10T10:07:08.305Z][error] - Cannot find authors
+[2019-05-10T10:08:32.779Z][error] - Cannot find authors
+[2019-05-10T10:10:10.604Z][error] - Cannot find authors
+[2019-05-10T10:10:49.833Z][error] - Cannot find authors
+[2019-05-10T10:10:51.317Z][error] - Cannot find authors
+[2019-05-10T10:14:09.070Z][error] - Cannot find authors
+[2019-05-10T10:14:10.093Z][error] - Cannot find authors
+[2019-05-10T10:14:10.616Z][error] - Cannot find authors
+[2019-05-10T10:14:11.161Z][error] - Cannot find authors
+[2019-05-10T10:15:59.842Z][error] - Cannot find authors
+[2019-05-10T10:16:53.709Z][error] - Cannot find authors
+[2019-05-10T10:17:57.045Z][error] - Cannot find authors
+[2019-05-10T10:43:27.084Z][error] - Cannot get last two docs
+[2019-05-10T10:43:41.895Z][error] - Cannot get last two docs
+[2019-05-10T10:43:53.878Z][error] - Cannot get last two docs
+[2019-05-10T10:44:10.401Z][error] - Cannot get last two docs
+[2019-05-10T10:45:26.109Z][error] - Cannot get last two docs
+[2019-05-10T10:45:39.828Z][error] - Cannot get last two docs
+[2019-05-10T10:45:56.202Z][error] - Cannot get last two docs - MongoError: Argument to $skip cannot be negative
+[2019-05-10T10:46:16.552Z][error] - Cannot get last two docs - MongoError: Argument to $skip cannot be negative
+[2019-05-10T10:46:23.953Z][error] - Cannot get last two docs - MongoError: Argument to $skip cannot be negative
+[2019-05-10T10:47:15.644Z][error] - Cannot get last two docs - MongoError: Argument to $skip must be a number not a object
+[2019-05-10T10:47:18.301Z][error] - Cannot get last two docs - MongoError: Argument to $skip must be a number not a object
+[2019-05-10T10:47:41.592Z][error] - Cannot get last two docs - MongoError: Argument to $skip must be a number not a object
+[2019-05-10T10:48:21.976Z][error] - Cannot get last two docs - MongoError: the count field must be a non-empty string
+[2019-05-10T10:48:59.440Z][error] - Cannot get last two docs - MongoError: the count field must be a non-empty string
+[2019-05-10T10:49:01.947Z][error] - Cannot get last two docs - MongoError: the count field must be a non-empty string
+[2019-05-10T11:26:26.021Z][error] - Cannot get last two docs - MongoError: the count field must be a non-empty string
+[2019-05-10T11:28:23.305Z][error] - Cannot get last two docs - MongoError: Argument to $skip cannot be negative
+[2019-05-10T11:28:42.454Z][error] - Cannot get last two docs - MongoError: Argument to $skip cannot be negative
+[2019-05-10T11:28:45.865Z][error] - Cannot get last two docs - MongoError: Argument to $skip cannot be negative
+[2019-05-10T11:31:09.509Z][error] - Cannot get last two docs - MongoError: Argument to $skip must be a number not a string
+[2019-05-10T11:31:18.890Z][error] - Cannot get last two docs - MongoError: Argument to $skip must be a number not a string
+[2019-05-10T11:38:53.848Z][error] - Cannot get last two docs - MongoError: Argument to $skip must be a number not a string
+[2019-05-10T11:40:41.753Z][error] - Cannot get last two docs - MongoError: Unrecognized expression '$count'
+[2019-05-10T11:44:35.734Z][error] - Cannot get last two docs - MongoError: The field 'name' must be an accumulator object
+[2019-05-10T11:44:37.974Z][error] - Cannot get last two docs - MongoError: The field 'name' must be an accumulator object
+[2019-05-10T11:45:05.550Z][error] - Cannot get last two docs - MongoError: The field 'name' must be an accumulator object
+[2019-05-10T11:45:06.705Z][error] - Cannot get last two docs - MongoError: The field 'name' must be an accumulator object
+[2019-05-10T11:45:51.193Z][error] - Cannot get last two docs - MongoError: The field 'price' must be an accumulator object
+[2019-05-10T11:47:47.480Z][error] - Cannot get last two docs - MongoError: a group specification must include an _id
+[2019-05-10T11:47:48.820Z][error] - Cannot get last two docs - MongoError: a group specification must include an _id
+[2019-05-10T11:48:21.712Z][error] - Cannot get last two docs - MongoError: The field 'name' must be an accumulator object
+[2019-05-10T11:48:22.666Z][error] - Cannot get last two docs - MongoError: The field 'name' must be an accumulator object
+[2019-05-10T11:48:23.780Z][error] - Cannot get last two docs - MongoError: The field 'name' must be an accumulator object
+[2019-05-10T12:20:03.754Z][error] - Cannot get last two docs - MongoError: Argument to $skip must be a number not a string
+[2019-05-10T12:21:53.718Z][error] - Cannot get last two docs - MongoError: Argument to $skip must be a number not a string
+[2019-05-10T12:22:18.000Z][error] - Cannot get last two docs - MongoError: Argument to $skip must be a number not a string
+[2019-05-10T12:31:35.536Z][error] - Cannot get last two docs - MongoError: Unrecognized expression '$push'
+[2019-05-10T12:35:29.531Z][error] - Cannot get last two docs - MongoError: The $push accumulator is a unary operator
+[2019-05-10T12:36:01.154Z][error] - Cannot get last two docs - MongoError: The $push accumulator is a unary operator

@@ -50,12 +50,30 @@ module.exports.sumPricesByAuthor = (req, res, next) => {
   )
     .then(function (books) {
 
-      logger.info("Counting all books by author... ");
+      logger.info("Sum all books by author... ");
       res.send(books);
 
     }).catch(function (err) {
-      logger.error("Cannot find books");
-      res.status(404).send("Cannot find books");
+      logger.error("Cannot sum books");
+      res.status(404).send("Cannot sum books");
+    })
+};
+
+module.exports.avgPricesAndSum = (req, res, next) => {
+
+  Book.aggregate(
+    [
+      { $group: { _id: 1, avgPrices: { $avg: "$price" }, sumPrices: { $sum: "$price" } } }
+    ]
+  )
+    .then(function (books) {
+
+      logger.info("Avg and sum prices... ");
+      res.send(books);
+
+    }).catch(function (err) {
+      logger.error("Cannot sum and get avg of books");
+      res.status(404).send("Cannot sum and get avg of books");
     })
 };
 
@@ -77,21 +95,62 @@ module.exports.getAuthorNames = (req, res, next) => {
     })
 };
 
-module.exports.getAuthorNames = (req, res, next) => {
+module.exports.getLastTwoDoc = (req, res, next) => {
 
   Book.aggregate(
     [
-      { $project: { author: 1 } }
+      // { $sort: { _id: -1 } },
+      // { $limit: 2 },
+      // { $match: {} },
+
+      //array('$match' => $document),
+      //   array('$group' => array('_id' => '$book_id', 'date' => array('$max' => '$book_viewed'),  'views' => array('$sum' => 1))),
+      //   array('$sort' => $sort),
+
+      // // get total, AND preserve the results
+      //   array('$group' => array('_id' => null, 'total' => array( '$sum' => 1 ), 'results' => array( '$push' => '$$ROOT' ) ),
+      // // apply limit and offset
+      //   array('$project' => array( 'total' => 1, 'results' => array( '$slice' => array( '$results', $skip, $length ) ) ) )
+      // ))
+
+
+      { $match: {} },
+      { $group: { _id: null, total: { $sum: 1 }, result: { $push: "$$ROOT" } } },
+      //{ $project: { _id: 1, name: "$result.", author: 1, skip: { $abs: { $subtract: ["$total", 2] } } } },
+      // { $count: "numberOfBooks" },
+      { $project: { _id: 1, result: "$result", skip: { $abs: { $subtract: ["$total", 2] } } } },
+
+      // { $group: { _id: null, result2: { $push: ["$result", "$skip"] }} }
+
+      //{ $skip: "$skip" }
+      // { $project: { _id: 1, numberOfBooks: 1 } }
     ]
   )
     .then(function (books) {
 
-      logger.info("All author names... ");
+      logger.info("Getting last two docs... ");
       res.send(books);
 
     }).catch(function (err) {
-      logger.error("Cannot find authors");
-      res.status(404).send("Cannot find authors");
+      logger.error("Cannot get last two docs - " + err);
+      res.status(404).send("Cannot get last two docs");
+    })
+};
+module.exports.multiplyPrices = (req, res, next) => {
+
+  Book.aggregate(
+    [
+      { $project: { _id: 1, name: 1, totalPrice: { $multiply: ["$price", "$qty"] } } }
+    ]
+  )
+    .then(function (books) {
+
+      logger.info("Getting total price for book... ");
+      res.send(books);
+
+    }).catch(function (err) {
+      logger.error("Cannot get total price - " + err);
+      res.status(404).send("Cannot get total price");
     })
 };
 module.exports.getAuthorByFilter = (req, res, next) => {
@@ -134,7 +193,25 @@ module.exports.getAllAuthorsThatAreNotEqualToPattern = (req, res, next) => {
       res.status(404).send("Cannot find authors" + err);
     })
 };
+module.exports.getAllAuthorsThatAreEqualToPattern = (req, res, next) => {
 
+  Book.aggregate(
+    [
+      { $match: { author: { $eq: 'mika' } } },
+      { $project: { author: 1 } }
+
+    ]
+  )
+    .then(function (books) {
+
+      logger.info("All author names... ");
+      res.send(books);
+
+    }).catch(function (err) {
+      logger.error("Cannot find authors");
+      res.status(404).send("Cannot find authors" + err);
+    })
+};
 
 module.exports.getAllAuthorsAndChangeNameIfEqualToPattern = (req, res, next) => {
 
@@ -161,6 +238,97 @@ module.exports.getAllAuthorsThatHavePrice = (req, res, next) => {
       { $match: { price: { $exists: true } } },
       { $project: { _id: 1, author: 1, price: 1 } }
     ]
+  )
+    .then(function (books) {
+
+      logger.info("All author names... ");
+      res.send(books);
+
+    }).catch(function (err) {
+      logger.error("Cannot find authors");
+      res.status(404).send("Cannot find authors" + err);
+    })
+};
+
+module.exports.getFirstAndLastDocs = (req, res, next) => {
+
+  Book.aggregate(
+    [{ $sort: { _id: -1 } },
+    { $limit: 2 },
+    {
+      $group: {
+        _id: null,
+        first: { $first: "$$ROOT" },
+        last: { $last: "$$ROOT" }
+      }
+
+
+    },
+    { $project: { _id: 1, name: 1, priceDifference: { $abs: { $subtract: ["$first.price", "$last.price"] } } } }
+    ]
+  )
+    .then(function (books) {
+
+      logger.info("All author names... ");
+      res.send(books);
+
+    }).catch(function (err) {
+      logger.error("Cannot find authors");
+      res.status(404).send("Cannot find authors" + err);
+    })
+};
+
+module.exports.getTimeDifferneceBetweenLastTwo = (req, res, next) => {
+
+  Book.aggregate(
+    [{ $sort: { _id: -1 } },
+    { $limit: 2 },
+    {
+      $group: {
+        _id: null,
+        first: { $first: "$$ROOT" },
+        last: { $last: "$$ROOT" }
+      }
+
+
+    },
+    { $project: { _id: 1, name: 1, timeDifference: { $abs: { $subtract: ["$first.time", "$last.time"] } } } }
+    ]
+  )
+    .then(function (books) {
+
+      logger.info("All author names... ");
+      res.send(books);
+
+    }).catch(function (err) {
+      logger.error("Cannot find authors");
+      res.status(404).send("Cannot find authors" + err);
+    })
+};
+module.exports.getYearFromTimestamp = (req, res, next) => {
+
+  Book.aggregate([
+
+    { $project: { _id: 1, name: 1, year: { $hour: "$time" } } }
+  ]
+  )
+    .then(function (books) {
+
+      logger.info("All author names... ");
+      res.send(books);
+
+    }).catch(function (err) {
+      logger.error("Cannot find authors");
+      res.status(404).send("Cannot find authors" + err);
+    })
+};
+module.exports.getLocalTime = (req, res, next) => {
+
+  Book.aggregate([
+
+    { $project: { _id: 1, hour: { $hour: { date: "$time", timezone: 'Europe/Belgrade' } }, minutes: { $minute: { date: "$time", timezone: 'Europe/Belgrade' } }, seconds: { $second: { date: "$time", timezone: 'Europe/Belgrade' } } } }
+
+  ]
   )
     .then(function (books) {
 
