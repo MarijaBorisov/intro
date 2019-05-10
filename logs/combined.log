@@ -1,59 +1,67 @@
-djeka{"message":"GET fired: get one user-find by id. Tue May 07 2019 12:36:09 GMT+0200 (Central European Summer Time)","level":"info","service":"user-service"}
-{"message":"POST fired: login user djeka2@eng.it , Tue May 07 2019 12:36:30 GMT+0200 (Central European Summer Time)","level":"info","service":"user-service"}
-{"message":"POST fired: login user djeka2@eng.it , Tue May 07 2019 12:38:00 GMT+0200 (Central European Summer Time)","level":"info","service":"user-service"}
-{"message":"POST fired: login user djeka2@eng.it , Tue May 07 2019 14:29:46 GMT+0200 (Central European Summer Time)","level":"info","service":"user-service"}
-{"message":"POST fired: login user djeka2@eng.it , Tue May 07 2019 14:30:38 GMT+0200 (Central European Summer Time)","level":"info","service":"user-service"}
-{"message":"POST fired: login user djeka2@eng.it , Tue May 07 2019 14:31:10 GMT+0200 (Central European Summer Time)","level":"info","service":"user-service"}
-{"message":"POST fired: login user djeka2@eng.it , Tue May 07 2019 14:39:29 GMT+0200 (Central European Summer Time)","level":"info","service":"user-service"}
-{"message":"POST fired: login user djeka2@eng.it , Tue May 07 2019 14:49:22 GMT+0200 (Central European Summer Time)","level":"info","service":"user-service"}
-{"message":"POST fired: login user undefined , Tue May 07 2019 15:04:54 GMT+0200 (Central European Summer Time)","level":"info","service":"user-service"}
-{"message":"POST fired: login user undefined , Tue May 07 2019 15:05:21 GMT+0200 (Central European Summer Time)","level":"info","service":"user-service"}
-{"message":"GET fired: get one user-find by id. Tue May 07 2019 15:05:40 GMT+0200 (Central European Summer Time)","level":"info","service":"user-service"}
-{"message":"POST fired: login user djeka2@eng.it , Tue May 07 2019 15:06:00 GMT+0200 (Central European Summer Time)","level":"info","service":"user-service"}
-{"message":"GET fired: get one user-find by id. Tue May 07 2019 15:07:38 GMT+0200 (Central European Summer Time)","level":"info","service":"user-service"}
-{"message":"POST fired: login user djeka2@eng.it , Tue May 07 2019 15:07:44 GMT+0200 (Central European Summer Time)","level":"info","service":"user-service"}
-{"message":"POST fired: login user djeka2@eng.it , Tue May 07 2019 15:07:49 GMT+0200 (Central European Summer Time)","level":"info","service":"user-service"}
-{"message":"POST fired: login user djeka2@eng.it , Tue May 07 2019 15:09:31 GMT+0200 (Central European Summer Time)","level":"info","service":"user-service"}
-{"level":"info","message":"GET fired: show all users from database. Tue May 07 2019 15:10:29 GMT+0200 (Central European Summer Time)"}
-{"message":"POST fired: login user djeka@eng.it , Tue May 07 2019 15:39:38 GMT+0200 (Central European Summer Time)","level":"info","service":"user-service"}
-{"message":"POST fired: login user djeka@eng.it , Tue May 07 2019 15:40:06 GMT+0200 (Central European Summer Time)","level":"info","service":"user-service"}
-{"message":"POST fired: login user djeka@eng.it , Tue May 07 2019 15:40:35 GMT+0200 (Central European Summer Time)","level":"info","service":"user-service"}
-{"message":"POST fired: login user djeka2@eng.it , Tue May 07 2019 15:41:22 GMT+0200 (Central European Summer Time)","level":"info","service":"user-service"}
-{"message":"POST fired: login user djeka2@eng.it , Tue May 07 2019 15:42:14 GMT+0200 (Central European Summer Time)","level":"info","service":"user-service"}
-{"message":"POST fired: login user djeka2@eng.it , Tue May 07 2019 15:44:04 GMT+0200 (Central European Summer Time)","level":"info","service":"user-service"}
-{"level":"info","message":"GET fired: show all users from database. Tue May 07 2019 15:44:24 GMT+0200 (Central European Summer Time)"}
-{"level":"info","message":"GET fired: show all users from database. Tue May 07 2019 15:44:39 GMT+0200 (Central European Summer Time)"}
-{"level":"info","message":"GET fired: show all users from database. Tue May 07 2019 15:46:09 GMT+0200 (Central European Summer Time)"}
-{"level":"info","message":"GET fired: show all users from database. Tue May 07 2019 15:46:28 GMT+0200 (Central European Summer Time)"}
-{"message":"POST fired: login user djeka@eng.it , Tue May 07 2019 16:25:44 GMT+0200 (Central European Summer Time)","level":"info","service":"user-service"}
-{"message":"POST fired: login user djeka@eng.it , Tue May 07 2019 16:25:55 GMT+0200 (Central European Summer Time)","level":"info","service":"user-service"}
-{"message":"POST fired: login user djeka@eng.it , Tue May 07 2019 16:26:30 GMT+0200 (Central European Summer Time)","level":"info","service":"user-service"}
-{"message":"POST fired: login user djeka@eng.it , Tue May 07 2019 16:26:50 GMT+0200 (Central European Summer Time)","level":"info","service":"user-service"}
-{"message":"POST fired: login user djeka@eng.it , Tue May 07 2019 16:28:39 GMT+0200 (Central European Summer Time)","level":"info","service":"user-service"}
-{"message":"POST fired: login user djeka@eng.it , Tue May 07 2019 16:28:45 GMT+0200 (Central European Summer Time)","level":"info","service":"user-service"}
-{"message":"POST fired: login user djeka@eng.it , Tue May 07 2019 16:55:55 GMT+0200 (Central European Summer Time)","level":"info","service":"user-service"}
-{"level":"info","message":"GET fired: show all users from database. Tue May 07 2019 16:56:34 GMT+0200 (Central European Summer Time)"}
-{"level":"info","message":"GET fired: show all users from database. Tue May 07 2019 17:06:00 GMT+0200 (Central European Summer Time)"}
-{"message":"POST fired: login user djeka@eng.it , Tue May 07 2019 17:06:17 GMT+0200 (Central European Summer Time)","level":"info","service":"user-service"}
-{"message":"POST fired: login user djeka@eng.it , Tue May 07 2019 17:07:47 GMT+0200 (Central European Summer Time)","level":"info","service":"user-service"}
-{"message":"POST fired: login user djeka@eng.it , Tue May 07 2019 17:08:57 GMT+0200 (Central European Summer Time)","level":"info","service":"user-service"}
-{"message":"POST fired: login user djeka@eng.it , Tue May 07 2019 17:09:29 GMT+0200 (Central European Summer Time)","level":"info","service":"user-service"}
-{"message":"POST fired: login user djeka@eng.it , Tue May 07 2019 17:10:21 GMT+0200 (Central European Summer Time)","level":"info","service":"user-service"}
-{"level":"info","message":"GET fired: show all users from database. Tue May 07 2019 17:11:06 GMT+0200 (Central European Summer Time)"}
-{"level":"info","message":"GET fired: show all users from database. Tue May 07 2019 17:11:16 GMT+0200 (Central European Summer Time)"}
-{"message":"POST fired: login user djeka2@eng.it , Tue May 07 2019 17:11:35 GMT+0200 (Central European Summer Time)","level":"info","service":"user-service"}
-{"level":"info","message":"GET fired: show all users from database. Tue May 07 2019 17:12:12 GMT+0200 (Central European Summer Time)"}
-{"message":"POST fired: login user djeka2@eng.it , Tue May 07 2019 17:15:35 GMT+0200 (Central European Summer Time)","level":"info","service":"user-service"}
-{"message":"POST fired: signup a new user. Tue May 07 2019 17:20:48 GMT+0200 (Central European Summer Time)","level":"info","service":"user-service"}
-{"message":"POST fired: signup a new user. Tue May 07 2019 17:21:06 GMT+0200 (Central European Summer Time)","level":"info","service":"user-service"}
-{"message":"POST fired: signup a new user. Tue May 07 2019 17:22:24 GMT+0200 (Central European Summer Time)","level":"info","service":"user-service"}
-{"message":"GET fired: get one user-find by id. Tue May 07 2019 17:34:20 GMT+0200 (Central European Summer Time)","level":"info","service":"user-service"}
-{"message":"GET fired: get one user-find by id. Tue May 07 2019 17:36:05 GMT+0200 (Central European Summer Time)","level":"info","service":"user-service"}
-{"message":"GET fired: get two users from db - Tue May 07 2019 17:37:09 GMT+0200 (Central European Summer Time)","level":"info","service":"user-service"}
-{"message":"GET fired: get two users from db - Tue May 07 2019 17:38:10 GMT+0200 (Central European Summer Time)","level":"info","service":"user-service"}
-{"message":"GET fired: get two users from db - Tue May 07 2019 17:40:01 GMT+0200 (Central European Summer Time)","level":"info","service":"user-service"}
-{"message":"GET fired: get two users from db - Tue May 07 2019 17:40:14 GMT+0200 (Central European Summer Time)","level":"info","service":"user-service"}
-{"message":"GET fired: get two users from db - Tue May 07 2019 17:42:40 GMT+0200 (Central European Summer Time)","level":"info","service":"user-service"}
-{"message":"GET fired: get two users from db - Tue May 07 2019 17:44:58 GMT+0200 (Central European Summer Time)","level":"info","service":"user-service"}
-{"message":"POST fired: signup a new user. Wed May 08 2019 15:37:05 GMT+0200 (Central European Summer Time)","level":"info","service":"user-service"}
-{"message":"POST fired: signup a new user. Wed May 08 2019 15:38:07 GMT+0200 (Central European Summer Time)","level":"info","service":"user-service"}
+{"message":"POST fired: login user djeka@eng.it , Thu May 09 2019 11:32:43 GMT+0200 (Central European Summer Time)","level":"info","service":"user-service"}
+{"message":"POST fired: login user djeka@eng.it , Thu May 09 2019 11:33:37 GMT+0200 (Central European Summer Time)","level":"info","service":"user-service"}
+{"level":"info","message":"GET fired: show all users from database. Thu May 09 2019 11:33:42 GMT+0200 (Central European Summer Time)"}
+{"level":"info","message":"GET fired: show all users from database. Thu May 09 2019 11:34:21 GMT+0200 (Central European Summer Time)"}
+{"level":"info","message":"GET fired: show all users from database. Thu May 09 2019 11:40:54 GMT+0200 (Central European Summer Time)"}
+{"level":"info","message":"GET fired: show all users from database. Thu May 09 2019 11:41:36 GMT+0200 (Central European Summer Time)"}
+{"level":"info","message":"GET fired: show all users from database. Thu May 09 2019 11:42:36 GMT+0200 (Central European Summer Time)"}
+{"level":"info","message":"GET fired: show all users from database. Thu May 09 2019 11:43:38 GMT+0200 (Central European Summer Time)"}
+{"level":"info","message":"GET fired: show all users from database. Thu May 09 2019 11:46:44 GMT+0200 (Central European Summer Time)"}
+{"level":"info","message":"GET fired: show all users from database. Thu May 09 2019 11:48:26 GMT+0200 (Central European Summer Time)"}
+{"level":"info","message":"GET fired: show all users from database. Thu May 09 2019 11:50:08 GMT+0200 (Central European Summer Time)"}
+{"level":"info","message":"GET fired: show all users from database. Thu May 09 2019 11:54:04 GMT+0200 (Central European Summer Time)"}
+{"message":"POST fired: login user djeka@eng.it , Thu May 09 2019 11:54:08 GMT+0200 (Central European Summer Time)","level":"info","service":"user-service"}
+{"message":"POST fired: signup a new user. Thu May 09 2019 11:57:07 GMT+0200 (Central European Summer Time)","level":"info","service":"user-service"}
+{"message":"Create new book fired. Thu May 09 2019 12:13:25 GMT+0200 (Central European Summer Time)","level":"info","service":"user-service"}
+{"message":"Create new book fired. Thu May 09 2019 12:25:56 GMT+0200 (Central European Summer Time)","level":"info","service":"user-service"}
+{"message":"Create new book fired. Thu May 09 2019 12:27:02 GMT+0200 (Central European Summer Time)","level":"info","service":"user-service"}
+{"message":"Create new book fired. Thu May 09 2019 12:27:19 GMT+0200 (Central European Summer Time)","level":"info","service":"user-service"}
+{"message":"Create new book fired. Thu May 09 2019 12:28:09 GMT+0200 (Central European Summer Time)","level":"info","service":"user-service"}
+{"message":"Create new book fired. Thu May 09 2019 12:29:33 GMT+0200 (Central European Summer Time)","level":"info","service":"user-service"}
+{"message":"Create new book fired. Thu May 09 2019 12:30:52 GMT+0200 (Central European Summer Time)","level":"info","service":"user-service"}
+{"message":"Create new book fired. Thu May 09 2019 12:30:58 GMT+0200 (Central European Summer Time)","level":"info","service":"user-service"}
+{"message":"Create new book fired. Thu May 09 2019 12:32:38 GMT+0200 (Central European Summer Time)","level":"info","service":"user-service"}
+{"message":"Create new book fired. Thu May 09 2019 12:33:21 GMT+0200 (Central European Summer Time)","level":"info","service":"user-service"}
+{"message":"Create new book fired. Thu May 09 2019 12:36:49 GMT+0200 (Central European Summer Time)","level":"info","service":"user-service"}
+{"message":"Create new book fired. Thu May 09 2019 14:49:09 GMT+0200 (Central European Summer Time)","level":"info","service":"user-service"}
+{"message":"Create new book fired. Thu May 09 2019 14:51:25 GMT+0200 (Central European Summer Time)","level":"info","service":"user-service"}
+{"message":"Create new book fired. Thu May 09 2019 14:52:14 GMT+0200 (Central European Summer Time)","level":"info","service":"user-service"}
+{"message":"Create new book fired. Thu May 09 2019 14:53:40 GMT+0200 (Central European Summer Time)","level":"info","service":"user-service"}
+{"message":"Create new book fired. Thu May 09 2019 17:25:06 GMT+0200 (Central European Summer Time)","level":"info","service":"user-service"}
+{"message":"Create new book fired. Thu May 09 2019 17:26:27 GMT+0200 (Central European Summer Time)","level":"info","service":"user-service"}
+{"message":"Create new author fired. Thu May 09 2019 17:27:57 GMT+0200 (Central European Summer Time)","level":"info","service":"user-service"}
+{"message":"Create new author fired. Thu May 09 2019 17:30:48 GMT+0200 (Central European Summer Time)","level":"info","service":"user-service"}
+{"message":"Create new author fired. Thu May 09 2019 17:31:12 GMT+0200 (Central European Summer Time)","level":"info","service":"user-service"}
+{"message":"get author aggreg.books fired Thu May 09 2019 17:40:18 GMT+0200 (Central European Summer Time)","level":"info","service":"user-service"}
+{"message":"get author aggreg.books fired Thu May 09 2019 17:41:39 GMT+0200 (Central European Summer Time)","level":"info","service":"user-service"}
+{"message":"get author aggreg.books fired Thu May 09 2019 17:54:03 GMT+0200 (Central European Summer Time)","level":"info","service":"user-service"}
+{"message":"get author aggreg.books fired Fri May 10 2019 09:40:17 GMT+0200 (Central European Summer Time)","level":"info","service":"user-service"}
+{"message":"get author aggreg.books fired Fri May 10 2019 09:40:46 GMT+0200 (Central European Summer Time)","level":"info","service":"user-service"}
+{"message":"get author aggreg.books fired Fri May 10 2019 09:41:38 GMT+0200 (Central European Summer Time)","level":"info","service":"user-service"}
+{"message":"get author aggreg.books fired Fri May 10 2019 09:42:00 GMT+0200 (Central European Summer Time)","level":"info","service":"user-service"}
+{"message":"get author aggreg.books fired Fri May 10 2019 09:42:20 GMT+0200 (Central European Summer Time)","level":"info","service":"user-service"}
+{"message":"get author aggreg.books fired Fri May 10 2019 09:43:36 GMT+0200 (Central European Summer Time)","level":"info","service":"user-service"}
+{"message":"get author aggreg.books fired Fri May 10 2019 09:50:36 GMT+0200 (Central European Summer Time)","level":"info","service":"user-service"}
+{"message":"get author aggreg.books fired Fri May 10 2019 09:52:24 GMT+0200 (Central European Summer Time)","level":"info","service":"user-service"}
+{"message":"get author aggreg.books fired Fri May 10 2019 09:53:31 GMT+0200 (Central European Summer Time)","level":"info","service":"user-service"}
+{"message":"get author aggreg.books fired Fri May 10 2019 09:53:42 GMT+0200 (Central European Summer Time)","level":"info","service":"user-service"}
+{"message":"get author aggreg.books fired Fri May 10 2019 09:54:18 GMT+0200 (Central European Summer Time)","level":"info","service":"user-service"}
+{"message":"Create new book fired. Fri May 10 2019 09:56:51 GMT+0200 (Central European Summer Time)","level":"info","service":"user-service"}
+{"message":"Create new book fired. Fri May 10 2019 09:57:03 GMT+0200 (Central European Summer Time)","level":"info","service":"user-service"}
+{"message":"Create new book fired. Fri May 10 2019 10:02:26 GMT+0200 (Central European Summer Time)","level":"info","service":"user-service"}
+{"message":"Create new book fired. Fri May 10 2019 10:06:09 GMT+0200 (Central European Summer Time)","level":"info","service":"user-service"}
+{"message":"Create new book fired. Fri May 10 2019 10:07:59 GMT+0200 (Central European Summer Time)","level":"info","service":"user-service"}
+{"message":"Create new book fired. Fri May 10 2019 10:08:38 GMT+0200 (Central European Summer Time)","level":"info","service":"user-service"}
+{"message":"Create new book fired. Fri May 10 2019 10:09:16 GMT+0200 (Central European Summer Time)","level":"info","service":"user-service"}
+{"message":"Create new book fired. Fri May 10 2019 10:09:52 GMT+0200 (Central European Summer Time)","level":"info","service":"user-service"}
+{"message":"Create new book fired. Fri May 10 2019 10:10:17 GMT+0200 (Central European Summer Time)","level":"info","service":"user-service"}
+{"message":"Create new book fired. Fri May 10 2019 10:10:27 GMT+0200 (Central European Summer Time)","level":"info","service":"user-service"}
+{"message":"Create new book fired. Fri May 10 2019 10:11:43 GMT+0200 (Central European Summer Time)","level":"info","service":"user-service"}
+{"message":"Create new book fired. Fri May 10 2019 10:11:56 GMT+0200 (Central European Summer Time)","level":"info","service":"user-service"}
+{"message":"Create new book fired. Fri May 10 2019 10:12:33 GMT+0200 (Central European Summer Time)","level":"info","service":"user-service"}
+{"level":"info","message":"GET fired: show all users from database. Fri May 10 2019 10:20:04 GMT+0200 (Central European Summer Time)"}
+{"level":"info","message":"GET fired: show all users from database. Fri May 10 2019 10:20:27 GMT+0200 (Central European Summer Time)"}
+{"message":"get author aggreg.books fired Fri May 10 2019 10:27:22 GMT+0200 (Central European Summer Time)","level":"info","service":"user-service"}
+{"message":"get author aggreg.books fired Fri May 10 2019 10:29:14 GMT+0200 (Central European Summer Time)","level":"info","service":"user-service"}
+{"message":"Create new author fired. Fri May 10 2019 10:31:17 GMT+0200 (Central European Summer Time)","level":"info","service":"user-service"}
+{"message":"Create new book fired. Fri May 10 2019 10:38:12 GMT+0200 (Central European Summer Time)","level":"info","service":"user-service"}

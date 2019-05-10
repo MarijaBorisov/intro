@@ -44,7 +44,11 @@ var UserSchema = new mongoose.Schema({
         type: String,        
         trim: true
     },
-    salt: String, 
+    age: {
+        type: Number,
+        trim: true
+    },
+    salt: String,
 });
 
 
@@ -100,4 +104,8 @@ UserSchema.methods.generateJwt = function () {
 // module.exports = mongoose.model('User');
 
 
-module.exports = mongoose.model('User', UserSchema);
+module.exports = {
+    UserModel : mongoose.model('User', UserSchema),
+    UserSchema : UserSchema
+}
+

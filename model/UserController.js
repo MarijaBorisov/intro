@@ -1,7 +1,7 @@
 const jwt = require('jsonwebtoken');
 
 const checkAuth = require('../util/check-auth');
-const User = require('./User');
+const User = require('./User').UserModel;
 const logger = require('../logger');
 
 
@@ -22,6 +22,7 @@ var signup = (req, res, next) => {
     newUser.email = req.body.email;
     newUser.password = req.body.password;
     newUser.profession = req.body.profession;
+    newUser.age = req.body.age;
 
     // save newUser object to database 
     newUser.save((err, user) => {
@@ -110,13 +111,14 @@ var login2 = (req, res, next) => {
 
 // RETURNS ALL THE USERS IN THE DATABASE
 // **
-var getAllUsers = (req, res, next) => {
+var getAllUsers = (req, res, next) => {    
     logger.log('info', 'GET fired: show all users from database. ' + Date(Date.now()));
-
-    User.find({}, (err, users) => {
+        
+    User.find({}, (err, users) => {        
         if (err) return res.status(500).send("There was a problem finding the users.");
         res.status(200).send(users);
-    });
+    }); 
+    //res.json("testing json response");
 }
 
 
