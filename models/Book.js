@@ -17,7 +17,8 @@ var BookSchema = new mongoose.Schema({
         trim: true
     },
     genre: String,
-    copies: Number  
+    copies: Number,
+    date: Date
 });
 
 

@@ -65,3 +65,58 @@
 {"message":"get author aggreg.books fired Fri May 10 2019 10:29:14 GMT+0200 (Central European Summer Time)","level":"info","service":"user-service"}
 {"message":"Create new author fired. Fri May 10 2019 10:31:17 GMT+0200 (Central European Summer Time)","level":"info","service":"user-service"}
 {"message":"Create new book fired. Fri May 10 2019 10:38:12 GMT+0200 (Central European Summer Time)","level":"info","service":"user-service"}
+{"message":"Create new book fired. Fri May 10 2019 11:02:38 GMT+0200 (Central European Summer Time)","level":"info","service":"user-service"}
+{"level":"info","message":"GET fired: show all users from database. Fri May 10 2019 11:02:49 GMT+0200 (Central European Summer Time)"}
+{"message":"get authors avg and sum of years. Fri May 10 2019 11:02:52 GMT+0200 (Central European Summer Time)","level":"info","service":"user-service"}
+{"message":"getDiff fired. Fri May 10 2019 11:51:40 GMT+0200 (Central European Summer Time)","level":"info","service":"user-service"}
+{"message":"getDiff fired. Fri May 10 2019 11:54:38 GMT+0200 (Central European Summer Time)","level":"info","service":"user-service"}
+{"message":"getDiff fired. Fri May 10 2019 11:55:15 GMT+0200 (Central European Summer Time)","level":"info","service":"user-service"}
+{"message":"Create new book fired. Fri May 10 2019 12:01:46 GMT+0200 (Central European Summer Time)","level":"info","service":"user-service"}
+{"message":"Create new book fired. Fri May 10 2019 12:03:27 GMT+0200 (Central European Summer Time)","level":"info","service":"user-service"}
+{"message":"Create new book fired. Fri May 10 2019 12:03:39 GMT+0200 (Central European Summer Time)","level":"info","service":"user-service"}
+{"message":"Create new book fired. Fri May 10 2019 12:04:31 GMT+0200 (Central European Summer Time)","level":"info","service":"user-service"}
+{"message":"Create new book fired. Fri May 10 2019 12:09:43 GMT+0200 (Central European Summer Time)","level":"info","service":"user-service"}
+{"message":"Create new book fired. Fri May 10 2019 12:10:18 GMT+0200 (Central European Summer Time)","level":"info","service":"user-service"}
+{"message":"getDiff fired. Fri May 10 2019 12:16:50 GMT+0200 (Central European Summer Time)","level":"info","service":"user-service"}
+{"message":"getDiff fired. Fri May 10 2019 12:18:01 GMT+0200 (Central European Summer Time)","level":"info","service":"user-service"}
+{"message":"Create new book fired. Fri May 10 2019 12:24:12 GMT+0200 (Central European Summer Time)","level":"info","service":"user-service"}
+{"message":"getDiff fired. Fri May 10 2019 12:24:21 GMT+0200 (Central European Summer Time)","level":"info","service":"user-service"}
+{"message":"getDiff fired. Fri May 10 2019 12:28:20 GMT+0200 (Central European Summer Time)","level":"info","service":"user-service"}
+{"message":"getDiff fired. Fri May 10 2019 12:29:32 GMT+0200 (Central European Summer Time)","level":"info","service":"user-service"}
+{"message":"getDiff fired. Fri May 10 2019 12:30:34 GMT+0200 (Central European Summer Time)","level":"info","service":"user-service"}
+{"message":"getDiff fired. Fri May 10 2019 12:30:56 GMT+0200 (Central European Summer Time)","level":"info","service":"user-service"}
+{"message":"getDiff fired. Fri May 10 2019 14:29:33 GMT+0200 (Central European Summer Time)","level":"info","service":"user-service"}
+{"message":"getDiff fired. Fri May 10 2019 14:30:48 GMT+0200 (Central European Summer Time)","level":"info","service":"user-service"}
+{"message":"getDiff fired. Fri May 10 2019 14:32:01 GMT+0200 (Central European Summer Time)","level":"info","service":"user-service"}
+{"message":"getDiff fired. Fri May 10 2019 14:32:37 GMT+0200 (Central European Summer Time)","level":"info","service":"user-service"}
+{"message":"getDiff fired. Fri May 10 2019 14:38:31 GMT+0200 (Central European Summer Time)","level":"info","service":"user-service"}
+{"message":"getDiff fired. Fri May 10 2019 14:39:05 GMT+0200 (Central European Summer Time)","level":"info","service":"user-service"}
+{"message":"getDiff fired. Fri May 10 2019 14:39:24 GMT+0200 (Central European Summer Time)","level":"info","service":"user-service"}
+{"message":"getDiff fired. Fri May 10 2019 14:39:43 GMT+0200 (Central European Summer Time)","level":"info","service":"user-service"}
+{"message":"getDiff fired. Fri May 10 2019 14:42:00 GMT+0200 (Central European Summer Time)","level":"info","service":"user-service"}
+{"message":"dateDiff fired. Fri May 10 2019 14:55:48 GMT+0200 (Central European Summer Time)","level":"info","service":"user-service"}
+{"message":"dateDiff fired. Fri May 10 2019 14:58:59 GMT+0200 (Central European Summer Time)","level":"info","service":"user-service"}
+{"message":"dateDiff fired. Fri May 10 2019 15:01:20 GMT+0200 (Central European Summer Time)","level":"info","service":"user-service"}
+{"message":"dateDiff fired. Fri May 10 2019 15:16:10 GMT+0200 (Central European Summer Time)","level":"info","service":"user-service"}
+{"message":"dateDiff fired. Fri May 10 2019 15:22:05 GMT+0200 (Central European Summer Time)","level":"info","service":"user-service"}
+{"message":"dateDiff fired. Fri May 10 2019 15:22:33 GMT+0200 (Central European Summer Time)","level":"info","service":"user-service"}
+{"message":"getSpecificTimestamps fired. Fri May 10 2019 15:31:43 GMT+0200 (Central European Summer Time)","level":"info","service":"user-service"}
+{"message":"getSpecificTimestamps fired. Fri May 10 2019 15:34:37 GMT+0200 (Central European Summer Time)","level":"info","service":"user-service"}
+{"message":"getSpecificTimestamps fired. Fri May 10 2019 15:35:00 GMT+0200 (Central European Summer Time)","level":"info","service":"user-service"}
+{"message":"getSpecificTimestamps fired. Fri May 10 2019 15:36:21 GMT+0200 (Central European Summer Time)","level":"info","service":"user-service"}
+{"message":"getSpecificTimestamps fired. Fri May 10 2019 15:36:40 GMT+0200 (Central European Summer Time)","level":"info","service":"user-service"}
+{"message":"getSpecificTimestamps fired. Fri May 10 2019 15:38:34 GMT+0200 (Central European Summer Time)","level":"info","service":"user-service"}
+{"message":"getSpecificTimestamps fired. Fri May 10 2019 15:40:14 GMT+0200 (Central European Summer Time)","level":"info","service":"user-service"}
+{"message":"getSpecificTimestamps fired. Fri May 10 2019 15:42:20 GMT+0200 (Central European Summer Time)","level":"info","service":"user-service"}
+{"message":"getSpecificTimestamps fired. Fri May 10 2019 15:43:33 GMT+0200 (Central European Summer Time)","level":"info","service":"user-service"}
+{"message":"getSpecificTimestamps fired. Fri May 10 2019 15:44:18 GMT+0200 (Central European Summer Time)","level":"info","service":"user-service"}
+{"message":"getSpecificTimestamps fired. Fri May 10 2019 15:45:57 GMT+0200 (Central European Summer Time)","level":"info","service":"user-service"}
+{"message":"timezone fired. Fri May 10 2019 16:41:14 GMT+0200 (Central European Summer Time)","level":"info","service":"user-service"}
+{"message":"timezone fired. Fri May 10 2019 16:44:08 GMT+0200 (Central European Summer Time)","level":"info","service":"user-service"}
+{"message":"timezone fired. Fri May 10 2019 16:50:53 GMT+0200 (Central European Summer Time)","level":"info","service":"user-service"}
+{"message":"timezone fired. Fri May 10 2019 16:52:11 GMT+0200 (Central European Summer Time)","level":"info","service":"user-service"}
+{"level":"info","message":"GET fired: show all users from database. Fri May 10 2019 17:24:48 GMT+0200 (Central European Summer Time)"}
+{"message":"POST fired: login user djeka@eng.it , Fri May 10 2019 17:25:01 GMT+0200 (Central European Summer Time)","level":"info","service":"user-service"}
+{"message":"Create new book fired. Fri May 10 2019 17:25:47 GMT+0200 (Central European Summer Time)","level":"info","service":"user-service"}
+{"message":"Create new author fired. Fri May 10 2019 17:28:18 GMT+0200 (Central European Summer Time)","level":"info","service":"user-service"}
+{"message":"Create new author fired. Fri May 10 2019 17:32:00 GMT+0200 (Central European Summer Time)","level":"info","service":"user-service"}

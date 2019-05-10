@@ -12,7 +12,8 @@ var createNewAuthor = (req, res, next) => {
             name: req.body.name,
             books: req.body.books,
             birthYear: req.body.birthYear,
-            prizes: req.body.prizes
+            prizes: req.body.prizes,
+            date: new Date()
         },
         (err, author) => {
             if (err) return res.status(500).send(err.errmsg);

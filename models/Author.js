@@ -9,7 +9,8 @@ var AuthorSchema = new mongoose.Schema({
     },
     birthYear: Number,
     books: Number,
-    prizes: Number
+    prizes: Number,
+    date: Date
 });
 
 
