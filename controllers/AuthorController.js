@@ -1,5 +1,5 @@
 const logger = require('../logger');
-const Author = require('./Author').AuthorModel;
+const Author = require('../models/Author').AuthorModel;
 
 
 

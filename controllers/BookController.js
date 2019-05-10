@@ -1,5 +1,5 @@
 const logger = require('../logger');
-const {BookModel} = require('./Book');
+const {BookModel} = require('../models/Book');
 
 
 // CREATE NEW BOOK

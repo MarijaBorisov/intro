@@ -3,7 +3,7 @@ var express = require('express');
 const {
     createNewAuthor,
     getAvg
-} = require('./AuthorController');
+} = require('../controllers/AuthorController');
 
 
 var router = express.Router();

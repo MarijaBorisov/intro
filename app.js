@@ -3,9 +3,9 @@ var db = require('./database/db');
 
 var app = express();
 
-var UserRoutes = require('./model/UserRoutes');
-var BookRoutes = require('./model/BookRoutes');
-var AuthorRoutes = require('./model/AuthorRoutes');
+var UserRoutes = require('./routes/UserRoutes');
+var BookRoutes = require('./routes/BookRoutes');
+var AuthorRoutes = require('./routes/AuthorRoutes');
 
 
 // user route when url matches /api/user/

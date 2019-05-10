@@ -2,7 +2,7 @@ var express = require('express');
 
 const {
     newBook
-} = require('./BookController');
+} = require('../controllers/BookController');
 
 
 var router = express.Router();

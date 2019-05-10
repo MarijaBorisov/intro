@@ -1,7 +1,7 @@
 const jwt = require('jsonwebtoken');
 
 const checkAuth = require('../util/check-auth');
-const User = require('./User').UserModel;
+const User = require('../models/User').UserModel;
 const logger = require('../logger');
 
 

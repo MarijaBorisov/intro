@@ -1,10 +1,4 @@
 var mongoose = require('mongoose');
-var crypto = require('crypto');
-var jwt = require('jsonwebtoken');
-var validator = require('validator');
-
-//const {AuthorSchema} = require('./Author');
-
 
 
 var BookSchema = new mongoose.Schema({

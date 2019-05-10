@@ -12,7 +12,7 @@ const {
     deleteUserById,
     findUserById,
     getAllUsers
-} = require('./UserController');
+} = require('../controllers/UserController');
 
 
 
