@@ -12,7 +12,7 @@ module.exports.getSingerNames = (req, res, next) => {
 
   Singer.aggregate(
     [
-      { $project: { lastname:1 } }
+      { $project: {_id:0, lastname:1 } }
     ]
   )
     .then(function (singers) {
@@ -46,6 +46,26 @@ module.exports.getSingerNames = (req, res, next) => {
     })
  };
 
+ module.exports.getSingerEqualTo = (req, res, next) => {
+
+  Singer.aggregate(
+    [
+      { $match: { lastname:  'Puente'  } },
+      { $project: { lastname:1 } }
+    ]
+  )
+    .then(function (singers) {
+ 
+      logger.info("Listing singers... ");
+      res.send(singers);
+ 
+    }).catch(function (err) {
+     
+      res.status(404).send("Cannot find singers");
+    })
+ };
+
+
 
  module.exports.getSingerBlankName = (req, res, next) => {
 
@@ -65,6 +85,189 @@ module.exports.getSingerNames = (req, res, next) => {
       res.status(404).send("Cannot find singers");
     })
  };
+
+ module.exports.getSumOfAge = (req, res, next) => {
+
+  Singer.aggregate(
+    [
+      { $match: {} },
+      { $group: { _id:{$sum: "$lastname"}, total: { $sum: "$age" } ,avgAge :{ $avg:"$age"}} },
+      {
+        $project: {
+            _id: 0, total: 1,avgAge:1
+        }
+    }
+    ]
+  )
+    .then(function (singers) {
+ 
+      logger.info("Listing singers... ");
+      res.send(singers);
+ 
+    }).catch(function (err) {
+     
+      res.status(404).send("Cannot find singers");
+    })
+ };
+
+
+ module.exports.getLastTwoSingers = (req, res, next) => {
+
+  Singer.aggregate(
+    [
+ 
+     {
+       $project:
+         {
+           _id:1,
+           name:1,
+           createdAt:1
+         }
+     },
+    { $sort : {  createdAt: -1 } },
+      { $limit : 2 }
+   
+    ]
+  )
+    .then(function (singers) {
+ 
+      logger.info("Listing singers... ");
+      res.send(singers);
+ 
+    }).catch(function (err) {
+     
+      res.status(404).send("Cannot find singers");
+    })
+ };
+
+
+
+
+ module.exports.getYear = (req, res, next) => {
+
+  Singer.aggregate(
+    [
+ 
+     {
+       $project:
+         {
+           _id:1,
+           name:1,
+           createdAt:1,
+           year: { $year: "$start" }
+         }
+     },
+    { $sort : {  createdAt: -1 } },
+      
+   
+    ]
+  )
+    .then(function (singers) {
+ 
+      logger.info("Listing singers... ");
+      res.send(singers);
+ 
+    }).catch(function (err) {
+     
+      res.status(404).send("Cannot find singers");
+    })
+ };
+
+
+ module.exports.getTimeZone = (req, res, next) => {
+
+  Singer.aggregate([
+    
+       { $project:{
+           _id:1,date: { 
+            second: {$second: {date :"$start", timezone : "Europe/Belgrade"}},
+            minute: {$minute: {date :"$start", timezone : "Europe/Belgrade"}},
+            hour: {$hour: {date :"$start", timezone : "Europe/Belgrade"}},
+                day: {$dayOfMonth: {date :"$start", timezone : "Europe/Belgrade"}},
+               month: {$month: {date : "$start", timezone : "Europe/Belgrade"}}, 
+              year: {$year: {date : "$start", timezone : "Europe/Belgrade"}} 
+            }
+          
+      }}
+    
+   ])
+    .then(function (singers) {
+ 
+      logger.info("Listing singers... ");
+      res.send(singers);
+ 
+    }).catch(function (err) {
+     
+      res.status(404).send("Cannot find singers");
+    })
+ };
+
+ module.exports.getSubtractAge = (req, res, next) => {
+
+  Singer.aggregate
+    (
+      [{ $sort: { _id: -1 } },
+      { $limit: 2 },
+      {
+        $group: {
+          _id: null,
+          first: { $first: "$$ROOT" },
+          last: { $last: "$$ROOT" }
+        }
+   
+   
+      },
+      { $project: { _id: 1, name: 1, subtract : { $subtract: ["$first.age", "$last.age"] } } } 
+      ]
+    )
+    .then(function (singers) {
+ 
+      logger.info("Listing singers... ");
+      res.send(singers);
+ 
+    }).catch(function (err) {
+     
+      res.status(404).send("Cannot find singers");
+    })
+ };
+
+
+
+
+ module.exports.getSubtract = (req, res, next) => {
+
+  Singer.aggregate
+    (
+      [{ $sort: { _id: -1 } },
+      { $limit: 2 },
+      {
+        $group: {
+          _id: null,
+          first: { $first: "$$ROOT" },
+          last: { $last: "$$ROOT" }
+        }
+   
+   
+      },
+      { $project: { _id: 1, name: 1, subtract :{ $subtract: ["$first.start", "$last.start"] } } } 
+      ]
+    )
+    .then(function (singers) {
+ 
+      logger.info("Listing singers... ");
+      res.send(singers);
+ 
+    }).catch(function (err) {
+     
+      res.status(404).send("Cannot find singers");
+    })
+ };
+
+
+
+
+
+
 
 
 module.exports.signUpUser = (req, res, next) => {
